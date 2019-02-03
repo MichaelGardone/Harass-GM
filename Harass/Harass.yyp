@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "006f88b3-0a12-41d9-bee8-eee980f0305c",
+            "Value": {
+                "id": "370ec8a4-8997-4ec0-8906-075a36aba096",
+                "resourcePath": "sprites\\Door\\Door.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0f2c0165-fdf9-42b9-adfc-f0b09e55aabb",
             "Value": {
                 "id": "46b7fab8-bc16-491b-9c4a-71b8d2871062",
@@ -44,6 +52,14 @@
                 "id": "660895a4-9aad-4e6a-9644-1dd294ce7e21",
                 "resourcePath": "views\\1a76750f-5a54-40d5-910c-506d37139c90.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1b1f952c-9ca2-4f15-99d9-7751232ed749",
+            "Value": {
+                "id": "138cafb5-f635-4846-a48b-ecfbbb604d8c",
+                "resourcePath": "sprites\\NotAggressiveEnemy\\NotAggressiveEnemy.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -127,6 +143,14 @@
             }
         },
         {
+            "Key": "9229832f-01ec-48ca-bbda-19b7b5dc5cd5",
+            "Value": {
+                "id": "a5030d25-33ed-4760-aa23-d155ce596fae",
+                "resourcePath": "sprites\\Player\\Player.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "96c0e7fd-2064-4c56-b853-303a0ecad00c",
             "Value": {
                 "id": "bfc767e2-93c4-4b47-ba26-91fa3975d01b",
@@ -159,11 +183,35 @@
             }
         },
         {
+            "Key": "bfb5a412-3b0d-4036-8bf3-0b9fdc9da947",
+            "Value": {
+                "id": "0bb38864-fbd7-46aa-9bf2-62b93c56470a",
+                "resourcePath": "sprites\\Ground\\Ground.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c0cb5576-a204-4926-8f0b-7d307454acdd",
+            "Value": {
+                "id": "9bf32479-2bc0-416b-9606-5b41f7c19d98",
+                "resourcePath": "views\\c0cb5576-a204-4926-8f0b-7d307454acdd.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "97fb4d7a-aeb1-444c-ab3e-925b6bde2e9f",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "e69da28e-da79-48c4-9d82-243e82d73a1d",
+            "Value": {
+                "id": "d195466f-b2f4-4e0a-9868-2727634615de",
+                "resourcePath": "sprites\\AggressiveEnemy\\AggressiveEnemy.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
