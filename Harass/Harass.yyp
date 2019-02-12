@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0ca33693-b868-4742-ba55-ef49f80a72ab",
+            "Value": {
+                "id": "f25480ae-6579-438f-9896-67e1db035d9e",
+                "resourcePath": "scripts\\Scr_Movement\\Scr_Movement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0f2c0165-fdf9-42b9-adfc-f0b09e55aabb",
             "Value": {
                 "id": "46b7fab8-bc16-491b-9c4a-71b8d2871062",
@@ -75,6 +83,14 @@
             "Value": {
                 "id": "4e924b94-79e1-4876-bfc0-013cc1162bee",
                 "resourcePath": "views\\28b0f544-dd27-4fb8-8f5d-5267d07db1ee.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "366fcffc-56c0-43d1-b7d5-0bcc623b193c",
+            "Value": {
+                "id": "8231b1ef-fe22-43eb-807b-2f30abbb9774",
+                "resourcePath": "views\\366fcffc-56c0-43d1-b7d5-0bcc623b193c.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -143,6 +159,22 @@
             }
         },
         {
+            "Key": "66e88676-85fe-4e0d-b612-6f038c7c6cd7",
+            "Value": {
+                "id": "5827a7d7-4f54-4a8f-84ed-24074731024e",
+                "resourcePath": "views\\66e88676-85fe-4e0d-b612-6f038c7c6cd7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7064ed59-ccf9-492c-9164-259b3d619f14",
+            "Value": {
+                "id": "c325b02b-2316-4d12-a099-b8c155e226cb",
+                "resourcePath": "scripts\\Scr_Input\\Scr_Input.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9229832f-01ec-48ca-bbda-19b7b5dc5cd5",
             "Value": {
                 "id": "a5030d25-33ed-4760-aa23-d155ce596fae",
@@ -164,6 +196,14 @@
                 "id": "a2c3fa84-1e1c-424f-a57f-a2a544f27d3e",
                 "resourcePath": "views\\9d03535c-0cb0-4e01-9c8f-87c5004f6414.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a264c8a0-ec94-4716-a913-7f4d36e1dbfc",
+            "Value": {
+                "id": "6d0fc459-7c8a-4a91-a56f-a683a3912b3e",
+                "resourcePath": "objects\\OBJ_Player\\OBJ_Player.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -224,7 +264,8 @@
         }
     ],
     "script_order": [
-        
+        "7064ed59-ccf9-492c-9164-259b3d619f14",
+        "0ca33693-b868-4742-ba55-ef49f80a72ab"
     ],
     "tutorial": ""
 }
