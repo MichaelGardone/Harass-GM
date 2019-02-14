@@ -8,7 +8,9 @@
         "1b1f952c-9ca2-4f15-99d9-7751232ed749",
         "9229832f-01ec-48ca-bbda-19b7b5dc5cd5",
         "e69da28e-da79-48c4-9d82-243e82d73a1d",
-        "006f88b3-0a12-41d9-bee8-eee980f0305c"
+        "006f88b3-0a12-41d9-bee8-eee980f0305c",
+        "faa43b0a-09a8-415e-8f77-dc02e0f6a44e",
+        "71f08d6d-bd6c-4829-9562-95bd8e206f2d"
     ],
     "filterType": "GMSprite",
     "folderName": "Test",
