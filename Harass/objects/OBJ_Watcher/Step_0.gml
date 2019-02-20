@@ -1,2 +1,3 @@
 
-Scr_AIMovement();
+// Behaviors
+Scr_StateMachine();

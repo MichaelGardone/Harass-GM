@@ -42,7 +42,7 @@
             "Key": "00848584-52ac-496a-ac31-d1f8667aaca2",
             "Value": {
                 "id": "b3dae96a-6c12-4926-a91d-520627529ccc",
-                "resourcePath": "scripts\\Scr_AIMovement\\Scr_AIMovement.yy",
+                "resourcePath": "scripts\\Scr_StateMachine\\Scr_StateMachine.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "4485f478-b73e-4468-9213-bbe697c02910",
+            "Value": {
+                "id": "3e960c65-ab5c-465f-8d73-1e4fd33dc8bd",
+                "resourcePath": "paths\\test_patrol\\test_patrol.yy",
+                "resourceType": "GMPath"
+            }
+        },
+        {
             "Key": "47c47338-cac0-4f31-8245-29356e8f4fad",
             "Value": {
                 "id": "c5971d90-fa28-4300-a684-b3f615fcb71f",
@@ -188,6 +196,14 @@
                 "id": "5d3aef37-ec36-4a4e-92d6-a6f426e8a125",
                 "resourcePath": "views\\4dbc2091-2eda-4459-b32c-104d7f5c5494.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "523b753c-d076-422e-aab1-921d32f66395",
+            "Value": {
+                "id": "e386c34b-ef93-41da-811b-178c03c2e68d",
+                "resourcePath": "paths\\patrol\\patrol.yy",
+                "resourceType": "GMPath"
             }
         },
         {
@@ -258,7 +274,7 @@
             "Key": "7ae71cc9-0f92-4935-a6f2-518d7a0607ba",
             "Value": {
                 "id": "484aecee-0307-4b63-85a5-f392896594a8",
-                "resourcePath": "sprites\\sprite7\\sprite7.yy",
+                "resourcePath": "sprites\\spr_enemy_node\\spr_enemy_node.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -428,6 +444,14 @@
                 "id": "d195466f-b2f4-4e0a-9868-2727634615de",
                 "resourcePath": "sprites\\AggressiveEnemy\\AggressiveEnemy.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ef57762e-a44e-4c91-ba61-39553b43eb1c",
+            "Value": {
+                "id": "cf5cb0e7-99a5-427e-92e3-69d2a0bc501e",
+                "resourcePath": "objects\\obj_path_node\\obj_path_node.yy",
+                "resourceType": "GMObject"
             }
         },
         {
