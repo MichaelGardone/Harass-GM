@@ -26,6 +26,11 @@ switch(state)
 		}
 	}
 	
+	if (direction == 0)
+		dir = 1;
+	else
+		dir = -1;
+	
 	break;
 	
 	// CHASE
@@ -43,8 +48,8 @@ switch(state)
 	x_spd = dir * chase_spd;
 	x += x_spd;
 	
-	if(position_meeting(x,y,OBJ_Player))
-		state = e_state.attack;
+	//if(position_meeting(x,y,OBJ_Player))
+	//	state = e_state.attack;
 	break;
 	
 	// Attack
