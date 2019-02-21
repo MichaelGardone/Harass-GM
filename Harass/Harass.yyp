@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "43f88df3-23f6-4f88-ad29-9c1076c49a29",
+            "Value": {
+                "id": "803731ef-6e10-4447-a922-561656b0700a",
+                "resourcePath": "rooms\\Car_1\\Car_1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "4485f478-b73e-4468-9213-bbe697c02910",
             "Value": {
                 "id": "3e960c65-ab5c-465f-8d73-1e4fd33dc8bd",
@@ -260,6 +268,14 @@
                 "id": "c325b02b-2316-4d12-a099-b8c155e226cb",
                 "resourcePath": "scripts\\Scr_Input\\Scr_Input.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "712d81a0-f0e6-4c06-aaaa-5ee683206b5c",
+            "Value": {
+                "id": "0bfda223-732e-4eb8-83b9-5aa989ebdf53",
+                "resourcePath": "sprites\\BenchWB\\BenchWB.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

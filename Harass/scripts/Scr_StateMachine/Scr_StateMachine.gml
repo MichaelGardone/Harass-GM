@@ -1,4 +1,5 @@
 detect = collision_line(x-dist_near_trig*dir, y, x+dist_far_trig*dir, y, OBJ_Player, false, true);
+attack = collision_line(x,y,x+attack,y, OBJ_Player, false, true);
 
 switch(state)
 {
@@ -6,7 +7,12 @@ switch(state)
 	x_spd = 0; // we do not want to modify the x coord in this state!
 	
 	if(path_index != test_patrol)
-		path_start(test_patrol, patrol_spd, path_action_reverse, false);
+	{
+		// Try to go back to the path's start
+		mp_linear_step(start_x, start_y, patrol_spd, false);
+		if(abs(x - start_x) < 2)
+			path_start(test_patrol, patrol_spd, path_action_reverse, true);
+	}
 	
 	// The enemy had found the player
 	if(detect != noone)
@@ -41,10 +47,15 @@ switch(state)
 		state = e_state.attack;
 	break;
 	
-	case attack:
-	
+	// Attack
+	case e_state.attack:
+	// If (player hides we lost) OR (player escapes hitboxes)
+	if(depth != OBJ_Player.depth || detect == noone)
+	{
+		state = e_state.wander;
+	}
 	break;
 	
-	case stunned:
+	case e_state.stunned:
 	break;
 }

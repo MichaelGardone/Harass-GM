@@ -3,11 +3,11 @@
 
 draw_self();
 
-if(dir == 1)
+if(direction == 0)
 {
 	image_index = 0;
 }
-else if(dir == -1)
+else if(direction == 180)
 {
 	image_index = 1;
 }
