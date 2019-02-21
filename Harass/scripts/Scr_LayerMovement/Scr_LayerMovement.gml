@@ -1,7 +1,10 @@
 
 if(place_meeting(x,y,OBJ_Door))
 {
-	game_restart(); // TODO: Change scenes
+	if (w_key && OBJ_Door.door_open)
+	{
+		game_restart(); // TODO: Change scenes
+	}
 } else {
 	if w_key
 	{

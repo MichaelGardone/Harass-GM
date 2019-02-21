@@ -1,0 +1,2 @@
+
+door_open = true;

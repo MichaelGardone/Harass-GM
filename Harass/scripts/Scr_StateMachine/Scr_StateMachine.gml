@@ -14,16 +14,12 @@ switch(state)
 			path_start(test_patrol, patrol_spd, path_action_reverse, true);
 	}
 	
-	// The enemy had found the player
-	if(detect != noone)
+	// The enemy had found the player & player is actually on the same depth level as the enemy
+	if(detect != noone && depth == OBJ_Player.depth)
 	{
-		// Check if the player is actually on the same depth level as the enemy
-		if(depth == OBJ_Player.depth)
-		{
-			// Get to work!
-			path_end();
-			state = e_state.chase;
-		}
+		// Get to work!
+		path_end();
+		state = e_state.chase;
 	}
 	
 	if (direction == 0)
@@ -48,8 +44,8 @@ switch(state)
 	x_spd = dir * chase_spd;
 	x += x_spd;
 	
-	//if(position_meeting(x,y,OBJ_Player))
-	//	state = e_state.attack;
+	if(attack != noone && OBJ_Player.depth == depth)
+		state = e_state.attack;
 	break;
 	
 	// Attack
