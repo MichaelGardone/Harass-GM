@@ -183,14 +183,6 @@
             }
         },
         {
-            "Key": "43f88df3-23f6-4f88-ad29-9c1076c49a29",
-            "Value": {
-                "id": "803731ef-6e10-4447-a922-561656b0700a",
-                "resourcePath": "rooms\\Car_1\\Car_1.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "4485f478-b73e-4468-9213-bbe697c02910",
             "Value": {
                 "id": "3e960c65-ab5c-465f-8d73-1e4fd33dc8bd",
@@ -263,6 +255,14 @@
             }
         },
         {
+            "Key": "6f36df97-f197-499a-bfd3-785961881bf2",
+            "Value": {
+                "id": "bb3ed426-f67a-4d7e-b541-bb3e41ebe0fa",
+                "resourcePath": "views\\6f36df97-f197-499a-bfd3-785961881bf2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7064ed59-ccf9-492c-9164-259b3d619f14",
             "Value": {
                 "id": "c325b02b-2316-4d12-a099-b8c155e226cb",
@@ -300,6 +300,14 @@
                 "id": "8bb9f781-87f5-45bd-9cec-91a60bf7c6b4",
                 "resourcePath": "scripts\\Scr_LayerMovement\\Scr_LayerMovement.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "81d615af-7e33-47df-abed-3ea690937dfb",
+            "Value": {
+                "id": "ba5cad06-33ab-461d-a75b-f01f2f5d1eb1",
+                "resourcePath": "tilesets\\Environment\\Environment.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -359,6 +367,14 @@
             }
         },
         {
+            "Key": "c0643a5e-eda8-42bd-bc35-39b851df0a2a",
+            "Value": {
+                "id": "42493c52-6103-416e-84c9-e9af6b9425e5",
+                "resourcePath": "rooms\\sizeScale\\sizeScale.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "c0cb5576-a204-4926-8f0b-7d307454acdd",
             "Value": {
                 "id": "9bf32479-2bc0-416b-9606-5b41f7c19d98",
@@ -372,6 +388,22 @@
                 "id": "97fb4d7a-aeb1-444c-ab3e-925b6bde2e9f",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d7ae21b0-aa18-4a4e-ad74-3736c04661bb",
+            "Value": {
+                "id": "bd4c0d9a-7b06-4cc0-911d-68431ff5a835",
+                "resourcePath": "sprites\\sprite11\\sprite11.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dda468c1-ef00-4676-83a8-14c593b35e7a",
+            "Value": {
+                "id": "c7530c31-07f5-44d8-a256-dde5ac401389",
+                "resourcePath": "views\\dda468c1-ef00-4676-83a8-14c593b35e7a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -396,6 +428,14 @@
                 "id": "5620ff78-fe7f-4cc6-bbcb-89ff07a95c67",
                 "resourcePath": "sprites\\Background\\Background.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fb21700e-bced-43f1-8696-7b262c96a2d5",
+            "Value": {
+                "id": "8edf107c-9edc-4ec3-95cb-442285eca657",
+                "resourcePath": "views\\fb21700e-bced-43f1-8696-7b262c96a2d5.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
