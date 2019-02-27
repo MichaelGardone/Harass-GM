@@ -5,8 +5,8 @@ if global.pause == 0 && global.player_locked == 0
 	{
 		path_speed = patrol_spd;
 	}
-	detect = collision_line(x-dist_near_trig*dir, y, x+dist_far_trig*dir, y, OBJ_Player, false, true);
-	attack = collision_line(x,y,x+attack,y, OBJ_Player, false, true);
+	detect = collision_rectangle(x-dist_near_trig*dir, y, x+dist_far_trig*dir, y, OBJ_Player, false, true);
+	attack = collision_rectangle(x+sprite_width*dir,y,x+sprite_width+attack*dir,y+sprite_height, OBJ_Player, false, true);
 
 	switch(state)
 	{
@@ -39,8 +39,8 @@ if global.pause == 0 && global.player_locked == 0
 		// CHASE
 		case e_state.chase:
 	
-		// If (player hides we lost) OR (player escapes hitboxes)
-		if(OBJ_Player.is_hiding == true || detect == noone)
+		// If (player hides we lost) OR (player escapes detection hitbox)
+		if(OBJ_Player.is_hiding == true/* || detect == noone*/)
 		{
 			state = e_state.wander;
 		}
@@ -51,7 +51,7 @@ if global.pause == 0 && global.player_locked == 0
 		x_spd = dir * chase_spd;
 		x += x_spd;
 	
-		if(attack != noone && OBJ_Player.depth == depth)
+		if(attack != noone && OBJ_Player.is_hiding == false)
 			state = e_state.attack;
 		break;
 	
