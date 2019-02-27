@@ -1,3 +1,8 @@
+// FOR PLAYER PAUSE ONLY
+global.pause = 0;
+
+// FOR ENEMY PAUSING
+global.player_locked = 0;
 
 // Reset patrol from last room
 len = path_get_length(patrol);

@@ -5,7 +5,12 @@ Scr_States();
 x_spd = 0;
 dir = 1;
 patrol_spd = 2;
+
+// Float
 chase_spd = 2.5;
+
+// Stun reduction
+stun_effect = -1;
 
 // Enemy Hitbox Information
 dist_far_trig = 300; // Facing

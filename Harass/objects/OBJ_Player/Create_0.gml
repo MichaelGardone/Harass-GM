@@ -16,3 +16,7 @@ s_key = false;
 use_item = false; // not implemented
 
 is_hiding = false;
+
+player_escape = false;
+breakout = 0;
+breakout_lim = 10;

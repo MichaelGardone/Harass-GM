@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "42ff6758-e181-4375-94c4-6b9d972e2615",
+            "Value": {
+                "id": "9d11ee0e-1b8b-40f6-ad2d-f3eb59f14b36",
+                "resourcePath": "views\\42ff6758-e181-4375-94c4-6b9d972e2615.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4485f478-b73e-4468-9213-bbe697c02910",
             "Value": {
                 "id": "3e960c65-ab5c-465f-8d73-1e4fd33dc8bd",
@@ -263,6 +271,14 @@
             }
         },
         {
+            "Key": "701fb1c9-876a-45c9-9fd7-16beaf620281",
+            "Value": {
+                "id": "c4a70720-fae6-4eb3-8965-abdd0a8c90a2",
+                "resourcePath": "views\\701fb1c9-876a-45c9-9fd7-16beaf620281.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7064ed59-ccf9-492c-9164-259b3d619f14",
             "Value": {
                 "id": "c325b02b-2316-4d12-a099-b8c155e226cb",
@@ -271,19 +287,19 @@
             }
         },
         {
-            "Key": "712d81a0-f0e6-4c06-aaaa-5ee683206b5c",
-            "Value": {
-                "id": "0bfda223-732e-4eb8-83b9-5aa989ebdf53",
-                "resourcePath": "sprites\\BenchWB\\BenchWB.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "71f08d6d-bd6c-4829-9562-95bd8e206f2d",
             "Value": {
                 "id": "e602d55e-21a7-4b19-b2eb-8d2ed3522d94",
                 "resourcePath": "sprites\\PlayerHide\\PlayerHide.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "721390ab-dde4-49c2-91e8-e1bd91e15362",
+            "Value": {
+                "id": "7420ec5c-59f6-4cdf-81e3-f6796f888527",
+                "resourcePath": "scripts\\Scr_EnemyLocked\\Scr_EnemyLocked.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -383,11 +399,35 @@
             }
         },
         {
+            "Key": "c4deb6f9-e182-458b-8831-c4ffd6de3fae",
+            "Value": {
+                "id": "46cc2533-9956-4857-b29b-f717af5e84d4",
+                "resourcePath": "views\\396c8088-d0ab-4607-a3db-478cb0f394de-room.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "97fb4d7a-aeb1-444c-ab3e-925b6bde2e9f",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d070854e-0c9b-4f7a-8c7d-c5d448df122d",
+            "Value": {
+                "id": "f068fe47-1bd2-4765-a4d2-46fb07d8e25e",
+                "resourcePath": "objects\\OBJ_Pause\\OBJ_Pause.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d5a6ea66-e125-4008-9bdd-65795b0bed11",
+            "Value": {
+                "id": "3a249f4a-f507-4add-ab58-ba49bc41e549",
+                "resourcePath": "objects\\OBJ_Bg\\OBJ_Bg.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -404,6 +444,14 @@
                 "id": "c7530c31-07f5-44d8-a256-dde5ac401389",
                 "resourcePath": "views\\dda468c1-ef00-4676-83a8-14c593b35e7a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e1c84e4d-9e26-4114-bdad-a19d92381741",
+            "Value": {
+                "id": "966d2cea-8ccc-4268-9f39-9735e46c95df",
+                "resourcePath": "rooms\\rm_initializer\\rm_initializer.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -451,6 +499,7 @@
         "7064ed59-ccf9-492c-9164-259b3d619f14",
         "0ca33693-b868-4742-ba55-ef49f80a72ab",
         "81a7d711-bab7-40de-8f0b-f2c284420203",
+        "721390ab-dde4-49c2-91e8-e1bd91e15362",
         "00848584-52ac-496a-ac31-d1f8667aaca2",
         "5b8e9c4f-6a7f-4ca4-b5bf-bf51b0379512"
     ],

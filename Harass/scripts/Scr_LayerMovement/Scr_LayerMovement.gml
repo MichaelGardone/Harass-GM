@@ -1,24 +1,21 @@
 
-if(place_meeting(x,y,OBJ_Door))
+if global.player_locked == 0 && global.pause == 0
 {
-	if (w_key && OBJ_Door.door_open)
+	if(place_meeting(x,y,OBJ_Door))
 	{
-		game_restart(); // TODO: Change scenes
-	}
-} else {
-	if w_key
-	{
-		if (depth == 0) {
-	       depth = 200;
-		   is_hiding = true;
+		if (w_key && OBJ_Door.door_open)
+		{
+			game_restart(); // TODO: Change scenes
 		}
-	}
+	} else {
+		if w_key
+		{
+			is_hiding = true;
+		}
 
-	if s_key
-	{
-		if (depth == 200) {
-	       depth = 0;
-		   is_hiding = false;
-		}
-	}	
+		if s_key
+		{
+			is_hiding = false;
+		}	
+	}
 }
