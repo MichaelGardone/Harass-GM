@@ -13,7 +13,7 @@ if global.pause == 0 && global.player_locked == 0
 		case e_state.wander:
 		x_spd = 0; // we do not want to modify the x coord in this state!
 	
-		if(path_index != test_patrol)
+		if(path_index != path2)
 		{
 			// Try to go back to the path's start
 			mp_linear_step(start_x, start_y, patrol_spd, false);
@@ -41,9 +41,7 @@ if global.pause == 0 && global.player_locked == 0
 	
 		// If (player hides we lost) OR (player escapes detection hitbox)
 		if(OBJ_Player.is_hiding == true/* || detect == noone*/)
-		{
 			state = e_state.wander;
-		}
 	
 		// using mp is wonky, use our own version
 		dir = sign(OBJ_Player.x - x);
