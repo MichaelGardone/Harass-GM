@@ -18,7 +18,7 @@ if global.pause == 0 && global.player_locked == 0
 			// Try to go back to the path's start
 			mp_linear_step(start_x, start_y, patrol_spd, false);
 			if(abs(x - start_x) < 2)
-				path_start(test_patrol, patrol_spd, path_action_reverse, true);
+				path_start(path2, patrol_spd, path_action_reverse, true);
 		}
 	
 		// The enemy had found the player & player is actually on the same depth level as the enemy
