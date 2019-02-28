@@ -64,6 +64,7 @@ if global.pause == 0 && global.player_locked == 0
 			
 			if stun_effect < 7
 				stun_effect++;
+			breakout_lim = round(breakout_lim * 1.5);
 		} else 
 		{
 			global.player_locked = 1;	
