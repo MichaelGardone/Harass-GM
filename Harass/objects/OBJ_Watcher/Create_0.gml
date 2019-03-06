@@ -13,10 +13,10 @@ chase_spd = 2.5;
 stun_effect = -1;
 
 // Enemy Hitbox Information
-dist_far_trig = 300; // Facing
-dist_near_trig = 100; // Not looking, "hears" player
-lost = 50; // Distance the player needs to be from the enemy to lose them
-attack = 50;
+dist_far_trig = 600; // Facing
+dist_near_trig = 200; // Not looking, "hears" player
+lost = 100; // Distance the player needs to be from the enemy to lose them
+attack = 75;
 
 // Initial state -- do not touch! should always be wandering
 state = e_state.wander;
