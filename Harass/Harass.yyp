@@ -362,7 +362,7 @@
             "Key": "8e9e6a01-f512-4d31-9a06-50ef642b176b",
             "Value": {
                 "id": "21d209eb-7576-4f50-8e64-e4514721c4c6",
-                "resourcePath": "sprites\\sprite14\\sprite14.yy",
+                "resourcePath": "sprites\\Spr_Barrier\\Spr_Barrier.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -372,6 +372,14 @@
                 "id": "a5030d25-33ed-4760-aa23-d155ce596fae",
                 "resourcePath": "sprites\\Player\\Player.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "94b39a55-9ef4-404c-abe2-401498c3bdca",
+            "Value": {
+                "id": "06d1dcc9-bca5-4213-ac5f-fa547304f64f",
+                "resourcePath": "views\\94b39a55-9ef4-404c-abe2-401498c3bdca.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

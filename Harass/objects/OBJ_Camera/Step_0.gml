@@ -26,7 +26,10 @@ if (global.pause == false)
 	}
 
 	x += (xTo - x) / factor;
+	x = clamp(x, halfViewWidth, room_width - halfViewWidth);
+	
 	y = yTo; // slap to y
+	//zoom += (target_zoom - zoom) / zoom_factor;
 	
 	camera_set_view_pos(camera, x - halfViewWidth, y - halfViewHeight / 2);
 	

@@ -2,7 +2,7 @@
     "id": "8e9e6a01-f512-4d31-9a06-50ef642b176b",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprite14",
+    "name": "Spr_Barrier",
     "For3D": false,
     "HTile": false,
     "VTile": false,
