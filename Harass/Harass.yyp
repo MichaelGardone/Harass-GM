@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0a4c98fc-2f32-4f1a-9398-9546fea31e27",
+            "Value": {
+                "id": "e01d94fd-52a8-42ce-aba0-7aa5368c1bd9",
+                "resourcePath": "objects\\OBJ_Camera\\OBJ_Camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0ca33693-b868-4742-ba55-ef49f80a72ab",
             "Value": {
                 "id": "f25480ae-6579-438f-9896-67e1db035d9e",
@@ -495,6 +503,14 @@
             }
         },
         {
+            "Key": "fb77e391-30fa-4f56-ba94-74e0fdaf7cee",
+            "Value": {
+                "id": "5f071da6-9b41-4839-b37d-5dce38c4623c",
+                "resourcePath": "scripts\\Scr_Camera\\Scr_Camera.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fe5e640a-e6b6-4d5d-831f-78ec5861a37f",
             "Value": {
                 "id": "6bc69026-bed4-45c5-a1f6-678ced20b673",
@@ -517,7 +533,8 @@
         "81a7d711-bab7-40de-8f0b-f2c284420203",
         "721390ab-dde4-49c2-91e8-e1bd91e15362",
         "00848584-52ac-496a-ac31-d1f8667aaca2",
-        "5b8e9c4f-6a7f-4ca4-b5bf-bf51b0379512"
+        "5b8e9c4f-6a7f-4ca4-b5bf-bf51b0379512",
+        "fb77e391-30fa-4f56-ba94-74e0fdaf7cee"
     ],
     "tutorial": ""
 }
