@@ -20,5 +20,7 @@ offset = 60;
 // Zoom
 zoom = 0.7;
 
-halfViewWidth = camera_get_view_width(camera) / 2;
-halfViewHeight = camera_get_view_height(camera) / 2;
+screenW = camera_get_view_width(view_camera[0]);
+screenH = camera_get_view_height(view_camera[0]);
+halfViewWidth = screenW / 2;
+halfViewHeight = screenH / 2;
