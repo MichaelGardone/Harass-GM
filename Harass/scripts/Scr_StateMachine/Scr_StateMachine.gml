@@ -13,13 +13,7 @@ if global.pause == 0 && global.player_locked == 0
 		case e_state.wander:
 		x_spd = 0; // we do not want to modify the x coord in this state!
 	
-		if(path_index != path2)
-		{
-			// Try to go back to the path's start
-			mp_linear_step(start_x, start_y, patrol_spd, false);
-			if(abs(x - start_x) < 2)
-				path_start(path2, patrol_spd, path_action_reverse, false);
-		}
+		Scr_AIPathing();
 	
 		// The enemy had found the player & player isn't hiding
 		if(detect != noone && OBJ_Player.is_hiding == false)
@@ -52,12 +46,12 @@ if global.pause == 0 && global.player_locked == 0
 		if(attack != noone && OBJ_Player.is_hiding == false)
 			state = e_state.attack;
 		break;
-	
+		
 		// Attack
 		case e_state.attack:
 		// If (player hides it lost) OR (player escapes hitboxes)
 		if OBJ_Player.player_escape
-		{
+		{	
 			OBJ_Player.player_escape = false;
 			
 			state = e_state.stunned;

@@ -6,8 +6,8 @@ x_dir = 0;
 running = 0;
 
 // Constants
-spd = 2;
-run_spd = 4;
+spd = 6;
+run_spd = 8;
 
 
 // Booleans
