@@ -375,14 +375,6 @@
             }
         },
         {
-            "Key": "8e991d30-0d26-46cd-a5e5-77f00ed0cad1",
-            "Value": {
-                "id": "5da39918-b870-4505-a0bc-7331d679e9c6",
-                "resourcePath": "sprites\\BroganTest\\BroganTest.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "8e9e6a01-f512-4d31-9a06-50ef642b176b",
             "Value": {
                 "id": "21d209eb-7576-4f50-8e64-e4514721c4c6",
