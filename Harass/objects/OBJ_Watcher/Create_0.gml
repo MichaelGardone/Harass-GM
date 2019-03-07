@@ -23,3 +23,10 @@ state = e_state.wander;
 
 start_x = x;
 start_y = y;
+
+
+
+nodes[instance_number(Obj_Node)] = noone;
+
+for(i = 0; i < instance_number(Obj_Node); i++)
+	nodes[i] = instance_find(Obj_Node, i);
