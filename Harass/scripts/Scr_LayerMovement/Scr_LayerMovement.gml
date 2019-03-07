@@ -8,7 +8,7 @@ if global.player_locked == 0 && global.pause == 0
 			game_restart(); // TODO: Change scenes
 		}
 	} else {
-		if w_key
+		if w_key && place_meeting(x,y, Obj_Crowd)
 		{
 			is_hiding = true;
 		}
