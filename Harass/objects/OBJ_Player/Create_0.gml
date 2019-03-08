@@ -6,9 +6,9 @@ x_dir = 0;
 running = 0;
 
 // Constants
-spd = 6;
-run_spd = 8;
-
+// WHY DO THEY USE MACROS AND NOT A CONST MODIFIER
+#macro spd 6;
+#macro run_spd 8;
 
 // Booleans
 w_key = false;
