@@ -5,10 +5,10 @@ right = 0;
 x_dir = 0;
 running = 0;
 
-// Constants
+// == Constants ==
 // WHY DO THEY USE MACROS AND NOT A CONST MODIFIER
-#macro spd 6;
-#macro run_spd 8;
+#macro spd 6
+#macro run_spd 8
 
 // Booleans
 w_key = false;
@@ -20,3 +20,10 @@ is_hiding = false;
 player_escape = false;
 breakout = 0;
 breakout_lim = 10;
+
+// graphics
+fval = 255;
+// control how fast the fade is for hiding
+hide_fade = 2;
+// control how fast the fade to red is for attack
+attk_fade = 5;

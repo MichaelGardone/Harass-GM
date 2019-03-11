@@ -9,9 +9,6 @@ factor = 15;
 // Offset to keep player in center
 offset = 60;
 
-// Zoom
-zoom = 0.7;
-
 screenW = camera_get_view_width(view_camera[0]);
 screenH = camera_get_view_height(view_camera[0]);
 halfViewWidth = screenW / 2;

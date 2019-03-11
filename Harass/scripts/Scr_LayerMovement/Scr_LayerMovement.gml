@@ -10,12 +10,12 @@ if global.player_locked == 0 && global.pause == 0
 	} else {
 		if w_key && place_meeting(x,y, Obj_Crowd)
 		{
+			fval = 255;
 			is_hiding = true;
 		}
-
 		if s_key
 		{
 			is_hiding = false;
-		}	
+		}
 	}
 }
