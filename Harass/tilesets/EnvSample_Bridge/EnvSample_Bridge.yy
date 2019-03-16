@@ -2,7 +2,7 @@
     "id": "673486dd-f459-486a-848b-b8cd7ec6f79b",
     "modelName": "GMTileSet",
     "mvc": "1.11",
-    "name": "EnvSample_RWall",
+    "name": "EnvSample_Bridge",
     "auto_tile_sets": [
         
     ],
