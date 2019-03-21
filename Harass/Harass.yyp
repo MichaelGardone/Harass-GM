@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0f2958bd-9dbb-41f6-8606-108732f63ff9",
+            "Value": {
+                "id": "e11ca0b4-e006-46b1-a31d-7b10e52ded69",
+                "resourcePath": "sounds\\Sfx_Door\\Sfx_Door.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "0f2c0165-fdf9-42b9-adfc-f0b09e55aabb",
             "Value": {
                 "id": "46b7fab8-bc16-491b-9c4a-71b8d2871062",
