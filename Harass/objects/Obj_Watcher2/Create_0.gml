@@ -9,9 +9,6 @@ patrol_spd = 5;
 // Float
 chase_spd = 6;
 
-// Stun reduction
-stun_effect = -1;
-
 // Enemy Hitbox Information
 dist_far_trig = 600; // Facing
 dist_near_trig = 200; // Not looking, "hears" player

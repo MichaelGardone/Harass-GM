@@ -4,8 +4,8 @@ if path_speed == 0
 	path_speed = patrol_spd;
 }
 
-track  = collision_rectangle(x-dist_near_trig*dir, y, x+dist_far_trig*dir, y, OBJ_Player, false, true);
-flee   = collision_rectangle(x+sprite_width*dir,y,x+sprite_width+attack*dir,y+sprite_height, OBJ_Player, false, true);
+track     = collision_rectangle(x-dist_near_trig*dir, y, x+dist_far_trig*dir, y, OBJ_Player, false, true);
+flee      = collision_rectangle(x+sprite_width*dir,y,x+sprite_width+attack*dir,y+sprite_height, OBJ_Player, false, true);
 max_close = collision_rectangle(x+sprite_width*dir,y,x+sprite_width+attack*dir,y+sprite_height, OBJ_Player, false, true);
 
 switch(state)
@@ -47,6 +47,15 @@ switch(state)
 	// Watcher chase is to be going after player up until a certain point
 	// and just sit there
 	
+	if (max_close)
+	{
+		// don't move past this
+		state = e_state.sit_tight;
+	}
+	else {
+		// player changed
+		
+	}
 	
 	break;
 	
@@ -60,6 +69,9 @@ switch(state)
 	break;
 	
 	case e_state.sit_tight:
-	// shouldn't reach
+	if (!max_close)
+	{
+		state = e_state.chase;
+	}
 	break;
 }
