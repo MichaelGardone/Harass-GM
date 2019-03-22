@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0f2958bd-9dbb-41f6-8606-108732f63ff9",
+            "Value": {
+                "id": "e11ca0b4-e006-46b1-a31d-7b10e52ded69",
+                "resourcePath": "sounds\\Sfx_Door\\Sfx_Door.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "0f2c0165-fdf9-42b9-adfc-f0b09e55aabb",
             "Value": {
                 "id": "46b7fab8-bc16-491b-9c4a-71b8d2871062",
@@ -492,6 +500,14 @@
                 "id": "5416aef0-6b24-40d1-a4ca-42d270abf774",
                 "resourcePath": "views\\a52d663e-a95e-4e17-8cfb-72b1f2f37603.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a92a5256-c470-427b-91cb-044028856d7d",
+            "Value": {
+                "id": "454ede88-0909-40b5-a191-cd8c06e292bb",
+                "resourcePath": "sprites\\Spr_CartDoor\\Spr_CartDoor.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
