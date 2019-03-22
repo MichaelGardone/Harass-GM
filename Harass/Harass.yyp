@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "582c3bb5-3cb0-4377-be41-b716e3f2a0ea",
+            "Value": {
+                "id": "87cb4cb0-80dc-4243-84b6-a5089eeef805",
+                "resourcePath": "objects\\Obj_PasserbyAI\\Obj_PasserbyAI.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5b8e9c4f-6a7f-4ca4-b5bf-bf51b0379512",
             "Value": {
                 "id": "3b100f49-d7cb-4c39-bf6f-4c42b0c32fcb",

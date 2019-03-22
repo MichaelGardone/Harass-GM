@@ -1,4 +1,4 @@
-// Init the states
+// Grab the states
 Scr_States();
 
 // Ints
@@ -9,9 +9,14 @@ patrol_spd = 5;
 // Float
 chase_spd = 6;
 
+// Stun reduction
+stun_effect = -1;
+
 // Enemy Hitbox Information
 dist_far_trig = 600; // Facing
 dist_near_trig = 200; // Not looking, "hears" player
+lost = 100; // Distance the player needs to be from the enemy to lose them
+attack = 75;
 
 // Initial state -- do not touch! should always be wandering
 state = e_state.wander;
@@ -38,7 +43,3 @@ for(i = 0; i < instance_number(Obj_Node); i++)
 	nodes[i] = cn;
 	maxnds++;
 }
-
-// graphics
-fval = 0;
-fade_back = 255;
