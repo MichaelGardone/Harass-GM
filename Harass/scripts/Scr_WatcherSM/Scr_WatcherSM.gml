@@ -1,6 +1,6 @@
-track     = collision_rectangle(x-dist_near_trig*dir, y, x+dist_far_trig*dir, y, OBJ_Player, false, true);
+track     = collision_rectangle(x-dist_near_trig*dir, y, x+dist_far_trig*dir, y+sprite_height, OBJ_Player, false, true);
 //flee      = collision_rectangle(x+sprite_width*dir,y,x+sprite_width+attack*dir,y+sprite_height, OBJ_Player, false, true);
-//max_close = collision_rectangle(x+sprite_width*dir,y,x+sprite_width+attack*dir,y+sprite_height, OBJ_Player, false, true);
+max_close = collision_rectangle(x,y,x+watch_dist*dir,y+sprite_height, OBJ_Player, false, true);
 
 switch(state)
 {
@@ -34,10 +34,9 @@ switch(state)
 	else
 		dir = -1;
 	
-	if (track != noone)
+	if (track != noone && OBJ_Player.is_hiding == false)
 	{
-		show_debug_message("hello!");
-	//	state = e_state.chase;
+		state = e_state.chase;
 	}
 	
 	break;
@@ -47,6 +46,12 @@ switch(state)
 	// Watcher chase is to be going after player up until a certain point
 	// and just sit there
 	
+	if(OBJ_Player.is_hiding == true || track == noone)
+	{
+		state = e_state.wander;
+		break;
+	}
+	
 	if (max_close)
 	{
 		// don't move past this
@@ -54,6 +59,8 @@ switch(state)
 	}
 	else {
 		// player changed
+		dir = sign(OBJ_Player.x - x);
+	
 		x_spd = dir * chase_spd;
 		x += x_spd;
 		
@@ -75,11 +82,6 @@ switch(state)
 	if (!max_close)
 	{
 		state = e_state.chase;
-	}
-	if (flee)
-	{
-		show_debug_message("I should run but I am stupid");
-		//state = e_state.flee;
 	}
 	break;
 }

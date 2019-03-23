@@ -13,11 +13,13 @@ if abs(x)-abs(curr_node.x) == 0
 		cindx += r; // don't care which way we go
 	
 	curr_node = nodes[cindx];
+}
+
+// Buggy function
+mp_potential_step(curr_node.x, y, patrol_spd, false);
+
+// new way
+//dir = sign(curr_node.x - x);
 	
-	mp_potential_step(curr_node.x, y, patrol_spd, false);
-}
-else {
-	mp_potential_step(curr_node.x, y, patrol_spd, false);
-}
-
-
+//x_spd = dir * patrol_spd;
+//x += x_spd;
