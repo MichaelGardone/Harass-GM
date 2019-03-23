@@ -37,7 +37,7 @@ for(i = 0; i < instance_number(Obj_Node); i++)
 	else if ((x - curr_node.x) < (x - cn.x))
 	{
 		curr_node = cn;
-		c_index = i;
+		cindex = i;
 	}
 	
 	nodes[i] = cn;

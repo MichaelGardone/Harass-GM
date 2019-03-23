@@ -4,6 +4,10 @@ Scr_States();
 // Ints
 x_spd = 0;
 dir = 1;
+if (direction == 0)
+	dir = 1;
+else
+	dir = -1;
 patrol_spd = 5;
 
 // Float
@@ -31,12 +35,19 @@ for(i = 0; i < instance_number(Obj_Node); i++)
 	
 	if(curr_node == noone)
 		curr_node = cn;
-	else if ((x - curr_node.x) < (x - cn.x))
+	else if ((x - curr_node.x) > (x - cn.x))
 	{
 		curr_node = cn;
-		c_index = i;
+		cindx = i;
 	}
+	
+	/*res1 = (x - curr_node.x);
+	res2 = (x - cn.x);
+	show_debug_message("at " + string(i) + ": (x - curr_node.x) = " + string(res1)
+	+  "; (x - cn.x) = " + string(res2));*/
 	
 	nodes[i] = cn;
 	maxnds++;
 }
+
+//show_debug_message("selected " + string(cindx));

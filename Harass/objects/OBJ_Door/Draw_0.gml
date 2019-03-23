@@ -16,4 +16,7 @@ if (door_open == true && global.pause == 0)
 } else if (door_open == false) {
 	image_index = 0;
 	sfx_track = 0;
+} else if(global.pause == 1)
+{
+	image_speed = 0;	
 }

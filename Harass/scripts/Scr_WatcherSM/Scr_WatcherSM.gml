@@ -1,12 +1,6 @@
-
-if path_speed == 0
-{
-	path_speed = patrol_spd;
-}
-
 track     = collision_rectangle(x-dist_near_trig*dir, y, x+dist_far_trig*dir, y, OBJ_Player, false, true);
-flee      = collision_rectangle(x+sprite_width*dir,y,x+sprite_width+attack*dir,y+sprite_height, OBJ_Player, false, true);
-max_close = collision_rectangle(x+sprite_width*dir,y,x+sprite_width+attack*dir,y+sprite_height, OBJ_Player, false, true);
+//flee      = collision_rectangle(x+sprite_width*dir,y,x+sprite_width+attack*dir,y+sprite_height, OBJ_Player, false, true);
+//max_close = collision_rectangle(x+sprite_width*dir,y,x+sprite_width+attack*dir,y+sprite_height, OBJ_Player, false, true);
 
 switch(state)
 {
@@ -40,6 +34,12 @@ switch(state)
 	else
 		dir = -1;
 	
+	if (track != noone)
+	{
+		show_debug_message("hello!");
+	//	state = e_state.chase;
+	}
+	
 	break;
 
 	// CHASE
@@ -54,7 +54,10 @@ switch(state)
 	}
 	else {
 		// player changed
+		x_spd = dir * chase_spd;
+		x += x_spd;
 		
+		curr_node = instance_nearest(x,y,Obj_Node);
 	}
 	
 	break;
@@ -72,6 +75,11 @@ switch(state)
 	if (!max_close)
 	{
 		state = e_state.chase;
+	}
+	if (flee)
+	{
+		show_debug_message("I should run but I am stupid");
+		//state = e_state.flee;
 	}
 	break;
 }
