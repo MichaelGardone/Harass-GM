@@ -1,6 +1,13 @@
-track     = collision_rectangle(x-dist_near_trig*dir, y, x+dist_far_trig*dir, y+sprite_height, OBJ_Player, false, true);
-//flee      = collision_rectangle(x+sprite_width*dir,y,x+sprite_width+attack*dir,y+sprite_height, OBJ_Player, false, true);
-max_close = collision_rectangle(x,y,x+watch_dist*dir,y+sprite_height, OBJ_Player, false, true);
+if (dir == 1)
+{
+	track     = collision_rectangle(x-dist_near_trig, y, x+dist_far_trig, y+sprite_height, OBJ_Player, false, true);
+	flee      = collision_rectangle(x,y,x+sprite_width+dist_near_trig,y+sprite_height, OBJ_Player, false, true);
+	max_close = collision_rectangle(x,y,x+sprite_width+watch_dist,y+sprite_height, OBJ_Player, false, true);
+} else {
+	track     = collision_rectangle(x-dist_far_trig, y, x+sprite_width+dist_near_trig, y+sprite_height, OBJ_Player, false, true);
+	flee      = collision_rectangle(x,y,x-dist_near_trig,y+sprite_height, OBJ_Player, false, true);
+	max_close = collision_rectangle(x,y,x-watch_dist,y+sprite_height, OBJ_Player, false, true);
+}
 
 switch(state)
 {
@@ -34,7 +41,7 @@ switch(state)
 	else
 		dir = -1;
 	
-	if (track != noone && OBJ_Player.is_hiding == false)
+	if (act_normal == false && track != noone && OBJ_Player.is_hiding == false && flee == noone)
 	{
 		state = e_state.chase;
 	}
@@ -46,8 +53,13 @@ switch(state)
 	// Watcher chase is to be going after player up until a certain point
 	// and just sit there
 	
-	if(OBJ_Player.is_hiding == true || track == noone)
+	if(OBJ_Player.is_hiding == true || track == noone || flee != noone)
 	{
+		if (flee != noone)
+		{
+			alarm[0] = room_speed * seconds_to_ret; // 3 seconds before they get back to their scheduled tasks
+			act_normal = true;
+		}
 		state = e_state.wander;
 		break;
 	}
@@ -82,6 +94,10 @@ switch(state)
 	if (!max_close)
 	{
 		state = e_state.chase;
+	}
+	if (flee != noone)
+	{
+		state = e_state.wander;
 	}
 	break;
 }
