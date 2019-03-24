@@ -1,11 +1,15 @@
-/// @description Insert description here
-//Set Font Behavior
 
+draw_self();
+
+//Set Font Behavior
 draw_set_font(Fnt_Press);
 draw_set_color(c_black);
 
-//Sprite (Frame)
-draw_sprite(Spr_Frame, image_index, x, y,);
-
 //String
-draw_text_transformed(x,y,"Arrival:" + string(time_var), 1, 1.25, 0);
+if (OBJ_Door.alarm[11] == -1)
+{
+	draw_text_transformed(x,y,"Arrival:" + "0", 1, 1.25, 0);
+}
+else {
+	draw_text_transformed(x,y,"Arrival: " + string(ceil(OBJ_Door.alarm[11]/room_speed)), 1, 1.25, 0);
+}
