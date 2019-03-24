@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "53c91ed3-14d2-441b-b6a6-fc5a3d63ac6f",
+            "Value": {
+                "id": "0a922d24-6baa-4a05-bec5-7fd3ab82a55e",
+                "resourcePath": "objects\\OBJ_FakeDoor\\OBJ_FakeDoor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "55295bdb-b0fb-44c5-a008-762c45d1c764",
             "Value": {
                 "id": "47e7fca6-ab7e-4cd1-a496-0fdd5874ac94",
@@ -468,6 +476,14 @@
                 "id": "330c73e1-940c-4861-84cd-8701dcfdad0a",
                 "resourcePath": "views\\73148ab1-945e-4260-a896-0d7a35cf2fcf.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "73e899bf-f9ca-4a5c-a332-e4ae671b0afc",
+            "Value": {
+                "id": "c8c44bba-bfa3-44ae-8324-1a83b7f893df",
+                "resourcePath": "sounds\\Sfx_No\\Sfx_No.yy",
+                "resourceType": "GMSound"
             }
         },
         {
