@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "55295bdb-b0fb-44c5-a008-762c45d1c764",
+            "Value": {
+                "id": "47e7fca6-ab7e-4cd1-a496-0fdd5874ac94",
+                "resourcePath": "fonts\\Fnt_Press\\Fnt_Press.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "56898e43-1474-4e02-b1db-e65b52e2ea9d",
             "Value": {
                 "id": "67621ff4-7e8d-48a3-b832-a3cfd55c0d19",
@@ -455,11 +463,35 @@
             }
         },
         {
+            "Key": "73148ab1-945e-4260-a896-0d7a35cf2fcf",
+            "Value": {
+                "id": "330c73e1-940c-4861-84cd-8701dcfdad0a",
+                "resourcePath": "views\\73148ab1-945e-4260-a896-0d7a35cf2fcf.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "762df8a9-4232-48be-a1e9-1522a74b45d3",
+            "Value": {
+                "id": "2ebbf05f-2e18-4e8e-9c95-91b945e61752",
+                "resourcePath": "sounds\\Sfx_GameOver\\Sfx_GameOver.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "7ae71cc9-0f92-4935-a6f2-518d7a0607ba",
             "Value": {
                 "id": "484aecee-0307-4b63-85a5-f392896594a8",
                 "resourcePath": "sprites\\spr_enemy_node\\spr_enemy_node.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7f4d481d-4a10-41b3-8ccb-8140c28fd4f8",
+            "Value": {
+                "id": "bb1589ec-5c38-4165-b379-c4064703aa24",
+                "resourcePath": "sounds\\Sfx_Background\\Sfx_Background.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -484,6 +516,14 @@
                 "id": "ba5cad06-33ab-461d-a75b-f01f2f5d1eb1",
                 "resourcePath": "tilesets\\Environment\\Environment.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "820131cc-1bcf-4f4b-b25d-51a7a8752737",
+            "Value": {
+                "id": "ab0a6175-c417-48ae-9c94-781e9ec0c01a",
+                "resourcePath": "objects\\OBJ_Timer\\OBJ_Timer.yy",
+                "resourceType": "GMObject"
             }
         },
         {
