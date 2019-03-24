@@ -9,7 +9,7 @@
         "14e31d68-4570-419e-bb76-4f86d1c5a944"
     ],
     "filterType": "GMSprite",
-    "folderName": "Placeholder",
+    "folderName": "Characters",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
