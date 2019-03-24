@@ -3,4 +3,5 @@
 if global.pause == 0 && global.player_locked == 0
 {
 	Scr_WatcherSM();
+	y = 320;
 }

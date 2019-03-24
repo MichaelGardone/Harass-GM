@@ -15,3 +15,8 @@ else if (global.player_locked)
 else {
 	image_blend = c_white;
 }
+
+if global.debug == 1
+{
+	draw_rectangle(x, y, x+sprite_width, y+sprite_height,1);
+}

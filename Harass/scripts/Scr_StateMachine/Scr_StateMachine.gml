@@ -5,8 +5,16 @@ if global.pause == 0 && global.player_locked == 0
 	{
 		path_speed = patrol_spd;
 	}
-	detect = collision_rectangle(x-dist_near_trig*dir, y, x+dist_far_trig*dir, y, OBJ_Player, false, true);
-	attack = collision_rectangle(x+sprite_width*dir,y,x+sprite_width+attack*dir,y+sprite_height, OBJ_Player, false, true);
+	
+	if(dir == 1)
+	{
+		detect = collision_rectangle(x-dist_near_trig, y, x+dist_far_trig, y+sprite_height, OBJ_Player, false, true);
+		attack = collision_rectangle(x+sprite_width,y,x+attack_trig,y+sprite_height, OBJ_Player, false, true);
+	} else {
+		detect = collision_rectangle(x-dist_far_trig, y, x+dist_near_trig, y+sprite_height, OBJ_Player, false, true);
+		attack = collision_rectangle(x,y,x-attack_trig,y+sprite_height, OBJ_Player, false, true);
+	}
+	
 
 	switch(state)
 	{
@@ -97,6 +105,9 @@ if global.pause == 0 && global.player_locked == 0
 		
 		case e_state.sit_tight:
 		// burn cycles
+		show_debug_message(string(x+attack*dir));
+		show_debug_message(x);
+		show_debug_message(attack);
 		break;
 	}
 } else {

@@ -16,7 +16,10 @@ stun_effect = -1;
 dist_far_trig = 600; // Facing
 dist_near_trig = 200; // Not looking, "hears" player
 lost = 100; // Distance the player needs to be from the enemy to lose them
-attack = 75;
+attack_trig = 75;
+
+detect = collision_rectangle(x-dist_near_trig*dir, y, x+dist_far_trig*dir, y+sprite_height, OBJ_Player, false, true);
+attack = collision_rectangle(x,y,x+attack_trig*dir,y+sprite_height, OBJ_Player, false, true);
 
 // Initial state -- do not touch! should always be wandering
 state = e_state.wander;
