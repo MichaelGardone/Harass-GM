@@ -703,6 +703,14 @@
             }
         },
         {
+            "Key": "ad45b940-febd-4e4d-acdc-049c59bd7f99",
+            "Value": {
+                "id": "6f88d7ac-001a-4513-93a6-1858927d1d2e",
+                "resourcePath": "sounds\\Sfx_DoorAlert\\Sfx_DoorAlert.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "ad7e66ce-dda4-4f33-8e50-a1432ea72636",
             "Value": {
                 "id": "29cfa85d-bee0-4200-b0c8-a092edce5a33",
@@ -716,6 +724,14 @@
                 "id": "7f68446c-e7c7-4bde-9aa4-e6c2e447fe0c",
                 "resourcePath": "sprites\\Spr_EnvNoWall\\Spr_EnvNoWall.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b803c604-7a13-480d-8bc0-9644db1aa163",
+            "Value": {
+                "id": "aa71a256-db56-4686-8911-16c1afb96260",
+                "resourcePath": "views\\b803c604-7a13-480d-8bc0-9644db1aa163.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
