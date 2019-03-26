@@ -666,7 +666,7 @@
             "Key": "a78b880f-c96b-4b04-939e-d5e94296c473",
             "Value": {
                 "id": "617e5061-8798-4342-b2c5-0f0100009f34",
-                "resourcePath": "sprites\\Spr_CartDoorNOAnim\\Spr_CartDoorNOAnim.yy",
+                "resourcePath": "sprites\\Spr_CartDoorNOAnimTest\\Spr_CartDoorNOAnimTest.yy",
                 "resourceType": "GMSprite"
             }
         },
