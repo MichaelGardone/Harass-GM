@@ -663,6 +663,14 @@
             }
         },
         {
+            "Key": "a78b880f-c96b-4b04-939e-d5e94296c473",
+            "Value": {
+                "id": "617e5061-8798-4342-b2c5-0f0100009f34",
+                "resourcePath": "sprites\\Spr_CartDoorNOAnim\\Spr_CartDoorNOAnim.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a92a5256-c470-427b-91cb-044028856d7d",
             "Value": {
                 "id": "454ede88-0909-40b5-a191-cd8c06e292bb",

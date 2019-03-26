@@ -1,5 +1,5 @@
-image_speed = 0
 draw_self()
+image_speed = 1
 
 if place_meeting(x,y,OBJ_Player)
 {
