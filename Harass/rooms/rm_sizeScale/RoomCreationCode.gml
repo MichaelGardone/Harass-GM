@@ -9,3 +9,6 @@ global.debug = 0;
 
 // SET TO 0 TO DISABLE MUSIC
 global.groove = 1;
+
+// RECORD TRACKER
+global.record = 0
