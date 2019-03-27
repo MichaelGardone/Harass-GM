@@ -27,3 +27,6 @@ fval = 255;
 hide_fade = 2;
 // control how fast the fade to red is for attack
 attk_fade = 5;
+
+//Anim Direction Tracker
+dir_remain = 0;

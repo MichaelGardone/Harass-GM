@@ -20,3 +20,29 @@ if global.debug == 1
 {
 	draw_rectangle(x, y, x+sprite_width, y+sprite_height,1);
 }
+
+// Anim for Player
+if (!x_spd == 0)
+	if (keyboard_check(ord("A")))
+	{
+		sprite_index = Spr_PlayerMove
+		image_xscale = -1
+		image_speed = 1
+	} else if ((keyboard_check(ord("D"))))
+	{
+		sprite_index = Spr_PlayerMove
+		image_xscale = 1
+		image_speed = 1
+	} else
+	{
+		sprite_index = Spr_PlayerIdle
+		if (keyboard_lastkey == vk_left)
+			{
+			image_xscale = -1
+			}
+		image_speed = 0
+		image_index = 0
+	}
+		
+
+	
