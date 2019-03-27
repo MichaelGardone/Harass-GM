@@ -823,6 +823,14 @@
             }
         },
         {
+            "Key": "d3662042-3ea0-4215-bb32-6207dab24a3c",
+            "Value": {
+                "id": "3d3287b0-81f9-4de1-bca9-3b506da659f6",
+                "resourcePath": "sounds\\Sfx_TramStop\\Sfx_TramStop.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "d3957e9d-9926-401c-bb77-44f6e63292a7",
             "Value": {
                 "id": "f33295b2-e265-41eb-9fe3-a781d347c84f",

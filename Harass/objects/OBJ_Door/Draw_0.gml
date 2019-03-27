@@ -24,3 +24,17 @@ if (door_open == true && global.pause == 0)
 {
 	image_speed = 0;	
 }
+
+
+if (door_open == false && (!audio_is_playing(Sfx_Tram)))
+	{
+		audio_play_sound(Sfx_Tram,2,1);
+	}
+if (door_open == true)
+	{
+		audio_pause_sound(Sfx_Tram)
+	} 
+	else
+	{
+		audio_resume_sound(Sfx_Tram)
+	}
