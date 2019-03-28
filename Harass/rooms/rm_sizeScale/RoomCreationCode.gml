@@ -12,3 +12,6 @@ global.groove = 1;
 
 // RECORD TRACKER
 global.record = 0
+
+// DOOR STATE
+global.door = false
