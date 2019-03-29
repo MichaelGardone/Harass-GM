@@ -1,7 +1,7 @@
-if global.door = false
-{
-	alarm[0] = room_speed * 1.5;
-}
+//if global.door = false
+//{
+	//alarm[0] = room_speed * 1.5;
+//}
 
 view_x = 0;
 view_y = 0;

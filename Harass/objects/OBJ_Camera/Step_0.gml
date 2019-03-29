@@ -12,9 +12,9 @@ if (global.pause == 0)
 
 	x += (xTo - x) / factor;
 	x = clamp(x, halfViewWidth, room_width - halfViewWidth);
-	x += OBJ_ScreenShake.view_x;
+	//x += OBJ_ScreenShake.view_x;
 	
-	y = yTo - OBJ_ScreenShake.view_y; // slap to y
+	//y = yTo - OBJ_ScreenShake.view_y; // slap to y
 	
 	camera_set_view_pos(camera, (x - halfViewWidth), (y - halfViewHeight));
 	
