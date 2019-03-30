@@ -735,6 +735,14 @@
             }
         },
         {
+            "Key": "982678f7-40b6-49a6-8468-a9ac09169d46",
+            "Value": {
+                "id": "c49bd637-a4fe-422f-809e-d357ce760975",
+                "resourcePath": "objects\\OBJ_StunAnim\\OBJ_StunAnim.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9d03535c-0cb0-4e01-9c8f-87c5004f6414",
             "Value": {
                 "id": "a2c3fa84-1e1c-424f-a57f-a2a544f27d3e",
