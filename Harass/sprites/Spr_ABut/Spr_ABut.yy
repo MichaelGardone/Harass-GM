@@ -2,7 +2,7 @@
     "id": "8f23785f-e170-493c-ad4c-5c1ca3775e26",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "Spr_Buttons",
+    "name": "Spr_ABut",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -58,50 +58,6 @@
                     "LayerId": "deda7c0b-61c3-421f-b427-9e279eb7e0e9"
                 }
             ]
-        },
-        {
-            "id": "1d2d4cc7-45a3-4f3f-ac61-a2f390c79715",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "8f23785f-e170-493c-ad4c-5c1ca3775e26",
-            "compositeImage": {
-                "id": "fa668f54-f783-4085-863b-8eccd6c79e93",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "1d2d4cc7-45a3-4f3f-ac61-a2f390c79715",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "cf11bd72-035e-4c26-a79f-532aa6c8171f",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "1d2d4cc7-45a3-4f3f-ac61-a2f390c79715",
-                    "LayerId": "deda7c0b-61c3-421f-b427-9e279eb7e0e9"
-                }
-            ]
-        },
-        {
-            "id": "45009c83-7709-4948-8813-08cb5148f763",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "8f23785f-e170-493c-ad4c-5c1ca3775e26",
-            "compositeImage": {
-                "id": "db3f7daf-621c-49f8-a9d6-38c0410b439b",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "45009c83-7709-4948-8813-08cb5148f763",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "0629a338-5213-4abf-8374-bb08c5794223",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "45009c83-7709-4948-8813-08cb5148f763",
-                    "LayerId": "deda7c0b-61c3-421f-b427-9e279eb7e0e9"
-                }
-            ]
         }
     ],
     "gridX": 0,
@@ -120,9 +76,9 @@
             "visible": true
         }
     ],
-    "origin": 0,
+    "origin": 4,
     "originLocked": false,
-    "playbackSpeed": 15,
+    "playbackSpeed": 6,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,
     "sepmasks": false,
@@ -131,6 +87,6 @@
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
     "width": 64,
-    "xorig": 0,
-    "yorig": 0
+    "xorig": 32,
+    "yorig": 32
 }

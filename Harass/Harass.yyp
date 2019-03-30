@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "17a170b2-de19-43f6-9663-3771ecb9d05c",
+            "Value": {
+                "id": "3c67f39f-a22d-4bb7-b50b-56cb595c5f0f",
+                "resourcePath": "sprites\\Spr_GryEyes\\Spr_GryEyes.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1a76750f-5a54-40d5-910c-506d37139c90",
             "Value": {
                 "id": "660895a4-9aad-4e6a-9644-1dd294ce7e21",
@@ -292,6 +300,14 @@
                 "id": "919e3ff4-c4e8-4c6c-a3d1-4828ae68800b",
                 "resourcePath": "views\\3c344be2-aac1-4d35-a839-4615eb1e9bfd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3c56e0c6-ca4b-42bc-b974-4c6dde5726c6",
+            "Value": {
+                "id": "a39e59bb-23b4-4336-bbd7-e0a4e2fd3fd0",
+                "resourcePath": "sprites\\Spr_DBut\\Spr_DBut.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -690,7 +706,7 @@
             "Key": "8f23785f-e170-493c-ad4c-5c1ca3775e26",
             "Value": {
                 "id": "0cde3e08-4282-45f4-857b-0b2f566078d7",
-                "resourcePath": "sprites\\Spr_Buttons\\Spr_Buttons.yy",
+                "resourcePath": "sprites\\Spr_ABut\\Spr_ABut.yy",
                 "resourceType": "GMSprite"
             }
         },

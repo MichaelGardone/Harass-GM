@@ -26,3 +26,7 @@
 //spawn_locs[15] = 0;
 
 //num_eyes = array_length_1d(spawn_locs);
+
+// PRESS
+a_press = 0
+d_press = 0
