@@ -22,7 +22,7 @@ if global.debug == 1
 }
 
 // Anim for Player
-if (!x_spd == 0)
+if (!x_spd == 0) && global.player_locked == 0
 	if (keyboard_check(ord("A")))
 	{
 		sprite_index = Spr_PlayerMove
