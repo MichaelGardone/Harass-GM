@@ -105,9 +105,9 @@ if global.pause == 0 && global.player_locked == 0
 		
 		case e_state.sit_tight:
 		// burn cycles
-		show_debug_message(string(x+attack*dir));
-		show_debug_message(x);
-		show_debug_message(attack);
+		//show_debug_message(string(x+attack*dir));
+		//show_debug_message(x);
+		//show_debug_message(attack);
 		break;
 	}
 } else {
