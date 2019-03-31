@@ -1,5 +1,3 @@
-
-i = random_range(0, curr_max-1);
 draw[i] = true;
 curr_max -= 1;
 
