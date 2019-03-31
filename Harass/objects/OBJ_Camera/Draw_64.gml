@@ -32,14 +32,3 @@ if global.debug == 1
 	
 	draw_set_color(c_black);
 }
-
-// Draw GUI
-if global.player_locked == 1
-{
-	// GENERAL HERE
-	// Todo: Make it more interesting
-	draw_set_color(c_red);
-	draw_text(view_wport[0]*.45, view_hport[0] * .4,
-		"MASH A AND D");
-	draw_set_color(c_black);
-}
