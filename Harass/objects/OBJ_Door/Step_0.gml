@@ -16,3 +16,12 @@ else if global.pause == 0 && reset_alarms == true
 	
 	reset_alarms = false;
 }
+
+if door_open = false
+	{
+	global.door = false
+	}
+	else
+	{
+	global.door = true
+	}

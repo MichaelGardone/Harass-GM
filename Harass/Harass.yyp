@@ -290,7 +290,7 @@
             "Key": "39390d45-cc53-4ffb-8c09-04e664c3f9ea",
             "Value": {
                 "id": "b5e1afdd-a5d3-4462-b5b5-866057f44d9a",
-                "resourcePath": "sprites\\Spr_Exit\\Spr_Exit.yy",
+                "resourcePath": "sprites\\Spr_ExitR\\Spr_ExitR.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -372,14 +372,6 @@
                 "id": "c4fdb05d-d801-4244-8de0-de02d2b6a2e0",
                 "resourcePath": "sounds\\Sfx_SelectMenu\\Sfx_SelectMenu.yy",
                 "resourceType": "GMSound"
-            }
-        },
-        {
-            "Key": "48ee9eb6-301c-46cb-8a86-0e36374c0806",
-            "Value": {
-                "id": "06c2e270-4f78-4d4c-bba2-339c0af196a1",
-                "resourcePath": "rooms\\rm_LvL4\\rm_LvL4.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -643,6 +635,14 @@
             "Value": {
                 "id": "484aecee-0307-4b63-85a5-f392896594a8",
                 "resourcePath": "sprites\\spr_enemy_node\\spr_enemy_node.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7c90832f-ed12-428c-8848-fe764ff27553",
+            "Value": {
+                "id": "60126afb-9606-494d-b773-deee1af6ba9d",
+                "resourcePath": "sprites\\Spr_ExitL\\Spr_ExitL.yy",
                 "resourceType": "GMSprite"
             }
         },

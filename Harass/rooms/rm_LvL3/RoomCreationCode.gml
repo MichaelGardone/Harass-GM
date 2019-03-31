@@ -14,4 +14,4 @@ global.groove = 1;
 global.record = 0
 
 // DOOR STATE
-global.door = false
+global.open = false
