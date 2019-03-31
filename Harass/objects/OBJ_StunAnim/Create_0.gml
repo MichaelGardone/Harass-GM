@@ -23,3 +23,6 @@ for(i = 0; i < static_max; i++)
 	draw[i] = false;
 	
 is_spawn = false
+
+// FACE TRACKER
+faceTrack = false

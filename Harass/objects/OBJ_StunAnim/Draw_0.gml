@@ -19,6 +19,13 @@ if global.player_locked == 1
 		d_press = 0
 	}
 	
+	// SCARY FACE
+	if faceTrack == false
+		{
+		instance_create_depth(OBJ_Player.x - 400,OBJ_Player.y - 30, -100, OBJ_HrssrFace)
+		faceTrack = true
+		}
+		
 	//SPOOKY EYEBALLS
 	if(!spawned)
 	{

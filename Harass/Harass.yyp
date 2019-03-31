@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "36d8356c-a3f9-471f-88ac-e5f26a81ff94",
+            "Value": {
+                "id": "867d8f64-98e3-4d54-adae-1a9e0eb99ff1",
+                "resourcePath": "sprites\\Spr_HarChat\\Spr_HarChat.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "38fd25f1-ff25-4562-9c23-cc6708400d8c",
             "Value": {
                 "id": "e1e79c3d-3d42-4f39-afba-0a2d5b1baa63",
@@ -332,6 +340,14 @@
                 "id": "49447fed-8344-4504-8a45-02fcc7567c4c",
                 "resourcePath": "tilesets\\Test\\Test.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "3df90d8f-e2cf-4488-833d-7520b6c8e5b9",
+            "Value": {
+                "id": "75030b04-03aa-4381-95e9-2563b7c93cf6",
+                "resourcePath": "objects\\OBJ_HrssrFace\\OBJ_HrssrFace.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -684,6 +700,14 @@
                 "id": "ab0a6175-c417-48ae-9c94-781e9ec0c01a",
                 "resourcePath": "objects\\OBJ_Timer\\OBJ_Timer.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "845e7021-2832-440e-87e5-f11283b28c6e",
+            "Value": {
+                "id": "8fa555ec-6ea5-4f64-9a41-6cd9a86eacbb",
+                "resourcePath": "sprites\\Spr_HarWake\\Spr_HarWake.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1108,6 +1132,14 @@
                 "id": "8cbb12d7-c557-4fa7-93df-1c5adfb01f10",
                 "resourcePath": "tilesets\\Env002_Tileset\\Env002_Tileset.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "f5e0e4b0-0d9c-4fc0-b75d-cf723cbcaf83",
+            "Value": {
+                "id": "08807fd5-a8a2-4606-bc60-cfd868637afa",
+                "resourcePath": "views\\f5e0e4b0-0d9c-4fc0-b75d-cf723cbcaf83.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
