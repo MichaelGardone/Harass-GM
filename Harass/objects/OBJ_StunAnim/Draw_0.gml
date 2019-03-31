@@ -42,4 +42,6 @@ if global.player_locked == 1
 			instance_create_depth(OBJ_Player.x + eyes[i, 1], OBJ_Player.y + eyes[i, 2], 
 			-100, eyes[i, 0])
 	}
+} else {
+	faceTrack = false
 }
