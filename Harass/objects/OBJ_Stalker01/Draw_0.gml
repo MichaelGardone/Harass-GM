@@ -1,5 +1,4 @@
 draw_self();
-show_debug_message(x_spd)
 if dir > 0 && if_moving == true
 {
 	image_xscale = 1

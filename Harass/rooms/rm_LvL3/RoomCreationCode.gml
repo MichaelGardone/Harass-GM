@@ -1,3 +1,5 @@
+randomize();
+
 // FOR PLAYER PAUSE ONLY
 global.pause = 0;
 

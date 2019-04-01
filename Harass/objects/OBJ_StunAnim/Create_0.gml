@@ -41,10 +41,20 @@ eyes[8,0] = OBJ_Eyes09
 eyes[8,1] = 165
 eyes[8,2] = -360
 
-static_max = array_length_1d(eyes);
-curr_max = 0;
+static_max = 9;
+curr_max = static_max;
 
 spawned = false;
+
+eyes_spawned[0] = false;
+eyes_spawned[1] = false;
+eyes_spawned[2] = false;
+eyes_spawned[3] = false;
+eyes_spawned[4] = false;
+eyes_spawned[5] = false;
+eyes_spawned[6] = false;
+eyes_spawned[7] = false;
+eyes_spawned[8] = false;
 
 draw[0] = false;
 for(i = 0; i < static_max; i++)
@@ -54,3 +64,5 @@ is_spawn = false
 
 // FACE TRACKER
 faceTrack = false
+
+last_spawn = 0;
