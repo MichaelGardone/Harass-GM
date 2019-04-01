@@ -2,7 +2,7 @@
     "id": "2b0a1fce-bb8a-4726-b379-3d3c2316de71",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "OBJ_Watcher",
+    "name": "OBJ_Watcher01",
     "eventList": [
         {
             "id": "b601bc72-a91c-4139-b3cd-1422518944b6",
@@ -92,6 +92,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "14e31d68-4570-419e-bb76-4f86d1c5a944",
+    "spriteId": "36c5ae07-80ab-4cc0-ac96-cc8246b6a8c1",
     "visible": true
 }
