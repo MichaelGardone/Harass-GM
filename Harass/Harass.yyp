@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "4298e4d6-bc37-4ac9-a98d-35ab07cd337b",
+            "Value": {
+                "id": "39bcdd3d-bbd3-42af-a80e-67fec4a9f5ab",
+                "resourcePath": "objects\\OBJ_Passerby02\\OBJ_Passerby02.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "42ff6758-e181-4375-94c4-6b9d972e2615",
             "Value": {
                 "id": "9d11ee0e-1b8b-40f6-ad2d-f3eb59f14b36",
@@ -876,6 +884,14 @@
                 "id": "617e5061-8798-4342-b2c5-0f0100009f34",
                 "resourcePath": "sprites\\Spr_CartDoorNOAnim\\Spr_CartDoorNOAnim.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a8e18854-c73d-4ffa-b14d-2a8ec2d2ff23",
+            "Value": {
+                "id": "9c2c39df-63fa-4521-bec5-92bb25499577",
+                "resourcePath": "objects\\OBJ_Watcher02\\OBJ_Watcher02.yy",
+                "resourceType": "GMObject"
             }
         },
         {
