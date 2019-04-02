@@ -12,6 +12,7 @@ if (dir == 1)
 switch(state)
 {
 	case e_state.wander:
+	if_moving = true;
 	x_spd = 0; // we do not want to modify the x coord in this state!
 	
 	// Update the index
@@ -50,6 +51,7 @@ switch(state)
 
 	// CHASE
 	case e_state.chase:
+	if_moving = true;
 	// Watcher chase is to be going after player up until a certain point
 	// and just sit there
 	
@@ -91,6 +93,7 @@ switch(state)
 	break;
 	
 	case e_state.sit_tight:
+	if_moving = false;
 	if (!max_close)
 	{
 		state = e_state.chase;

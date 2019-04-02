@@ -21,10 +21,10 @@ if global.player_locked == 1
 	
 	// SCARY FACE
 	if faceTrack == false
-		{
+	{
 		instance_create_depth(OBJ_Player.x - 400,OBJ_Player.y - 30, -100, OBJ_HrssrFace)
 		faceTrack = true
-		}
+	}
 		
 	//SPOOKY EYEBALLS
 	if(!spawned)
@@ -38,10 +38,25 @@ if global.player_locked == 1
 	
 	for(i = 0; i < static_max; i++)
 	{
-		if (draw[i] == true)
+		if (draw[i] == true && eyes_spawned[i] == false)
+		{
 			instance_create_depth(OBJ_Player.x + eyes[i, 1], OBJ_Player.y + eyes[i, 2], 
-			-100, eyes[i, 0])
+			-100, eyes[i, 0]);
+			eyes_spawned[i] = true;
+		}
 	}
 } else {
-	faceTrack = false
+	faceTrack = false;
+	
+	for(i = 0; i < static_max; i++)
+	{
+		if (draw[i] == true && eyes_spawned[i] == true)
+		{
+			instance_destroy(eyes[i, 0]);
+			eyes_spawned[i] = false;
+			draw[i] = false;
+		}
+	}
+	
+	spawned = false;
 }

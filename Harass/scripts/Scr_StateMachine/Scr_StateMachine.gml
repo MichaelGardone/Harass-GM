@@ -19,6 +19,8 @@ if global.pause == 0 && global.player_locked == 0
 	switch(state)
 	{
 		case e_state.wander:
+		if_stunned = 0;
+		if_moving = 1;
 		x_spd = 0; // we do not want to modify the x coord in this state!
 		
 		// Update the index
@@ -60,7 +62,7 @@ if global.pause == 0 && global.player_locked == 0
 	
 		// CHASE
 		case e_state.chase:
-	
+		if_moving = 1;
 		// If (player hides we lost) OR (player escapes detection hitbox)
 		if(OBJ_Player.is_hiding == true/* || detect == noone*/)
 			state = e_state.wander;
@@ -98,12 +100,14 @@ if global.pause == 0 && global.player_locked == 0
 		break;
 	
 		case e_state.stunned:
+		if_stunned = 1;
 		fval = 0;
 		alarm[0] = room_speed * (9 - stun_effect);
 		state = e_state.sit_tight;
 		break;
 		
 		case e_state.sit_tight:
+		if_moving = 0
 		// burn cycles
 		//show_debug_message(string(x+attack*dir));
 		//show_debug_message(x);
