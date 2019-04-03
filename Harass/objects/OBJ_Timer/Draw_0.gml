@@ -18,7 +18,7 @@ if (global.pause == 0)
 		draw_set_color(c_lime);
 	}
 }
-	
+
 // String
 if (global.pause == 0 && OBJ_Door.alarm[11] == -1)
 {

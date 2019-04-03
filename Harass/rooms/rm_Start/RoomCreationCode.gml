@@ -27,3 +27,8 @@ global.game_over = false;
 
 // STUN REDUCTION
 global.stun_effect = 0;
+
+// TIMES
+global.times[0] = 15;
+global.times[1] = 30;
+global.times[2] = 45;
