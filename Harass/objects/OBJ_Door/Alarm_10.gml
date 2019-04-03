@@ -1,5 +1,11 @@
-door_open = false;
-
-// Game over here, for now it just resets alarm[11]
-
-alarm[11] = room_speed * 5;
+if (door_open)
+{
+	global.level_fade = true;
+	global.next_room = noone;
+	global.game_over = true;
+	global.record = 0;
+	door_open = false;
+}
+else {
+	alarm[11] = room_speed * 5;
+}
