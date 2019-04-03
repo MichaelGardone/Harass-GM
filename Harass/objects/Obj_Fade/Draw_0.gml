@@ -4,10 +4,9 @@ if (global.level_fade)
 	a = clamp(a + (fade * fade_speed), 0, 1);
 	if (a == 1)
 	{
-		if (global.next_room != noone)
+		if (global.game_over == false)
 			room_goto(global.next_room);
-		else
-			game_over = true;
+		
 		fade = -1;
 	}
 	if (a == 0 && fade == -1)
