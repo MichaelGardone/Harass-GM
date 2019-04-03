@@ -13,7 +13,16 @@ global.debug = 0;
 global.groove = 1;
 
 // RECORD TRACKER
-global.record = 0
+global.record = 0;
 
 // DOOR STATE
-global.open = false
+global.open = false;
+
+// LEVEL DONE
+global.level_fade = false;
+
+// NEXT ROOM
+global.next_room = rm_LvL2;
+
+// GAME OVER
+global.game_over = false;
