@@ -743,6 +743,14 @@
             }
         },
         {
+            "Key": "69b15dc1-6e3d-4bfc-a912-3a1fcc9ec6ab",
+            "Value": {
+                "id": "e5b69581-bafb-447c-adc6-038d25c691b1",
+                "resourcePath": "views\\69b15dc1-6e3d-4bfc-a912-3a1fcc9ec6ab.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "6e5a417d-ec46-49d8-947d-02871ab83807",
             "Value": {
                 "id": "75d9994a-3424-41c8-95cb-edf8bb212e02",
@@ -820,6 +828,14 @@
                 "id": "2ebbf05f-2e18-4e8e-9c95-91b945e61752",
                 "resourcePath": "sounds\\Sfx_GameOver\\Sfx_GameOver.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "778abfa9-ed11-4481-94ed-cf218b3b843c",
+            "Value": {
+                "id": "74dcd1b3-9606-4ba4-a87d-9baef5a368e3",
+                "resourcePath": "objects\\OBJ_StartMenu\\OBJ_StartMenu.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1132,6 +1148,14 @@
                 "id": "6ae0823e-7a13-4091-9c96-eaecb888cb15",
                 "resourcePath": "sprites\\Spr_Sill6\\Spr_Sill6.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "afbf17ca-a8f3-40a2-9c0c-c13a3d5e0e76",
+            "Value": {
+                "id": "7c3f2262-86b3-466d-a746-4c76143793ad",
+                "resourcePath": "rooms\\rm_Start\\rm_Start.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
