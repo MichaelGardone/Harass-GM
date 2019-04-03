@@ -1,9 +1,6 @@
 
 i = irandom_range(0, curr_max - 1);
 
-show_debug_message(i);
-show_debug_message(curr_max);
-
 if(draw[i] == false)
 {
 	draw[i] = true;

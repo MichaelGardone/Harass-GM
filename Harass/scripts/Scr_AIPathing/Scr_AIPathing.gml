@@ -4,7 +4,7 @@ if abs(x)-abs(curr_node.x) == 0
 	
 	// choose between going left and right
 	r = choose(-1, 1);
-
+	dir = r
 	if cindx + r < 0
 		cindx = 1; // auto force right
 	else if cindx + r > (maxnds-1)
