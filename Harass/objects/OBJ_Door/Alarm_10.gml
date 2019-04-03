@@ -1,8 +1,10 @@
-if (door_open)
+if (door_open && global.win == false)
 {
 	global.level_fade = true;
-	global.next_room = noone;
+	global.next_room = rm_LvL1;
+	
 	global.game_over = true;
+	
 	global.record = 0;
 	door_open = false;
 }

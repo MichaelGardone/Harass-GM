@@ -1,4 +1,9 @@
 
+if(instance_number(OBJ_Pause) > 1)
+{
+	instance_destroy();
+}
+
 if (global.pause == 1)
 {
 	y_select = keyboard_check_pressed(ord("S")) - keyboard_check_pressed(ord("W"));
