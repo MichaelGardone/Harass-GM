@@ -2,7 +2,7 @@
     "id": "26329d84-6159-4fb3-8446-318ed57b420c",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "Spr_ChadeMove",
+    "name": "Spr_ChadMove",
     "For3D": false,
     "HTile": false,
     "VTile": false,

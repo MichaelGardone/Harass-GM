@@ -43,6 +43,12 @@ if (!x_spd == 0) && global.player_locked == 0
 		image_speed = 0
 		image_index = 0
 	}
+else if global.player_locked == 1
+{
+	sprite_index = Spr_PlayerStun
+	image_speed = 0
+	image_index = 0
+}
 		
 // EXIT
 if global.door == true && !place_meeting(OBJ_Player.x,OBJ_Player.y,OBJ_Door)
