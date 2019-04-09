@@ -1,4 +1,9 @@
 
+if(instance_number(OBJ_Pause) > 1)
+{
+	instance_destroy();
+}
+
 if (global.pause == 1)
 {
 	y_select = keyboard_check_pressed(ord("S")) - keyboard_check_pressed(ord("W"));
@@ -13,12 +18,11 @@ if (global.pause == 1)
 		else if (y_pos < 0)
 			y_pos = y_max;
 	
-		audio_play_sound(Sfx_MoveMenu,2,0);
+		//audio_play_sound(snd_switch,10,0);
 	}
 
 	//interaction
 	if keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) {
-		audio_play_sound(Sfx_SelectMenu,3,0);
 		if (y_pos == 0)
 		{
 			global.pause = 0;

@@ -3,10 +3,11 @@ if global.player_locked == 0 && global.pause == 0
 {
 	if(place_meeting(x,y,OBJ_Door))
 	{
-		if (w_key && OBJ_Door.door_open)
+		if (w_key && OBJ_Door.door_open && global.win == false)
 		{
-			global.record = +1 
+			global.record += 1;
 			global.level_fade = true;
+			global.win = true;
 			if (room == rm_LvL1)
 				global.next_room = rm_LvL2;
 			else if (room == rm_LvL2)

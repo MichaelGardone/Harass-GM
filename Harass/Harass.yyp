@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "229a7f27-949e-4d75-b4ed-15b22f884e8a",
+            "Value": {
+                "id": "b8f35c8c-1d9d-4f09-8904-98f782721832",
+                "resourcePath": "rooms\\rm_NewLvL2\\rm_NewLvL2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "23df3eb9-5a1a-4e4f-9056-d52d5ef9f295",
             "Value": {
                 "id": "de11f5da-0d7a-4f59-b011-8018cefa2a0a",
@@ -292,6 +300,14 @@
                 "id": "6d21eb72-5092-43a6-8dc2-19e232981245",
                 "resourcePath": "objects\\OBJ_Eyes04\\OBJ_Eyes04.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2bbf5aea-2897-4aca-a196-5f216051ab44",
+            "Value": {
+                "id": "39d65b52-b443-4962-ae29-d69329b39e39",
+                "resourcePath": "rooms\\rm_Landing\\rm_Landing.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1111,6 +1127,14 @@
             }
         },
         {
+            "Key": "aa3b1d0d-05af-4ba4-9c10-6d0e175d5d6a",
+            "Value": {
+                "id": "c882b1cf-eca3-4708-bf55-b5ac48f565e0",
+                "resourcePath": "rooms\\rm_NewLvL1\\rm_NewLvL1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "aaefc0d1-f8d3-45c6-a0fd-2cba2f13204b",
             "Value": {
                 "id": "940be580-f1b9-4e2a-8616-4388a7c90656",
@@ -1295,6 +1319,14 @@
             }
         },
         {
+            "Key": "c868de53-4548-41e2-acba-ec59211e6a0d",
+            "Value": {
+                "id": "ecbcd3a6-ba5a-4dc5-ac31-04ef8c63da95",
+                "resourcePath": "rooms\\rm_GameOver\\rm_GameOver.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "c9e32736-8987-40c6-9c06-8221c0e0f9b9",
             "Value": {
                 "id": "0209c378-a5b7-474e-a1bf-6a1097263ce3",
@@ -1380,6 +1412,14 @@
                 "id": "c7530c31-07f5-44d8-a256-dde5ac401389",
                 "resourcePath": "views\\dda468c1-ef00-4676-83a8-14c593b35e7a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "de71655f-76ed-41e4-8de6-ad99b526f15d",
+            "Value": {
+                "id": "c1055424-e1b0-441a-83b0-2f65228e76a7",
+                "resourcePath": "objects\\Obj_GameOver\\Obj_GameOver.yy",
+                "resourceType": "GMObject"
             }
         },
         {

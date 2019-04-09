@@ -1,5 +1,5 @@
 
-if global.player_locked == 1
+if global.player_locked == 1 && global.game_over == false
 {
 	//SOUND & AUDIO MANAGEMENT
 	audio_pause_sound(Sfx_Background)

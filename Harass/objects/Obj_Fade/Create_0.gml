@@ -1,5 +1,5 @@
 // Alpha
-a = 0
+a = 0;
 
 // Fading out = 1
 // Fade in = -1

@@ -89,8 +89,8 @@ if global.pause == 0 && global.player_locked == 0
 			
 			state = e_state.stunned;
 			
-			if stun_effect < 7
-				stun_effect++;
+			if global.stun_effect < 7
+				global.stun_effect++;
 			OBJ_Player.breakout_lim = round(OBJ_Player.breakout_lim * 1.5);
 		} else 
 		{
@@ -102,7 +102,7 @@ if global.pause == 0 && global.player_locked == 0
 		case e_state.stunned:
 		if_stunned = 1;
 		fval = 0;
-		alarm[0] = room_speed * (9 - stun_effect);
+		alarm[0] = room_speed * (9 - global.stun_effect);
 		state = e_state.sit_tight;
 		break;
 		
