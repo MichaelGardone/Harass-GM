@@ -1,7 +1,7 @@
 if (door_open && global.win == false)
 {
 	global.level_fade = true;
-	global.next_room = rm_LvL1;
+	global.next_room = rm_GameOver;
 	
 	global.game_over = true;
 	

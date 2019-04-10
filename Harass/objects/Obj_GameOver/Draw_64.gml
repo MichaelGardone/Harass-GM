@@ -9,9 +9,11 @@ draw_text(xx, yy, "GAME OVER");
 	
 yy += yoffset;
 draw_set_halign(fa_center);
-for (i=0; i<= buttons; i++) {
-	if i = menu_index draw_set_color(c_white);
-	else draw_set_color(c_gray);
+for (i=0; i < buttons; i++) {
+	if i = menu_index
+		draw_set_color(c_white);
+	else
+		draw_set_color(c_gray);
 	draw_text(xx,yy+i*yoffset,text[i]);	
 }
 draw_set_halign(fa_left);

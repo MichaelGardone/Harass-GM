@@ -57,7 +57,7 @@
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Persistant",
+            "name": "Persistent",
             "id": "beccd0f7-bbf6-42a2-a0f7-8e7fc78a49d3",
             "depth": 0,
             "grid_x": 32,
