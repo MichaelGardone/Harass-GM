@@ -29,7 +29,7 @@ if global.player_locked == 0 && global.pause == 0
 			instance.can_hide = false;
 			
 			alarm[1] = room_speed * hide_length;
-			instance.alarm[0] = room_speed * (instance.time_to_open + hide_length);
+			instance.alarm[0] = room_speed * (instance.time_to_open);
 			
 			fval = 255;
 			is_hiding = true;
