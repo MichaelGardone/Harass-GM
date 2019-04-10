@@ -35,4 +35,10 @@ global.times[2] = 35;
 global.times[3] = 45;
 
 // HIDDEN
-global.hide = false
+global.hide = false;
+
+// DISCOMFORT METER
+global.discomf = 0;
+
+// DISCOMFORT METER MAX
+global.discomf_max = 5;
