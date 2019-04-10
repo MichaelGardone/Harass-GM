@@ -14,7 +14,7 @@ if (global.discomf == global.discomf_max)
 	// End game
 	global.level_fade = true;
 	// TODO: Go to game over
-	global.next_room = rm_LvL1;
+	global.next_room = rm_GameOver;
 	
 	global.game_over = true;
 	
