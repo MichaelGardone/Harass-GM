@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "16c0d13f-04c0-4617-a4d1-c27f13de7f53",
+            "Value": {
+                "id": "c4a37643-011f-4f75-a3ca-c6f5ea698480",
+                "resourcePath": "sprites\\Spr_Meter\\Spr_Meter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "17a170b2-de19-43f6-9663-3771ecb9d05c",
             "Value": {
                 "id": "3c67f39f-a22d-4bb7-b50b-56cb595c5f0f",
