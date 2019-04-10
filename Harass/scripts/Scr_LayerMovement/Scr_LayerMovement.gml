@@ -21,15 +21,24 @@ if global.player_locked == 0 && global.pause == 0
 	} else {
 		
 		instance = instance_place(x,y, OBJ_Crowd01);
-		instance = instance_place(x,y, OBJ_Crowd02);
+		instance2 = instance_place(x,y, OBJ_Crowd02);
 		
 		if (w_key && (place_meeting(x,y, OBJ_Crowd01) || place_meeting(x,y,OBJ_Crowd02))
-			&& instance != noone && instance.can_hide)
+			&& ((instance != noone && instance.can_hide) || (instance2 != noone && instance2.can_hide)))
 		{
-			instance.can_hide = false;
-			
 			alarm[1] = room_speed * hide_length;
-			instance.alarm[0] = room_speed * (instance.time_to_open);
+			
+			if(instance != noone)
+			{
+				instance.can_hide = false;
+				instance.alarm[0] = room_speed * (instance.time_to_open);
+			}
+			
+			if (instance2 != noone)
+			{
+				instance2.can_hide = false;
+				instance2.alarm[0] = room_speed * (instance2.time_to_open);
+			}
 			
 			fval = 255;
 			is_hiding = true;
