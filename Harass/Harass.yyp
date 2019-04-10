@@ -823,14 +823,6 @@
             }
         },
         {
-            "Key": "71f2a8e1-e392-43a8-9804-99cdf033b095",
-            "Value": {
-                "id": "01a1bc7b-08ba-4c3e-998d-4318a9fbb9cb",
-                "resourcePath": "sprites\\Spr_Hidden\\Spr_Hidden.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "721390ab-dde4-49c2-91e8-e1bd91e15362",
             "Value": {
                 "id": "7420ec5c-59f6-4cdf-81e3-f6796f888527",
@@ -1346,7 +1338,7 @@
             "Key": "cec4e586-a052-4cab-9091-11d319cc0589",
             "Value": {
                 "id": "10b23ce6-9234-4fa8-acb7-39d35b5602de",
-                "resourcePath": "sprites\\Spr_HideAction\\Spr_HideAction.yy",
+                "resourcePath": "sprites\\Spr_Hidden\\Spr_Hidden.yy",
                 "resourceType": "GMSprite"
             }
         },

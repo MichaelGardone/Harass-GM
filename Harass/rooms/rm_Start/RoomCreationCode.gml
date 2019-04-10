@@ -33,3 +33,6 @@ global.times[0] = 15;
 global.times[1] = 25;
 global.times[2] = 35;
 global.times[3] = 45;
+
+// HIDDEN
+global.hide = false
