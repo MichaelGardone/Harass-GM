@@ -10,4 +10,4 @@ Scr_LayerMovement();
 Scr_EnemyLocked();
 
 // global hide
-global.hide = is_hiding
+global.hide = is_hiding;

@@ -15,6 +15,9 @@ if global.player_locked == 0 && global.pause == 0
 			// Tutorial is over, ranodmize
 			else	
 			{
+				// Re-seed to keep it random
+				// Does GM use linear randomization?
+				randomize();
 				global.next_room = choose(rm_LvL3, rm_LvL4);
 			}
 		}
@@ -50,4 +53,15 @@ if global.player_locked == 0 && global.pause == 0
 		}
 		
 	}
+}
+
+if (global.pause && alarm[1] > 0)
+{
+	hiding_timer = alarm[1];
+	alarm[1] = -1;
+}
+if (global.pause == false && alarm[1] = -1 && hiding_timer != -1)
+{
+	alarm[1] = hiding_timer;
+	hiding_timer = -1;
 }

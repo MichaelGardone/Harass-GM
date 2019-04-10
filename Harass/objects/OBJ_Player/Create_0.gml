@@ -32,3 +32,6 @@ attk_fade = 5;
 
 //Anim Direction Tracker
 dir_remain = 0;
+
+// TIMER STORAGE
+hiding_timer = -1;
