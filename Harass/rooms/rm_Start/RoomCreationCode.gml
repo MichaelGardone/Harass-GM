@@ -30,5 +30,6 @@ global.stun_effect = 0;
 
 // TIMES
 global.times[0] = 15;
-global.times[1] = 30;
-global.times[2] = 45;
+global.times[1] = 25;
+global.times[2] = 35;
+global.times[3] = 45;
