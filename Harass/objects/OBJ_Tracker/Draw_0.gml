@@ -20,7 +20,7 @@ if(global.pause == 0)
 }
 	
 // String
-draw_text_transformed(x+60,y+45,"Record: " + string(global.record), 1.25, 1.5, 0);
+draw_text_transformed(x+75,y+50,"Record: " + string(global.record), 1.1, 1.1, 0);
 
 draw_set_alpha(1);
 

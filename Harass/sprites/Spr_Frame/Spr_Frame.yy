@@ -6,10 +6,10 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 120,
+    "bbox_bottom": 106,
     "bbox_left": 7,
     "bbox_right": 376,
-    "bbox_top": 7,
+    "bbox_top": 21,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
@@ -45,37 +45,37 @@
             ]
         },
         {
-            "id": "97d8d5a5-87b0-40ce-be5a-9470dcf1e649",
+            "id": "24dd1e19-b3d4-4f16-a1cf-fe0865745268",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "6ed5e455-81ac-4e8a-98cb-8e04e20c549d",
             "compositeImage": {
-                "id": "3d125f4a-22f6-427c-a46d-cb689420560f",
+                "id": "68f0cb80-9ddb-4a04-b7df-a6aa5531bdb5",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "97d8d5a5-87b0-40ce-be5a-9470dcf1e649",
+                "FrameId": "24dd1e19-b3d4-4f16-a1cf-fe0865745268",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "5c22f658-e93e-44fe-96de-d872b707438f",
+                    "id": "91f3d2bf-e760-4381-9d8d-ea8cc520e4b6",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "97d8d5a5-87b0-40ce-be5a-9470dcf1e649",
+                    "FrameId": "24dd1e19-b3d4-4f16-a1cf-fe0865745268",
                     "LayerId": "42bec419-bbed-4017-8e3c-07b42b7c9765"
                 },
                 {
-                    "id": "5b1e15a0-1e18-4300-af99-353fae147098",
+                    "id": "1efffdb6-23dd-4eac-819f-a2496d98bb34",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "97d8d5a5-87b0-40ce-be5a-9470dcf1e649",
+                    "FrameId": "24dd1e19-b3d4-4f16-a1cf-fe0865745268",
                     "LayerId": "2ddf53dd-24b9-453d-b7a1-27aa5bce86c5"
                 }
             ]
         }
     ],
-    "gridX": 1,
-    "gridY": 1,
+    "gridX": 32,
+    "gridY": 32,
     "height": 128,
     "layers": [
         {

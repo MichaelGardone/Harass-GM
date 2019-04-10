@@ -1,4 +1,14 @@
 draw_self();
+
+if global.pause == 1
+	{
+	image_speed = 0
+	}
+else
+	{
+	image_speed = 1
+	}
+
 if dir > 0 && if_moving == true
 {
 	image_xscale = 1

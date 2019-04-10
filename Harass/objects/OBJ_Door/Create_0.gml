@@ -6,6 +6,8 @@ else if (room == rm_LvL2)
 	alarm[11] = room_speed * global.times[1];
 else if (room == rm_LvL3)
 	alarm[11] = room_speed * global.times[2];
+else if (room == rm_LvL4)
+	alarm[11] = room_speed * global.times[3];
 
 door_open = false;
 	

@@ -5,6 +5,8 @@ right = 0;
 x_dir = 0;
 running = 0;
 
+hide_length = 6;
+
 // == Constants ==
 // WHY DO THEY USE MACROS AND NOT A CONST MODIFIER
 #macro spd 6
