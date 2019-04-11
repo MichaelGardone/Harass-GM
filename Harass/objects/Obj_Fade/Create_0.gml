@@ -1,5 +1,3 @@
-show_debug_message("hj");
-
 // Alpha
 a = 0;
 

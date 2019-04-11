@@ -19,9 +19,9 @@ else if global.pause == 0 && reset_alarms == true
 
 if door_open = false
 {
-	global.door = false
+	global.door = false;
 }
 else
 {
-	global.door = true
+	global.door = true;
 }
