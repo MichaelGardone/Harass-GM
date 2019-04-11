@@ -20,3 +20,10 @@ if (global.discomf == global.discomf_max)
 	
 	global.record = 0;
 }
+
+// Plz work, it moves
+
+cx = camera_get_view_x(view_camera[0]);
+
+x = cx + xDifference;
+
