@@ -16,11 +16,8 @@ global.record = 0;
 // DOOR STATE
 global.open = false;
 
-// LEVEL DONE
-global.level_fade = false;
-
 // NEXT ROOM
-global.next_room = rm_LvL2;
+global.next_room = rm_LvL1;
 
 // GAME OVER
 global.game_over = false;
@@ -41,4 +38,7 @@ global.hide = false;
 global.discomf = 0;
 
 // DISCOMFORT METER MAX
-global.discomf_max = 5;
+global.discomf_max = 7;
+
+// BREAKOUT LIMIT
+global.breakout_lim = 10;

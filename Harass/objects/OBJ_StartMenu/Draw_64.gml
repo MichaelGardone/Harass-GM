@@ -1,5 +1,5 @@
 xx = display_get_gui_width()/2;
-yy = 150;
+yy = 100;
 
 draw_set_halign(fa_center);
 draw_set_font(Fnt_Press);

@@ -5,11 +5,13 @@ switch(menu_index)
 		audio_play_sound(Sfx_SelectMenu,2,0);
 		global.level_fade = true;
 		global.next_room = rm_LvL3;
+		global.game_over = false;
 		break;
 	case 1:
 		audio_play_sound(Sfx_SelectMenu,2,0);
 		global.level_fade = true;
 		global.next_room = rm_Start;
+		global.game_over = false;
 		break;
 	case 2:
 		game_end();

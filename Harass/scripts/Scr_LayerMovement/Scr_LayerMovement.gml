@@ -12,7 +12,7 @@ if global.player_locked == 0 && global.pause == 0
 				global.next_room = rm_LvL2;
 			else if (room == rm_LvL2)
 				global.next_room = rm_LvL3;
-			// Tutorial is over, ranodmize
+			// Tutorial is over, randomize
 			else	
 			{
 				// Re-seed to keep it random

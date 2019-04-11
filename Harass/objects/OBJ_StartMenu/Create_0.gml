@@ -11,3 +11,5 @@ buttons = array_length_1d(text);
 
 menu_index = 0;
 last_selected = 0;
+
+global.next_room = rm_LvL1;

@@ -1,8 +1,13 @@
+//show_debug_message(string(room));
+
 if (global.level_fade)
 {
 	a = clamp(a + (fade * fade_speed), 0, 1);
+	show_debug_message(a);
 	if (a == 1)
 	{
+		show_debug_message("trans from " + string(room));
+		
 		room_goto(global.next_room);
 		
 		fade = -1;
