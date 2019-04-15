@@ -9,18 +9,6 @@ if (global.player_locked && added == false)
 if (global.player_locked == false && added)
 	added = false;
 
-if (global.discomf == global.discomf_max)
-{
-	// End game
-	global.level_fade = true;
-	// TODO: Go to game over
-	global.next_room = rm_GameOver;
-	
-	global.game_over = true;
-	
-	global.record = 0;
-}
-
 // Plz work, it moves
 
 cx = camera_get_view_x(view_camera[0]);

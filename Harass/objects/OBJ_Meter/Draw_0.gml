@@ -11,17 +11,17 @@ else
 	image_speed = 1
 
 // DRAWN PROGRESS OF METER
-if discTrack == 0
+if global.discomf == 0
 	sprite_index = Spr_Meter0
-else if discTrack == 1
+else if global.discomf == 1
 	sprite_index = Spr_Meter1
-else if discTrack == 2
+else if global.discomf == 2
 	sprite_index = Spr_Meter2
-else if discTrack == 3
+else if global.discomf == 3
 	sprite_index = Spr_Meter3
-else if discTrack == 4
+else if global.discomf == 4
 	sprite_index = Spr_Meter4
-else if discTrack == 5
+else if global.discomf == 5
 	sprite_index = Spr_Meter5
-else if discTrack == 6
+else if global.discomf == 6
 	sprite_index = Spr_Meter6

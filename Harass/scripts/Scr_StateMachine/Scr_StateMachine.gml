@@ -84,7 +84,7 @@ if global.pause == 0 && global.player_locked == 0
 		case e_state.attack:
 		// If (player hides it lost) OR (player escapes hitboxes)
 		if OBJ_Player.player_escape
-		{	
+		{
 			OBJ_Player.player_escape = false;
 			
 			state = e_state.stunned;
@@ -94,6 +94,18 @@ if global.pause == 0 && global.player_locked == 0
 			global.breakout_lim = round(global.breakout_lim * 1.5);
 		} else 
 		{
+			if (global.discomf == global.discomf_max)
+			{
+				// End game
+				global.level_fade = true;
+				
+				global.next_room = rm_GameOver;
+	
+				global.game_over = true;
+	
+				global.record = 0;
+			}
+			
 			global.player_locked = 1;
 			OBJ_Player.fval = 0;
 		}
