@@ -6,6 +6,10 @@ if (is_hiding)
 {
 	fval = clamp(fval - hide_fade, 100, 255);
 	image_blend = make_color_rgb(fval, fval, fval);
+	
+	// HIDE JUICE
+	draw_sprite(Spr_Hidden, image_index, OBJ_Player.x, OBJ_Player.y);
+
 }
 else if (global.player_locked)
 {

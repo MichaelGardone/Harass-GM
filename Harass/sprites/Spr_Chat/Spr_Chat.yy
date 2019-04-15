@@ -2,7 +2,7 @@
     "id": "36d8356c-a3f9-471f-88ac-e5f26a81ff94",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "Spr_HarChat",
+    "name": "Spr_Chat",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -143,7 +143,7 @@
         }
     ],
     "origin": 4,
-    "originLocked": false,
+    "originLocked": true,
     "playbackSpeed": 10,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,

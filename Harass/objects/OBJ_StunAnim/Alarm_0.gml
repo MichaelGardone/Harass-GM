@@ -1,11 +1,6 @@
-
-i = irandom_range(0, curr_max - 1);
-
-if(draw[i] == false)
+if global.player_locked == 1
 {
-	draw[i] = true;
-	curr_max -= 1;
+anim_Pace = anim_Pace + 1
+show_debug_message(string(anim_Pace))
+alarm[0] = room_speed * 2
 }
-
-if (curr_max != 0)
-	alarm[0] = room_speed * 2;
