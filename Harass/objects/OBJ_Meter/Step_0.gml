@@ -9,12 +9,6 @@ if (global.player_locked && added == false)
 if (global.player_locked == false && added)
 	added = false;
 
-if (global.win && global.discomf > 0)
-{
-	// Decrement
-	global.discomf--;
-}
-
 // Plz work, it moves
 
 cx = camera_get_view_x(view_camera[0]);
