@@ -91,7 +91,7 @@ if global.pause == 0 && global.player_locked == 0
 			
 			if global.stun_effect < 7
 				global.stun_effect++;
-			OBJ_Player.breakout_lim = round(OBJ_Player.breakout_lim * 1.5);
+			global.breakout_lim = round(global.breakout_lim * 1.5);
 		} else 
 		{
 			global.player_locked = 1;
