@@ -13,6 +13,13 @@ if global.player_locked == 1 && global.game_over == false
 		audio_play_sound(Sfx_StunDur,4,0)
 		}
 	
+	//CREEPY GROWING FACE
+	if faceDrawn == 0
+	{
+		instance_create_depth(OBJ_Player.x,OBJ_Player.y,-100,OBJ_HrssrFace)
+		faceDrawn += 1
+	}
+	
 	//MASH UI
 	draw_sprite(Spr_ABut,a_press,OBJ_Player.x+-30,OBJ_Player.y + -110)
 	draw_sprite(Spr_DBut,d_press,OBJ_Player.x+30,OBJ_Player.y + -110)
