@@ -15,8 +15,9 @@ if global.player_locked == 1
 	}
 	if sprite_index == Spr_Chat
 	{
-		draw_text_transformed(OBJ_HrssrFace.x,OBJ_HrssrFace.y + 300,
-			comment[str_temp],0.8,0.8,0)
+		draw_set_halign(fa_center)
+		draw_text_transformed(OBJ_HrssrFace.x + xShake,OBJ_HrssrFace.y - 250 + yShake,
+			comment[str_temp],1,1.25,0)
 	}
 } else {
 	sprite_index = Spr_HarWake;

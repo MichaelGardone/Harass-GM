@@ -287,14 +287,6 @@
             }
         },
         {
-            "Key": "289d87b9-3de5-4f87-9987-c07d305bbad3",
-            "Value": {
-                "id": "e8b3559e-59ff-4da9-a87d-d52209e6c081",
-                "resourcePath": "objects\\OBJ_Eyes07\\OBJ_Eyes07.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "28b0f544-dd27-4fb8-8f5d-5267d07db1ee",
             "Value": {
                 "id": "4e924b94-79e1-4876-bfc0-013cc1162bee",
@@ -331,14 +323,6 @@
             "Value": {
                 "id": "849d2e1a-c121-4e08-a1c1-79e122badd4f",
                 "resourcePath": "objects\\OBJ_Eyes03\\OBJ_Eyes03.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "2c96fdaa-7993-4cee-ba2e-6b9b9eb9f67b",
-            "Value": {
-                "id": "c8d0bb74-7418-4307-ae4e-cfcfa021d181",
-                "resourcePath": "objects\\OBJ_Eyes08\\OBJ_Eyes08.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -655,6 +639,14 @@
             }
         },
         {
+            "Key": "54e3ead3-b43f-4686-8621-cb3ea2a93aeb",
+            "Value": {
+                "id": "f5596a5c-aa75-46f0-8446-3d30907680f9",
+                "resourcePath": "sounds\\Sfx_ChitChat\\Sfx_ChitChat.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "55295bdb-b0fb-44c5-a008-762c45d1c764",
             "Value": {
                 "id": "47e7fca6-ab7e-4cd1-a496-0fdd5874ac94",
@@ -711,14 +703,6 @@
             }
         },
         {
-            "Key": "5b8e1546-4de4-45ee-9e00-0dd98bab0c99",
-            "Value": {
-                "id": "f5f674fc-006b-4517-92f4-933d42ba7057",
-                "resourcePath": "objects\\OBJ_Eyes09\\OBJ_Eyes09.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "5b8e9c4f-6a7f-4ca4-b5bf-bf51b0379512",
             "Value": {
                 "id": "3b100f49-d7cb-4c39-bf6f-4c42b0c32fcb",
@@ -748,6 +732,14 @@
                 "id": "c3bdba80-6a43-4301-a8e0-425b59356435",
                 "resourcePath": "objects\\OBJ_Meter\\OBJ_Meter.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6100db74-851b-49d4-a07d-5cff02a2b18c",
+            "Value": {
+                "id": "8fb1445d-ea6b-4da8-a67f-644b0f7234bd",
+                "resourcePath": "sprites\\Spr_RedEyes\\Spr_RedEyes.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

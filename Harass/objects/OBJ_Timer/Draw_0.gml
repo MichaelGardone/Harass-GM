@@ -20,6 +20,7 @@ if (global.pause == 0)
 }
 
 // String
+draw_set_halign(fa_left)
 if (global.pause == 0 && OBJ_Door.alarm[11] == -1)
 {
 	draw_text_transformed(x+73,y+50,"Arrived!", 1.1, 1.1, 0);

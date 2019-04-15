@@ -9,5 +9,10 @@ str_temp = random(4)
 // SWAY
 alarm[0] = room_speed/12
 angleSway = 0
+
 // Direction of Sway, R:0 L:1
 dir = false
+
+// STRING SHAKE
+stringSpawn = 0
+

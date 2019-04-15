@@ -20,6 +20,7 @@ if(global.pause == 0)
 }
 	
 // String
+draw_set_halign(fa_left)
 draw_text_transformed(x+75,y+50,"Record: " + string(global.record), 1.1, 1.1, 0);
 
 draw_set_alpha(1);
