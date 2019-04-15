@@ -54,7 +54,10 @@ if global.player_locked == 1 && global.game_over == false
 } else {
 	audio_resume_sound(Sfx_Background)
 	sfx_play = 0
-	
+	if audio_is_playing(Sfx_ChitChat)
+	{
+		audio_stop_sound(Sfx_ChitChat)
+	}
 	if audio_is_playing(Sfx_StunDur)
 	{
 		audio_stop_sound(Sfx_StunDur)

@@ -11,5 +11,6 @@ alarm[0] = -1
 
 // ALARM GROWING FACE
 faceDrawn = -1
+faceTrack = 0
 
 
