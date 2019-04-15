@@ -9,16 +9,10 @@ if (global.player_locked && added == false)
 if (global.player_locked == false && added)
 	added = false;
 
-if (global.discomf == global.discomf_max)
+if (global.win && global.discomf > 0)
 {
-	// End game
-	global.level_fade = true;
-	// TODO: Go to game over
-	global.next_room = rm_GameOver;
-	
-	global.game_over = true;
-	
-	global.record = 0;
+	// Decrement
+	global.discomf--;
 }
 
 // Plz work, it moves
