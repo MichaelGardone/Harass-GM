@@ -83,32 +83,37 @@ if global.pause == 0 && global.player_locked == 0
 		// Attack
 		case e_state.attack:
 		// If (player hides it lost) OR (player escapes hitboxes)
-		if OBJ_Player.player_escape
+		if(global.win == false)
 		{
-			OBJ_Player.player_escape = false;
-			
-			state = e_state.stunned;
-			
-			if global.stun_effect < 7
-				global.stun_effect++;
-			global.breakout_lim = round(global.breakout_lim * 1.5);
-		} else 
-		{
-			if (global.discomf == global.discomf_max)
+			if OBJ_Player.player_escape
 			{
-				// End game
-				global.level_fade = true;
-				
-				global.next_room = rm_GameOver;
-	
-				global.game_over = true;
-	
-				global.record = 0;
-			}
+				OBJ_Player.player_escape = false;
 			
-			global.player_locked = 1;
-			OBJ_Player.fval = 0;
+				state = e_state.stunned;
+			
+				if global.stun_effect < 7
+					global.stun_effect++;
+				global.breakout_lim = round(global.breakout_lim * 1.5);
+			} else 
+			{
+				show_debug_message(global.discomf);
+				if (global.discomf == global.discomf_max)
+				{
+					// End game
+					global.level_fade = true;
+				
+					global.next_room = rm_GameOver;
+	
+					global.game_over = true;
+	
+					global.record = 0;
+				}
+			
+				global.player_locked = 1;
+				OBJ_Player.fval = 0;
+			}
 		}
+		
 		break;
 	
 		case e_state.stunned:
