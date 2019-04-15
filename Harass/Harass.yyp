@@ -418,7 +418,7 @@
             "Key": "36d8356c-a3f9-471f-88ac-e5f26a81ff94",
             "Value": {
                 "id": "867d8f64-98e3-4d54-adae-1a9e0eb99ff1",
-                "resourcePath": "sprites\\Spr_HarChat\\Spr_HarChat.yy",
+                "resourcePath": "sprites\\Spr_Chat\\Spr_Chat.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -959,6 +959,14 @@
             }
         },
         {
+            "Key": "80d46406-2cde-49c7-9ca0-01f6ff303586",
+            "Value": {
+                "id": "57551be7-a990-4987-9b5b-2fdd32f08b96",
+                "resourcePath": "views\\80d46406-2cde-49c7-9ca0-01f6ff303586.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "81a7d711-bab7-40de-8f0b-f2c284420203",
             "Value": {
                 "id": "8bb9f781-87f5-45bd-9cec-91a60bf7c6b4",
@@ -1452,6 +1460,14 @@
                 "id": "3a249f4a-f507-4add-ab58-ba49bc41e549",
                 "resourcePath": "objects\\OBJ_Bg\\OBJ_Bg.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d5f5807e-ab9b-48d9-bfcf-22de2875a7cd",
+            "Value": {
+                "id": "bb3c31f5-2be9-4241-b00e-40cf71bb0594",
+                "resourcePath": "sprites\\Spr_Smerk\\Spr_Smerk.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

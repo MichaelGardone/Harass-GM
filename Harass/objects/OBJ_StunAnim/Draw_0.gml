@@ -39,32 +39,6 @@ if global.player_locked == 1 && global.game_over == false
 		d_press = 0
 	}
 	
-	// SCARY FACE
-	if faceTrack == false
-	{
-		instance_create_depth(OBJ_Player.x - 400,OBJ_Player.y - 30, -100, OBJ_HrssrFace)
-		faceTrack = true
-	}
-		
-	//SPOOKY EYEBALLS
-	if(!spawned)
-	{
-		spawned = true;
-		alarm[0] = room_speed * 2;
-		curr_max = static_max;
-		for(i = 0; i < static_max; i++)
-			draw[i] = false;
-	}
-	
-	for(i = 0; i < static_max; i++)
-	{
-		if (draw[i] == true && eyes_spawned[i] == false)
-		{
-			instance_create_depth(OBJ_Player.x + eyes[i, 1], OBJ_Player.y + eyes[i, 2], 
-			-100, eyes[i, 0]);
-			eyes_spawned[i] = true;
-		}
-	}
 } else {
 	audio_resume_sound(Sfx_Background)
 	sfx_play = 0
@@ -74,17 +48,4 @@ if global.player_locked == 1 && global.game_over == false
 		audio_stop_sound(Sfx_StunDur)
 		audio_play_sound(Sfx_StunBreak,6,0)
 	}
-	faceTrack = false;
-	
-	for(i = 0; i < static_max; i++)
-	{
-		if (draw[i] == true && eyes_spawned[i] == true)
-		{
-			instance_destroy(eyes[i, 0]);
-			eyes_spawned[i] = false;
-			draw[i] = false;
-		}
-	}
-	
-	spawned = false;
 }
