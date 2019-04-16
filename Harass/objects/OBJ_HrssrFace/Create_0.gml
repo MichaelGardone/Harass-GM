@@ -13,6 +13,5 @@ angleSway = 0
 // Direction of Sway, R:0 L:1
 dir = false
 
-// STRING SHAKE
-stringSpawn = 0
-
+// PUNCH FLASH
+flashPunch = 0

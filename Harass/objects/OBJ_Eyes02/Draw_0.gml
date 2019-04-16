@@ -1,5 +1,5 @@
 draw_self()
-image_angle = 5
+image_angle = -30
 image_speed = 1
 if image_index > image_number - 1
 {

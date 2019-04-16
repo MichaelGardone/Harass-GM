@@ -1,6 +1,6 @@
 // POSITION OF FACE
-x = OBJ_Player.x
-y = OBJ_Player.y
+x = camera_get_view_x(view_camera[0]);
+y = camera_get_view_y(view_camera[0]);
 
 // ANIM PACING FOR EYES AND FACE
 if global.player_locked == 1 && anim_Pace == 0
@@ -14,10 +14,17 @@ else if (global.player_locked == 0 && anim_Pace != 0)
 	alarm[0] = -1
 	anim_Pace = 0
 	//show_debug_message(string(anim_Pace))
+	
+	// REMOVES FACE
 	faceDrawn = -1
 	faceTrack -= 1
+	
+	// REMOVES EYES
+	eyeTotal = 0
+	
 }
 
+// CHECK WHEN TO SPAWN FACE
 if anim_Pace == 2 && faceTrack == 0
 	{
 		faceDrawn += 1

@@ -13,4 +13,6 @@ alarm[0] = -1
 faceDrawn = -1
 faceTrack = 0
 
+// SPAWNED EYES
+eyeTotal = 0
 

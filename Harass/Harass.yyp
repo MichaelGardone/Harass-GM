@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "1e704bdf-100d-4dce-9f51-873643cf6af0",
+            "Value": {
+                "id": "fe868ba4-ecfc-4471-8e64-d2a6b0b2e606",
+                "resourcePath": "shaders\\Shd_Flash\\Shd_Flash.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "21a8e109-c206-4f0a-a6e5-f1dd8594f16c",
             "Value": {
                 "id": "f2e46a27-6df2-4bda-85a0-8479087a4eb4",
