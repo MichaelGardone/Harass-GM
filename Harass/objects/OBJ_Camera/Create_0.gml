@@ -1,15 +1,10 @@
 camera = view_camera[0];
-
 follow = OBJ_Player;
-xTo = x;
-yTo = y;
 
-// Change this for changing camera lerp speed
-factor = 15;
-// Offset to keep player in center
-offset = 60;
+view_w_half = camera_get_view_width(camera) * 0.5;
+view_h_half = camera_get_view_height(camera) * 0.5;
 
-screenW = camera_get_view_width(view_camera[0]);
-screenH = camera_get_view_height(view_camera[0]);
-halfViewWidth = screenW / 2;
-halfViewHeight = screenH / 2;
+x_dest = xstart;
+y_dest = ystart;
+
+factor = 15.0;

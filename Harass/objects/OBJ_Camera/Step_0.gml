@@ -1,21 +1,15 @@
 if (global.pause == 0)
-{
-	// Keep updating this
-	halfViewWidth = camera_get_view_width(camera) / 2 + 50;
-	halfViewHeight = camera_get_view_height(camera) / 2;
-	
-	if (follow != noone)
+{	
+	if(instance_exists(follow))
 	{
-		xTo = follow.x + offset;
-		yTo = follow.y;
+		x_dest = follow.x;
+		y_dest = follow.y;
 	}
-
-	x += (xTo - x) / factor;
-	x = clamp(x, halfViewWidth, room_width - halfViewWidth);
-	//x += OBJ_ScreenShake.view_x;
 	
-	//y = yTo - OBJ_ScreenShake.view_y; // slap to y
+	x += (x_dest - x) / factor;
+	y += (y_dest - y) / factor;
+	show_debug_message(room_width);
+	x = clamp(x, view_w_half, room_width-view_w_half);
 	
-	camera_set_view_pos(camera, (x - halfViewWidth), (y - halfViewHeight));
-	
+	camera_set_view_pos(camera, x - view_w_half, y - view_h_half - 80);
 }

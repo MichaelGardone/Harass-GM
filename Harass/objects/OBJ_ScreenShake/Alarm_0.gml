@@ -1,1 +1,1 @@
-//shake = true;
+shake = true;

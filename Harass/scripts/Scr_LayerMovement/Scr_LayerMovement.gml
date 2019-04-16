@@ -47,7 +47,7 @@ if global.player_locked == 0 && global.pause == 0
 			is_hiding = true;
 		}
 		
-		if ((left || right) && is_hiding == true && fval == 100)
+		if ((left || right) && is_hiding == true && fval < 200)
 		{
 			is_hiding = false;
 		}

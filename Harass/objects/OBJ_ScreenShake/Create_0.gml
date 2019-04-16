@@ -1,12 +1,9 @@
-//if global.door = false
-//{
-	//alarm[0] = room_speed * 1.5;
-//}
+alarm[0] = room_speed * 1.5;
 
-view_x = 0;
-view_y = 0;
+view_yview = 0;
 
 shake = false;
 shakeDur = 5;
-shakeForce = 1;
-shakeForceY = 3;
+shakeForce = 3;
+
+cam0 = view_camera[0];
