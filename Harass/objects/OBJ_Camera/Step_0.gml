@@ -8,7 +8,7 @@ if (global.pause == 0)
 	
 	x += (x_dest - x) / factor;
 	y += (y_dest - y) / factor;
-	show_debug_message(room_width);
+	
 	x = clamp(x, view_w_half, room_width-view_w_half);
 	
 	camera_set_view_pos(camera, x - view_w_half, y - view_h_half - 80);
