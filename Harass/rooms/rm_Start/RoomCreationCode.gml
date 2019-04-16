@@ -22,9 +22,6 @@ global.next_room = rm_LvL1;
 // GAME OVER
 global.game_over = false;
 
-// STUN REDUCTION
-global.stun_effect = 0;
-
 // TIMES
 global.times[0] = 15;
 global.times[1] = 25;
@@ -41,4 +38,4 @@ global.discomf = 0;
 global.discomf_max = 7;
 
 // BREAKOUT LIMIT
-global.breakout_lim = 10;
+global.breakout_lim = 22;

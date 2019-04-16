@@ -1,13 +1,12 @@
 xx = display_get_gui_width()/2;
-yy = 50;
+yy = 100;
 
 draw_set_halign(fa_center);
 draw_set_font(Fnt_Press);
 draw_set_color(c_white);
 draw_set_alpha(1.0);
-draw_text(xx, yy, "HARASS");
+draw_text(xx, yy, "Credits");
 yy+=50;
-draw_text(xx, yy, "-Gold Master-");
 
 yy += yoffset;
 draw_set_halign(fa_center);

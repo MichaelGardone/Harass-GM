@@ -18,6 +18,17 @@ if (global.pause == 0)
 		draw_set_color(c_lime);
 	}
 }
+else
+{
+	if (alarm_save <= 30)
+	{
+		draw_set_color(c_green);
+	}
+	else 
+	{
+		draw_set_color(c_lime);
+	}
+}
 
 // String
 draw_set_halign(fa_left)

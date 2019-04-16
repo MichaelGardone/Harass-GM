@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "094553e9-66df-46c8-b836-cc7e7ab18659",
+            "Value": {
+                "id": "a6aed7f6-9ed5-4d39-abb6-43768f38361e",
+                "resourcePath": "rooms\\rm_Credits\\rm_Credits.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "0a4c98fc-2f32-4f1a-9398-9546fea31e27",
             "Value": {
                 "id": "e01d94fd-52a8-42ce-aba0-7aa5368c1bd9",
@@ -292,6 +300,14 @@
                 "id": "dd77dc93-73f6-4ce5-8e6c-df6cf47d3cac",
                 "resourcePath": "sounds\\Sfx_MashAD\\Sfx_MashAD.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "28585e91-96dc-48b5-818f-772c24e571b3",
+            "Value": {
+                "id": "e4d26d96-eb01-40f9-aa53-217b39d3b926",
+                "resourcePath": "objects\\OBJ_Options\\OBJ_Options.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -612,6 +628,14 @@
                 "id": "b59e4c18-2d1c-4d0b-97c8-c759c3d08c85",
                 "resourcePath": "sprites\\Spr_BluEyes\\Spr_BluEyes.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "515333ab-418a-4e0f-903d-52984995662f",
+            "Value": {
+                "id": "5757120c-862d-473b-a79c-baa9db59c3fa",
+                "resourcePath": "views\\515333ab-418a-4e0f-903d-52984995662f.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1095,6 +1119,14 @@
             }
         },
         {
+            "Key": "95271dd6-000a-4cc2-bbad-ee648f0efccd",
+            "Value": {
+                "id": "d43f7303-15e3-4b2e-8dea-f16c4dbce61e",
+                "resourcePath": "objects\\OBJ_Credits\\OBJ_Credits.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "96c0e7fd-2064-4c56-b853-303a0ecad00c",
             "Value": {
                 "id": "bfc767e2-93c4-4b47-ba26-91fa3975d01b",
@@ -1532,6 +1564,14 @@
                 "id": "d6a909e7-4ef4-46ba-9f31-ea3d2373cdd4",
                 "resourcePath": "sounds\\Sfx_StunBreak\\Sfx_StunBreak.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "ea5026e8-b24a-4e03-9158-f6f8e6de956d",
+            "Value": {
+                "id": "766cbef1-b4ab-470c-9e60-5816e79ceb0c",
+                "resourcePath": "rooms\\rm_Options\\rm_Options.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

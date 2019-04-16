@@ -90,13 +90,11 @@ if global.pause == 0 && global.player_locked == 0
 				OBJ_Player.player_escape = false;
 			
 				state = e_state.stunned;
-			
-				if global.stun_effect < 7
-					global.stun_effect++;
-				global.breakout_lim = round(global.breakout_lim * 1.5);
+				
+				global.breakout_lim = round(global.discomf * 1.5 * global.breakout_lim);
 			} else 
 			{
-				show_debug_message(global.discomf);
+				
 				if (global.discomf == global.discomf_max)
 				{
 					// End game
@@ -119,7 +117,7 @@ if global.pause == 0 && global.player_locked == 0
 		case e_state.stunned:
 		if_stunned = 1;
 		fval = 0;
-		alarm[0] = room_speed * (9 - global.stun_effect);
+		alarm[0] = room_speed * (10 - global.discomf);
 		state = e_state.sit_tight;
 		break;
 		

@@ -4,7 +4,13 @@ if (global.level_fade)
 	if (a == 1)
 	{
 		if(global.discomf > 0)
+		{
 			global.discomf--;
+			global.breakout_lim = round(global.discomf * 1.5 * global.breakout_lim);
+		}
+		else {
+			global.breakout_lim = 22;
+		}
 		
 		room_goto(global.next_room);
 		
