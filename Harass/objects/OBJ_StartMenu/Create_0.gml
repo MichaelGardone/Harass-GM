@@ -6,7 +6,8 @@ yoffset = 100;
 
 text[0] = "Start";
 text[1] = "Options";
-text[2] = "Exit Game";
+text[2] = "Credits";
+text[3] = "Exit Game";
 buttons = array_length_1d(text);
 
 menu_index = 0;
