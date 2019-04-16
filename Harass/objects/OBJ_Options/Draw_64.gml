@@ -6,7 +6,7 @@ draw_set_font(Fnt_Press);
 draw_set_color(c_white);
 draw_set_alpha(1.0);
 draw_text(xx, yy, "Options");
-yy+=50;
+yy+=25;
 
 yy += yoffset;
 draw_set_halign(fa_left);
