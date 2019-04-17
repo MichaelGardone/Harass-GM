@@ -11,15 +11,13 @@ if global.player_locked == 0 && global.pause == 0
 			global.win = true;
 			if (room == rm_LvL1)
 				global.next_room = rm_LvL2;
-			else if (room == rm_LvL2)
-				global.next_room = rm_LvL3;
 			// Tutorial is over, randomize
 			else	
 			{
 				// Re-seed to keep it random
 				// Does GM use linear randomization?
 				randomize();
-				global.next_room = choose(rm_LvL3, rm_LvL4);
+				global.next_room = choose(rm_LvL2, rm_LvL3, rm_LvL4);
 			}
 		}
 	} else {
@@ -34,8 +32,6 @@ if global.player_locked == 0 && global.pause == 0
 				|| instance3 != noone)))
 		{
 			alarm[1] = room_speed * hide_length;
-			
-			show_debug_message("hello");
 			
 			if(instance != noone)
 			{

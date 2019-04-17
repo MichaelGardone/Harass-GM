@@ -52,7 +52,7 @@ if tut_prog == 3
 	draw_set_halign(fa_center)
 	draw_text(OBJ_Player.x,OBJ_Player.y-110,"Hide with the 'W' key")
 	draw_sprite(Spr_Hide,betterIndex,OBJ_CrowdTutorial.x+64,OBJ_CrowdTutorial.y-60)
-	if keyboard_check_pressed(ord("X"))
+	if global.hide
 	{
 		tut_prog += 1
 		tut_hide += 1
