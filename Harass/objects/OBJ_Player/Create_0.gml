@@ -22,6 +22,9 @@ is_hiding = false;
 player_escape = false;
 breakout = 0;
 
+// Discomf bar incrementer
+time_to_incr = 5;
+
 // graphics
 fval = 255;
 // control how fast the fade is for hiding
@@ -34,3 +37,4 @@ dir_remain = 0;
 
 // TIMER STORAGE
 hiding_timer = -1;
+discomf_incr_store = -1;

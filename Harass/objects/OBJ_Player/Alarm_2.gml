@@ -1,2 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+if(global.player_locked == 1 && global.pause == false)
+{
+	global.discomf++;
+	alarm[2] = room_speed * time_to_incr;
+}
