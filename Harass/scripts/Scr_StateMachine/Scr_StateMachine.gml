@@ -92,7 +92,7 @@ if global.pause == 0 && global.player_locked == 0
 			
 				state = e_state.stunned;
 				
-				global.breakout_lim = round(global.discomf * 1.5 * global.breakout_lim);
+				global.breakout_lim += round(global.discomf * 12);
 			} else 
 			{
 				

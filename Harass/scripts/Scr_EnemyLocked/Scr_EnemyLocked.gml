@@ -7,7 +7,7 @@ if global.player_locked == 1
 		breakout++;	
 	}
 	
-	if breakout == global.breakout_lim
+	if breakout == global.breakout_lim && player_escape == false
 	{
 		player_escape = true;
 		breakout = 0;
