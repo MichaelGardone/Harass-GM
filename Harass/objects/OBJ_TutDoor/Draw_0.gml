@@ -2,38 +2,83 @@ draw_self()
 image_speed = 1
 
 draw_self();
+draw_set_color(c_white)
+//// TUTORIAL
 
-// TUTORIAL
+// OBJECTIVE
+if tut_prog == 0
+{
+	draw_set_halign(fa_center)
+	draw_text(OBJ_Player.x,OBJ_Player.y-200,"-TUTORIAL LEVEL-")
+	draw_text_transformed(OBJ_Player.x,OBJ_Player.y-170,"Objective: Use public transport and ",
+	0.75,0.75,0)
+	draw_text_transformed(OBJ_Player.x,OBJ_Player.y-140,"exit the train once you've arrived at ",
+	0.75,0.75,0)
+	draw_text_transformed(OBJ_Player.x,OBJ_Player.y-110,"your destination.",
+	0.75,0.75,0)
+}
+
+// HOW TO MOVE
 if tut_prog == 1
 {
-	draw_text(OBJ_Player.x,OBJ_Player.y-60,"Move with the 'A' and 'D' keys.")
-	if keyboard_check_pressed(ord("Z"))
+	draw_sprite(Spr_A_Arrow,a_press,OBJ_Player.x-30,OBJ_Player.y)
+	if keyboard_check_pressed(ord("A")) && global.pause == 0
 	{
-		tut_prog += 1
-		show_debug_message("Movement Complete")
-		alarm[0] = room_speed * 3
+		a_press = 1
+	} else if keyboard_check_released(ord("A")) {
+		a_press = 0
+	}
+	draw_sprite(Spr_D_Arrow,d_press,OBJ_Player.x+30,OBJ_Player.y)
+	if keyboard_check_pressed(ord("D")) && global.pause == 0
+	{
+		d_press = 1
+	} else if keyboard_check_released(ord("D")) {
+		d_press = 0
+	}
+	if pressTemp > 1
+	{
+		if alarm[2] == -1
+		{
+			tut_prog += 1
+			tut_move += 1
+			alarm[0] = room_speed * 3
+		}
 	}
 }
 
+// HOW TO HIDE - REMOVE X PRESS ONCE IT WORKS
 if tut_prog == 3
 {
-	draw_text(OBJ_Player.x,OBJ_Player.y-60,"Hide with the 'S' key")
+	draw_set_halign(fa_center)
+	draw_text(OBJ_Player.x,OBJ_Player.y-110,"Hide with the 'W' key")
+	draw_sprite(Spr_Hide,betterIndex,OBJ_CrowdTutorial.x+64,OBJ_CrowdTutorial.y-60)
 	if keyboard_check_pressed(ord("X"))
 	{
 		tut_prog += 1
-		show_debug_message("Hide Complete")
+		tut_hide += 1
 		alarm[0] = room_speed * 3
 	}
 }
+
+// WHO TO AVOID
 if tut_prog == 5
 {
-	draw_text(OBJ_Player.x,OBJ_Player.y-60,"Be wary of those who walk beside you")
-	if keyboard_check_pressed(ord("C"))
+	draw_set_halign(fa_center)
+	draw_text(OBJ_Player.x,OBJ_Player.y-110,"Be wary of pedestrians.")
+	draw_sprite(Spr_Locater,betterIndex,OBJ_Stalker01.x-15,OBJ_CrowdTutorial.y-60)
+	if alarm[1] = -1
 	{
 		tut_prog += 1
+		tut_enemy += 1
 		show_debug_message("Aware Complete")
-		alarm[0] = room_speed * 3
 	}
+}
+
+// HOW TO EXIT
+if tut_enemy == 1 && tut_hide == 1 && tut_move == 1
+{
+	draw_set_halign(fa_center)
+	draw_text(OBJ_Player.x,OBJ_Player.y-110,"You have arrived. Use 'W' to Exit.")
 }
 
 // DOOR OPENING ANIMATION
@@ -48,6 +93,7 @@ if (door_open == true && global.pause == 0)
 	if (image_index+image_speed >= image_number)
 	{
 		image_speed = 0;
+		global.door = true
 	}
 	if (!audio_is_playing(Sfx_DoorAlert)) & (!audio_is_playing(Sfx_Door))
 	{
@@ -70,7 +116,7 @@ if (door_open == true)
 	{
 		audio_pause_sound(Sfx_Tram)
 	} 
-	else
+else
 	{
 		audio_resume_sound(Sfx_Tram)
-	} 
+	}
