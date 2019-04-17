@@ -1063,6 +1063,14 @@
             }
         },
         {
+            "Key": "7faaeca4-7ae2-4af5-91ac-c5e63ebd4b62",
+            "Value": {
+                "id": "25409160-a5ea-46de-a75f-eb78721e2162",
+                "resourcePath": "objects\\OBJ_FadeSprite\\OBJ_FadeSprite.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "80d46406-2cde-49c7-9ca0-01f6ff303586",
             "Value": {
                 "id": "57551be7-a990-4987-9b5b-2fdd32f08b96",
@@ -1108,6 +1116,14 @@
                 "id": "ab0a6175-c417-48ae-9c94-781e9ec0c01a",
                 "resourcePath": "objects\\OBJ_Timer\\OBJ_Timer.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "835ec59c-7bf8-4739-aaaa-1a45dbf91b45",
+            "Value": {
+                "id": "c2a1d3cb-6a3a-40db-883d-84c8ca01c39d",
+                "resourcePath": "sprites\\Fade\\Fade.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

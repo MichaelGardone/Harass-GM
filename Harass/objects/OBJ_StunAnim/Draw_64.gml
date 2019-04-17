@@ -1,17 +1,10 @@
 if global.player_locked == 1 && global.game_over == false
 {
-	width = camera_get_view_width(view_camera[0]);
-	height = camera_get_view_width(view_camera[0]);
 	
-	draw_set_color(c_black);
-	draw_set_alpha(a);
-	draw_rectangle(
-		0, 0,
-		width, height,
-		0
-		);
-	draw_set_alpha(1);
-	draw_set_color(c_white);
+	if(anim_Pace > 2)
+	{
+		instance_create_depth(x,y,-99,OBJ_FadeSprite);
+	}
 	
 	//CREEPY GROWING FACE
 	if faceDrawn == 0
@@ -60,6 +53,7 @@ if global.player_locked == 1 && global.game_over == false
 			instance_create_depth(OBJ_HrssrFace.x+300,OBJ_HrssrFace.y+140,-100,OBJ_Eyes06)
 			eyeTotal += 1
 		}
+	
 } else if global.player_locked == 0 {
 	if instance_exists(OBJ_Eyes01)
 	{
@@ -84,5 +78,9 @@ if global.player_locked == 1 && global.game_over == false
 	if instance_exists(OBJ_Eyes06)
 	{
 		instance_destroy(OBJ_Eyes06)
+	}
+	if instance_exists(OBJ_FadeSprite)
+	{
+		instance_destroy(OBJ_FadeSprite)
 	}
 }
