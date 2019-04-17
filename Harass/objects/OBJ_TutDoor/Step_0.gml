@@ -43,3 +43,11 @@ if pressTemp == 2
 	alarm[2] = room_speed * 2
 	pressTemp += 1
 }
+
+show_debug_message(string(global.open))
+if door_open = true
+{
+	global.open = true
+} else {
+	global.open = false
+}

@@ -55,9 +55,21 @@ else if global.player_locked == 1
 }
 		
 // EXIT
-if global.open == true && !place_meeting(OBJ_Player.x,OBJ_Player.y,OBJ_Door)
+if global.open == true && !place_meeting(OBJ_Player.x,OBJ_Player.y,OBJ_Door) && instance_exists(OBJ_Door)
 	{
 	if (OBJ_Door.x > OBJ_Player.x)
+		{
+		draw_sprite(Spr_ExitR,image_index,OBJ_Player.x + 120, OBJ_Player.y)
+		}
+	else
+		{
+		draw_sprite(Spr_ExitL,image_index,OBJ_Player.x - 120, OBJ_Player.y)
+		}
+	}
+	
+if global.open == true && !place_meeting(OBJ_Player.x,OBJ_Player.y,OBJ_TutDoor) && instance_exists(OBJ_TutDoor)
+	{
+	if (OBJ_TutDoor.x > OBJ_Player.x)
 		{
 		draw_sprite(Spr_ExitR,image_index,OBJ_Player.x + 120, OBJ_Player.y)
 		}
