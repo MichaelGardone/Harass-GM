@@ -1,6 +1,7 @@
 
 // inputs
-Scr_Input();
+if(global.pause == 0)
+	Scr_Input();
 
 // movement
 Scr_Movement();

@@ -1,4 +1,5 @@
 
+
 if global.player_locked == 0 && global.pause == 0
 {
 	if(place_meeting(x,y,OBJ_Door) || place_meeting(x,y,OBJ_TutDoor))

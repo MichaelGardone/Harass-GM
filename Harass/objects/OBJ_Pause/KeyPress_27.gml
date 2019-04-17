@@ -1,8 +1,7 @@
-
-if global.pause == 0
-{
+if(global.pause == 0)
 	global.pause = 1;
-} else {
+else
+{
 	global.pause = 0;
-	y_pos = 0;
+	menu_current = 0;
 }

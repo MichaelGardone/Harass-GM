@@ -62,7 +62,7 @@ else
 			audio_group_set_gain(sound_effects, global.sfx_level, 0);
 		}
 		
-		if(msc_vol && global.msc_level)
+		if(msc_vol && global.groove)
 		{
 			if (keyboard_check_pressed(ord("D")))
 			{
@@ -75,5 +75,4 @@ else
 			audio_group_set_gain(music, global.msc_level, 0);
 		}
 	}
-	
 }

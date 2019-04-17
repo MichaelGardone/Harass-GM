@@ -72,6 +72,7 @@ for (i=0; i < gui_buttons; i++) {
 	draw_text(400+i*100,300,gui_contrl[i]);	
 }
 
+draw_set_color(c_white);
 if (global.msc_level == 0)
 {
 	draw_text(400, 375, string(round(global.msc_level * 100)) + ">");
