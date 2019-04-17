@@ -1,4 +1,4 @@
-if(instance_count(OBJ_Meter) > 1)
+if(instance_number(OBJ_Meter) > 1)
 	instance_destroy();
 
 added = false;

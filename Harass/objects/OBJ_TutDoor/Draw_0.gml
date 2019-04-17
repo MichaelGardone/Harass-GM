@@ -84,7 +84,7 @@ if tut_enemy == 1 && tut_hide == 1 && tut_move == 1
 // DOOR OPENING ANIMATION
 if (door_open == true && global.pause == 0)
 {
-	if (!audio_is_playing(Sfx_Door) & (sfx_track == 0))
+	if (!audio_is_playing(Sfx_Door) && (sfx_track == 0) && global.sfx_on)
 	{
 		audio_play_sound(Sfx_Door,10,0);
 		sfx_track = 1;
@@ -95,7 +95,7 @@ if (door_open == true && global.pause == 0)
 		image_speed = 0;
 		global.door = true
 	}
-	if (!audio_is_playing(Sfx_DoorAlert)) & (!audio_is_playing(Sfx_Door))
+	if (!audio_is_playing(Sfx_DoorAlert)) && (!audio_is_playing(Sfx_Door) && global.sfx_on)
 	{
 		audio_play_sound(Sfx_DoorAlert,5,0);
 	}
@@ -108,15 +108,15 @@ if (door_open == true && global.pause == 0)
 }
 
 // ENVIRONMENT SOUNDS
-if (door_open == false && (!audio_is_playing(Sfx_Tram)))
-	{
-		audio_play_sound(Sfx_Tram,2,1);
-	}
-if (door_open == true)
-	{
-		audio_pause_sound(Sfx_Tram)
-	} 
-else
-	{
-		audio_resume_sound(Sfx_Tram)
-	}
+if (door_open == false && (!audio_is_playing(Sfx_Tram)) && global.sfx_on)
+{
+	audio_play_sound(Sfx_Tram,2,1);
+}
+if (door_open == true && global.sfx_on)
+{
+	audio_pause_sound(Sfx_Tram)
+} 
+else if(door_open == false && global.sfx_on)
+{
+	audio_resume_sound(Sfx_Tram)
+}

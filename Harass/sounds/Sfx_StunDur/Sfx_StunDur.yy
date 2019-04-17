@@ -3,7 +3,7 @@
     "modelName": "GMSound",
     "mvc": "1.0",
     "name": "Sfx_StunDur",
-    "audioGroupGuid": "9f154e3a-b56c-4d12-866a-8a1770a10db6",
+    "audioGroupGuid": "80f83f0c-eeaf-44f1-99d2-3ccdc4a7e8e7",
     "bitDepth": 1,
     "bitRate": 128,
     "kind": 0,

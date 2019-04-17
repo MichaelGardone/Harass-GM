@@ -12,7 +12,7 @@ if (menu_index > buttons - 1)
 	menu_index = 0;
 }
 
-if (menu_index != last_selected)
+if (menu_index != last_selected && global.sfx_on)
 {
 	audio_play_sound(Sfx_MoveMenu,1,false);
 }

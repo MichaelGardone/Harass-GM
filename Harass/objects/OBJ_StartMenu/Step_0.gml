@@ -13,7 +13,7 @@ if(prompt_on == false)
 		menu_index = 0;
 	}
 
-	if (menu_index != last_selected)
+	if (menu_index != last_selected && global.sfx_on)
 	{
 		audio_play_sound(Sfx_MoveMenu,1,false);
 	}
@@ -34,7 +34,7 @@ else {
 		prompt_index = 0;
 	}
 
-	if (prompt_index != prompt_last_selected)
+	if (prompt_index != prompt_last_selected && global.sfx_on)
 	{
 		audio_play_sound(Sfx_MoveMenu,1,false);
 	}

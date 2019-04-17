@@ -26,15 +26,10 @@ else if (global.player_locked == 0 && anim_Pace != 0)
 	a = 0;
 }
 
-if(anim_Pace > 2 && a != 1)
-{
-	a = clamp(a + (fade * fade_speed), 0, 1);
-}
-
 // CHECK WHEN TO SPAWN FACE
 if anim_Pace == 2 && faceTrack == 0
 {
 	faceDrawn += 1
-	show_debug_message(string(faceDrawn))
+	//show_debug_message(string(faceDrawn))
 	faceTrack += 1
 }

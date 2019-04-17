@@ -11,7 +11,7 @@ if global.player_locked == 1 && global.game_over == false
 		{
 			instance_create_depth(x+520,y+310,-100,OBJ_HrssrFace)
 			faceDrawn += 1
-			if !audio_is_playing(Sfx_ChitChat)
+			if !audio_is_playing(Sfx_ChitChat) && global.sfx_on
 			{
 				audio_play_sound(Sfx_ChitChat,5,0)
 			}
