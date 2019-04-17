@@ -17,6 +17,9 @@ music_control = false;
 sfx_control = false;
 gui_control = false;
 
+sfx_vol = false;
+msc_vol = false;
+
 menu_index = 0;
 last_selected = 0;
 
@@ -32,9 +35,9 @@ music_buttons = array_length_1d(music_contrl);
 sfx_contrl[0] = "Off";
 sfx_contrl[1] = "On";
 sfx_buttons = array_length_1d(sfx_contrl);
-sfx_active = 1;
+//sfx_active = 1;
 
 gui_contrl[0] = "Off";
 gui_contrl[1] = "On";
 gui_buttons = array_length_1d(sfx_contrl);
-gui_active = 1;
+//gui_active = 1;

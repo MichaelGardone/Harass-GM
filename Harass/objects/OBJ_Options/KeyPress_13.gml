@@ -3,33 +3,41 @@ if (y_movement_active)
 	switch(menu_index)
 	{
 		case 0:
-			audio_play_sound(Sfx_SelectMenu,2,0);
+			if(global.sfx_on)
+				audio_play_sound(Sfx_SelectMenu,2,0);
 			y_movement_active = false;
 			horz_index = global.groove;
 			music_control = true;
 			break;
 		case 1:
-			audio_play_sound(Sfx_SelectMenu,2,0);
+			if(global.sfx_on)
+				audio_play_sound(Sfx_SelectMenu,2,0);
 			y_movement_active = false;
-			horz_index = sfx_active;
+			horz_index = global.sfx_on;
 			sfx_control = true;
 			break;
 		case 2:
-			audio_play_sound(Sfx_SelectMenu,2,0);
+			if(global.sfx_on)
+				audio_play_sound(Sfx_SelectMenu,2,0);
 			y_movement_active = false;
-			horz_index = gui_active;
+			horz_index = global.gui_on;
 			gui_control = true;
 			break;
 		case 3:
-			audio_play_sound(Sfx_SelectMenu,2,0);
+			if(global.sfx_on)
+				audio_play_sound(Sfx_SelectMenu,2,0);
 			y_movement_active = false;
+			msc_vol = true;
 			break;
 		case 4:
-			audio_play_sound(Sfx_SelectMenu,2,0);
+			if(global.sfx_on)
+				audio_play_sound(Sfx_SelectMenu,2,0);
 			y_movement_active = false;
+			sfx_vol = true;
 			break;
 		case 5:
-			audio_play_sound(Sfx_SelectMenu,2,0);
+			if(global.sfx_on)
+				audio_play_sound(Sfx_SelectMenu,2,0);
 			global.next_room = rm_Start;
 			global.level_fade = true;
 			break;
@@ -41,13 +49,15 @@ else {
 		switch(horz_index)
 		{
 			case 0:
-				audio_play_sound(Sfx_SelectMenu,2,0);
+				if(global.sfx_on)
+					audio_play_sound(Sfx_SelectMenu,2,0);
 				y_movement_active = true;
 				music_control = false;
 				global.groove = 0;
 				break;
 			case 1:
-				audio_play_sound(Sfx_SelectMenu,2,0);
+				if(global.sfx_on)
+					audio_play_sound(Sfx_SelectMenu,2,0);
 				y_movement_active = true;
 				music_control = false;
 				global.groove = 1;
@@ -60,16 +70,18 @@ else {
 		switch(horz_index)
 		{
 			case 0:
-				audio_play_sound(Sfx_SelectMenu,2,0);
+				if(global.sfx_on)
+					audio_play_sound(Sfx_SelectMenu,2,0);
 				y_movement_active = true;
 				sfx_control = false;
-				sfx_active = 0;
+				global.sfx_on = 0;
 				break;
 			case 1:
-				audio_play_sound(Sfx_SelectMenu,2,0);
+				if(global.sfx_on)
+					audio_play_sound(Sfx_SelectMenu,2,0);
 				y_movement_active = true;
 				sfx_control = false;
-				sfx_active = 1;
+				global.sfx_on = 1;
 				break;
 		}
 	}
@@ -79,18 +91,32 @@ else {
 		switch(horz_index)
 		{
 			case 0:
-				audio_play_sound(Sfx_SelectMenu,2,0);
+				if(global.sfx_on)
+					audio_play_sound(Sfx_SelectMenu,2,0);
 				y_movement_active = true;
 				gui_control = false;
-				gui_active = 0;
+				global.gui_on = 0;
 				break;
 			case 1:
-				audio_play_sound(Sfx_SelectMenu,2,0);
+				if(global.sfx_on)
+					audio_play_sound(Sfx_SelectMenu,2,0);
 				y_movement_active = true;
 				gui_control = false;
-				gui_active = 1;
+				global.gui_on = 1;
 				break;
 		}
+	}
+	
+	if(msc_vol)
+	{
+		msc_vol = false;
+		y_movement_active = true;
+	}
+	
+	if(sfx_vol)
+	{
+		sfx_vol = false;
+		y_movement_active = true;
 	}
 	
 }
