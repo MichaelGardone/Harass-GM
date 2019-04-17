@@ -9,6 +9,7 @@ else if (room == rm_LvL3)
 else if (room == rm_LvL4)
 	alarm[11] = room_speed * global.times[3];
 
+// ANIM VARIABLE
 door_open = false;
 	
 to_open = 0;

@@ -13,7 +13,8 @@
         "80d46406-2cde-49c7-9ca0-01f6ff303586",
         "845e7021-2832-440e-87e5-f11283b28c6e",
         "36d8356c-a3f9-471f-88ac-e5f26a81ff94",
-        "d5f5807e-ab9b-48d9-bfcf-22de2875a7cd"
+        "d5f5807e-ab9b-48d9-bfcf-22de2875a7cd",
+        "c9833069-1d69-40b0-94ed-f9b3ee82c55f"
     ],
     "filterType": "GMSprite",
     "folderName": "Stun",

@@ -17,13 +17,13 @@ global.record = 0;
 global.open = false;
 
 // NEXT ROOM
-global.next_room = rm_LvL1;
+global.next_room = rm_LvL3;
 
 // GAME OVER
 global.game_over = false;
 
 // TIMES
-global.times[0] = 15;
+global.times[0] = -1;
 global.times[1] = 25;
 global.times[2] = 35;
 global.times[3] = 45;

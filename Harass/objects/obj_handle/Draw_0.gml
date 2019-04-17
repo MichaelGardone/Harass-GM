@@ -1,6 +1,6 @@
 draw_self()
 image_speed = 1
-if global.door == true
+if global.open == true
 	{
 	sprite_index = Spr_Handle_Slim
 	}

@@ -5,6 +5,9 @@ sfx_play = 0
 a_press = 0
 d_press = 0
 
+a_played = 0
+d_played = 0
+
 // ALARM PACING FOR CREEPY ANIM
 anim_Pace = 0
 alarm[0] = -1

@@ -55,7 +55,7 @@ else if global.player_locked == 1
 }
 		
 // EXIT
-if global.door == true && !place_meeting(OBJ_Player.x,OBJ_Player.y,OBJ_Door)
+if global.open == true && !place_meeting(OBJ_Player.x,OBJ_Player.y,OBJ_Door)
 	{
 	if (OBJ_Door.x > OBJ_Player.x)
 		{

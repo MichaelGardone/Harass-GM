@@ -22,22 +22,28 @@ if global.player_locked == 1 && global.game_over == false
 	if (keyboard_check(ord("A")))
 	{
 		a_press = 1
-		if !audio_is_playing(Sfx_MashAD)
+		if !audio_is_playing(Sfx_MashAD) && a_played == 0
 		{
 			audio_play_sound(Sfx_MashAD,2,0)
+			a_played += 1
 		}
 	} else {
 		a_press = 0
+		if keyboard_check_released(ord("A"))
+			a_played -= 1
 	}
 	if (keyboard_check(ord("D")))
 	{
 		d_press = 1
-		if !audio_is_playing(Sfx_MashAD)
+		if !audio_is_playing(Sfx_MashAD) && d_played == 0
 		{
 			audio_play_sound(Sfx_MashAD,2,0)
+			d_played += 1
 		}
 	} else {
 		d_press = 0
+		if keyboard_check_released(ord("D"))
+			d_played -= 1
 	}
 	
 } else {

@@ -2,7 +2,8 @@ draw_self()
 
 // METER LABEL
 draw_set_color(c_white)
-draw_text_transformed(x-190,y-10,"Discomfort Meter",1,1,0)
+draw_set_halign(fa_center)
+draw_text_transformed(x,y-10,"Discomfort Meter",1,1,0)
 
 // PAUSE ANIM
 if global.pause == 1

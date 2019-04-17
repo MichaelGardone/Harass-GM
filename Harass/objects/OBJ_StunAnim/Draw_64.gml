@@ -14,25 +14,25 @@ if global.player_locked == 1 && global.game_over == false
 	//EYE SPAWN
 	if anim_Pace == 4 && eyeTotal == 0
 		{
-			instance_create_depth(OBJ_HrssrFace.x-300,OBJ_HrssrFace.y-275,-100,OBJ_Eyes01)
+			instance_create_depth(OBJ_HrssrFace.x-300,OBJ_HrssrFace.y-215,-100,OBJ_Eyes01)
 			eyeTotal += 1
 		}
 	
 	if anim_Pace == 6 && eyeTotal == 1
 		{
-			instance_create_depth(OBJ_HrssrFace.x+300,OBJ_HrssrFace.y-275,-100,OBJ_Eyes02)
+			instance_create_depth(OBJ_HrssrFace.x+300,OBJ_HrssrFace.y-215,-100,OBJ_Eyes02)
 			eyeTotal += 1
 		}
 	
 	if anim_Pace == 8 && eyeTotal == 2
 		{
-			instance_create_depth(OBJ_HrssrFace.x-375,OBJ_HrssrFace.y-75,-100,OBJ_Eyes03)
+			instance_create_depth(OBJ_HrssrFace.x-375,OBJ_HrssrFace.y-50,-100,OBJ_Eyes03)
 			eyeTotal += 1
 		}
 	
 	if anim_Pace == 10 && eyeTotal == 3
 		{
-			instance_create_depth(OBJ_HrssrFace.x+375,OBJ_HrssrFace.y-75,-100,OBJ_Eyes04)
+			instance_create_depth(OBJ_HrssrFace.x+375,OBJ_HrssrFace.y-50,-100,OBJ_Eyes04)
 			eyeTotal += 1
 		}
 	
@@ -44,7 +44,7 @@ if global.player_locked == 1 && global.game_over == false
 	
 	if anim_Pace == 14 && eyeTotal == 5
 		{
-			instance_create_depth(OBJ_HrssrFace.x+300,OBJ_HrssrFace.ys+140,-100,OBJ_Eyes06)
+			instance_create_depth(OBJ_HrssrFace.x+300,OBJ_HrssrFace.y+140,-100,OBJ_Eyes06)
 			eyeTotal += 1
 		}
 } else if global.player_locked == 0 {
