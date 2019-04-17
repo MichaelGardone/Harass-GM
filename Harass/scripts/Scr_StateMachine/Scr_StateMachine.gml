@@ -104,12 +104,15 @@ if global.pause == 0 && global.player_locked == 0
 					global.next_room = rm_GameOver;
 	
 					global.game_over = true;
-	
+					
 					global.record = 0;
+					
+					global.reason = "Discomfort meter rose too high.";
 				}
-			
-				global.player_locked = 1;
-				OBJ_Player.fval = 0;
+				else {
+					global.player_locked = 1;
+					OBJ_Player.fval = 0;
+				}
 			}
 		}
 		

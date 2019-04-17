@@ -2,7 +2,7 @@ display_set_gui_size(1080,620);
 
 y_pos = 0;
 
-yoffset = 100;
+yoffset = 75;
 
 text[0] = "Restart";
 text[1] = "Exit to Menu";

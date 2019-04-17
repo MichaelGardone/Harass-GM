@@ -7,6 +7,7 @@ switch(menu_index)
 		global.level_fade = true;
 		global.next_room = rm_LvL3;
 		global.game_over = false;
+		global.reason = "";
 		break;
 	case 1:
 		if(global.sfx_on)

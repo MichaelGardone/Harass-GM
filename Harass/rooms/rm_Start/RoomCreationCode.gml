@@ -19,6 +19,9 @@ global.next_room = rm_LvL1;
 // GAME OVER
 global.game_over = false;
 
+// WHY DID I FAIL?
+global.reason = "";
+
 // TIMES
 global.times[0] = -1; // lvl 1 - 1, TUTORIAL
 global.times[1] = 25; // lvl 2 - 2
