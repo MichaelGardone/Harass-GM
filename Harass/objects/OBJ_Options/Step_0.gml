@@ -29,9 +29,9 @@ else
 
 	if (horz_index < 0)
 	{
-		horz_index = buttons - 1;
+		horz_index = music_buttons - 1;
 	}
-	if (horz_index > buttons - 1)
+	if (horz_index > music_buttons - 1)
 	{
 		horz_index = 0;
 	}

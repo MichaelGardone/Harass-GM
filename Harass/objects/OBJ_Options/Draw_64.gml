@@ -17,4 +17,59 @@ for (i=0; i < buttons; i++) {
 		draw_set_color(c_gray);
 	draw_text(50,yy+i*yoffset,text[i]);	
 }
+
+for (i=0; i < music_buttons; i++) {
+	if (music_control == true)
+	{
+		if i == horz_index
+			draw_set_color(c_white);
+		else
+			draw_set_color(c_gray);
+	}
+	else {
+		if i == global.groove
+			draw_set_color(c_white);
+		else
+			draw_set_color(c_gray);
+	}
+	
+	draw_text(400+i*100,150,music_contrl[i]);	
+}
+
+for (i=0; i < sfx_buttons; i++) {
+	if (sfx_control == true)
+	{
+		if i == horz_index
+			draw_set_color(c_white);
+		else
+			draw_set_color(c_gray);
+	}
+	else {
+		if i == sfx_active
+			draw_set_color(c_white);
+		else
+			draw_set_color(c_gray);
+	}
+	
+	draw_text(400+i*100,225,music_contrl[i]);	
+}
+
+for (i=0; i < gui_buttons; i++) {
+	if (gui_control == true)
+	{
+		if i == horz_index
+			draw_set_color(c_white);
+		else
+			draw_set_color(c_gray);
+	}
+	else {
+		if i == gui_active
+			draw_set_color(c_white);
+		else
+			draw_set_color(c_gray);
+	}
+	
+	draw_text(400+i*100,300,gui_contrl[i]);	
+}
+
 draw_set_halign(fa_left);
