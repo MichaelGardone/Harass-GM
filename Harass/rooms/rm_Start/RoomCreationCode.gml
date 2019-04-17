@@ -17,7 +17,7 @@ global.record = 0;
 global.open = false;
 
 // NEXT ROOM
-global.next_room = rm_LvL3;
+global.next_room = rm_LvL1;
 
 // GAME OVER
 global.game_over = false;
