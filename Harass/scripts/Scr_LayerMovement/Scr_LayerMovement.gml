@@ -1,9 +1,10 @@
 
 if global.player_locked == 0 && global.pause == 0
 {
-	if(place_meeting(x,y,OBJ_Door))
+	if(place_meeting(x,y,OBJ_Door) || place_meeting(x,y,OBJ_TutDoor))
 	{
-		if (w_key && OBJ_Door.door_open && global.win == false)
+		if (w_key && ((instance_exists(OBJ_Door) && OBJ_Door.door_open)
+			|| (instance_exists(OBJ_TutDoor) && OBJ_TutDoor.door_open)) && global.win == false)
 		{
 			global.record += 1;
 			global.level_fade = true;
@@ -25,11 +26,16 @@ if global.player_locked == 0 && global.pause == 0
 		
 		instance = instance_place(x,y, OBJ_Crowd01);
 		instance2 = instance_place(x,y, OBJ_Crowd02);
+		instance3 = instance_place(x,y, OBJ_CrowdTutorial);
 		
-		if (w_key && (place_meeting(x,y, OBJ_Crowd01) || place_meeting(x,y,OBJ_Crowd02))
-			&& ((instance != noone && instance.can_hide) || (instance2 != noone && instance2.can_hide)))
+		if (w_key && (place_meeting(x,y, OBJ_Crowd01) || place_meeting(x,y,OBJ_Crowd02)
+			|| place_meeting(x,y, OBJ_CrowdTutorial))
+			&& ((instance != noone && instance.can_hide) || (instance2 != noone && instance2.can_hide
+				|| instance3 != noone)))
 		{
 			alarm[1] = room_speed * hide_length;
+			
+			show_debug_message("hello");
 			
 			if(instance != noone)
 			{
@@ -41,6 +47,12 @@ if global.player_locked == 0 && global.pause == 0
 			{
 				instance2.can_hide = false;
 				instance2.alarm[0] = room_speed * (instance2.time_to_open);
+			}
+			
+			if (instance3 != noone)
+			{
+				instance3.can_hide = false;
+				instance3.alarm[0] = room_speed * (instance3.time_to_open);
 			}
 			
 			fval = 255;
