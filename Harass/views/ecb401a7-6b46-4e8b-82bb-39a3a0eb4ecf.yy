@@ -6,7 +6,8 @@
     "children": [
         "3a633452-3593-4d9c-a416-34bc4aaeb1cb",
         "ba21eb45-f57f-4dbc-8696-80bd29363d0d",
-        "b1eadc48-2159-47f9-8e2f-0026bfad3131"
+        "b1eadc48-2159-47f9-8e2f-0026bfad3131",
+        "729bb463-0217-4637-9966-6dff9ef02828"
     ],
     "filterType": "GMSprite",
     "folderName": "Player (Eva)",
