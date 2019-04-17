@@ -46,11 +46,6 @@ for(i = 0; i < instance_number(Obj_Node); i++)
 		cindx = i;
 	}
 	
-	/*res1 = (x - curr_node.x);
-	res2 = (x - cn.x);
-	show_debug_message("at " + string(i) + ": (x - curr_node.x) = " + string(res1)
-	+  "; (x - cn.x) = " + string(res2));*/
-	
 	nodes[i] = cn;
 	maxnds++;
 }
