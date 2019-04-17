@@ -5,6 +5,8 @@ y = camera_get_view_y(view_camera[0]);
 // ANIM PACING FOR EYES AND FACE
 if global.player_locked == 1 && anim_Pace == 0
 {
+	a = clamp(a + (fade * fade_speed), 0, 1);
+
 	anim_Pace += 1
 	//show_debug_message(string(anim_Pace))
 	alarm[0] = room_speed * 2
@@ -22,6 +24,7 @@ else if (global.player_locked == 0 && anim_Pace != 0)
 	// REMOVES EYES
 	eyeTotal = 0
 	
+	a = 0;
 }
 
 // CHECK WHEN TO SPAWN FACE
