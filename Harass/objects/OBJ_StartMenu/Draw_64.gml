@@ -33,7 +33,7 @@ if(prompt_on)
 			draw_set_color(c_white);
 		else
 			draw_set_color(c_gray);
-		draw_text((xx-100) + i * yoffset,yy,prompt[i]);	
+		draw_text((xx-150) + i * 200,yy,prompt[i]);	
 	}
 }
 

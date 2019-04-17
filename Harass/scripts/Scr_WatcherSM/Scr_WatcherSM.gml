@@ -54,7 +54,6 @@ switch(state)
 	if_moving = true;
 	// Watcher chase is to be going after player up until a certain point
 	// and just sit there
-	
 	if(OBJ_Player.is_hiding == true || track == noone || flee != noone)
 	{
 		if (flee != noone)
@@ -98,9 +97,15 @@ switch(state)
 	{
 		state = e_state.chase;
 	}
-	if (flee != noone)
+	if(OBJ_Player.is_hiding == true || track == noone || flee != noone)
 	{
+		if (flee != noone)
+		{
+			alarm[0] = room_speed * seconds_to_ret; // 3 seconds before they get back to their scheduled tasks
+			act_normal = true;
+		}
 		state = e_state.wander;
+		break;
 	}
 	break;
 }
