@@ -45,7 +45,7 @@ for (i=0; i < sfx_buttons; i++) {
 			draw_set_color(c_gray);
 	}
 	else {
-		if i == sfx_active
+		if i == global.sfx_on
 			draw_set_color(c_white);
 		else
 			draw_set_color(c_gray);
@@ -63,13 +63,37 @@ for (i=0; i < gui_buttons; i++) {
 			draw_set_color(c_gray);
 	}
 	else {
-		if i == gui_active
+		if i == global.gui_on
 			draw_set_color(c_white);
 		else
 			draw_set_color(c_gray);
 	}
 	
 	draw_text(400+i*100,300,gui_contrl[i]);	
+}
+
+if (global.msc_level == 0)
+{
+	draw_text(400, 375, string(round(global.msc_level * 100)) + ">");
+}
+else if(global.msc_level == 1)
+{
+	draw_text(400, 375, "<" + string(round(global.msc_level * 100)));
+}
+else {
+	draw_text(400, 375, "<" + string(round(global.msc_level * 100)) + ">");
+}
+
+if (global.sfx_level == 0)
+{
+	draw_text(400, 450, string(round(global.sfx_level * 100)) + ">");
+}
+else if(global.sfx_level == 1)
+{
+	draw_text(400, 450, "<" + string(round(global.sfx_level * 100)));
+}
+else {
+	draw_text(400, 450, "<" + string(round(global.sfx_level * 100)) + ">");
 }
 
 draw_set_halign(fa_left);
