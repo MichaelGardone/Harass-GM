@@ -18,3 +18,6 @@ faceTrack = 0
 
 // SPAWNED EYES
 eyeTotal = 0
+
+// SPAWNED FADE, STOPS OBJECT FROM SPAWNING MULTIPLE TIMES
+fade_Spawned = 0

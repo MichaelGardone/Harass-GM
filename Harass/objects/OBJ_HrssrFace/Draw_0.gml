@@ -1,5 +1,6 @@
 image_speed = 1
 // GROWS CREEPY FUCKING FACE
+
 if global.player_locked == 1
 {
 	if keyboard_check_pressed(ord("A")) ||  keyboard_check_pressed(ord("D"))
@@ -23,7 +24,7 @@ if global.player_locked == 1
 	if sprite_index == Spr_Chat 
 	{
 		draw_set_halign(fa_center)
-		draw_text_transformed(OBJ_HrssrFace.x + xShake,OBJ_HrssrFace.y - 250 + yShake,
+		draw_text_transformed(OBJ_HrssrFace.x + xShake,OBJ_HrssrFace.y - 210 + yShake,
 			comment[str_temp],0.8,1.1,0)
 	}
 } else {
