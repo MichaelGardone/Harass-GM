@@ -18,7 +18,7 @@ else if (global.player_locked == 0 && anim_Pace != 0)
 	
 	// REMOVES FACE
 	faceDrawn = -1
-	faceTrack -= 1
+	faceTrack = 0
 	
 	// REMOVES EYES
 	eyeTotal = 0
@@ -31,5 +31,5 @@ if anim_Pace == 2 && faceTrack == 0
 {
 	faceDrawn += 1
 	//show_debug_message(string(faceDrawn))
-	faceTrack += 1
+	faceTrack = 1
 }

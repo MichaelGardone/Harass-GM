@@ -1,4 +1,4 @@
-if (door_open && global.win == false)
+if (door_open && global.win == false && global.game_over == false)
 {
 	global.level_fade = true;
 	global.next_room = rm_GameOver;
