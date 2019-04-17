@@ -1,22 +1,38 @@
 
-switch(menu_index)
+if(prompt_on == false)
 {
-	case 0:
-		audio_play_sound(Sfx_SelectMenu,2,0);
-		global.next_room = rm_LvL1;
-		global.level_fade = true;
-		break;
-	case 1:
-		audio_play_sound(Sfx_SelectMenu,2,0);
-		global.next_room = rm_Options;
-		global.level_fade = true;
-		break;
-	case 2:
-		audio_play_sound(Sfx_SelectMenu,2,0);
-		global.next_room = rm_Credits;
-		global.level_fade = true;
-		break;
-	case 3:
-		game_end();
-		break;
+	switch(menu_index)
+	{
+		case 0:
+			audio_play_sound(Sfx_SelectMenu,2,0);
+			prompt_on = true;
+			break;
+		case 1:
+			audio_play_sound(Sfx_SelectMenu,2,0);
+			global.next_room = rm_Options;
+			global.level_fade = true;
+			break;
+		case 2:
+			audio_play_sound(Sfx_SelectMenu,2,0);
+			global.next_room = rm_Credits;
+			global.level_fade = true;
+			break;
+		case 3:
+			game_end();
+			break;
+	}
+} else {
+	switch(prompt_index)
+	{
+		case 0:
+			audio_play_sound(Sfx_SelectMenu,2,0);
+			global.next_room = rm_LvL1;
+			global.level_fade = true;
+			break;
+		case 1:
+			audio_play_sound(Sfx_SelectMenu,2,0);
+			global.next_room = rm_LvL2;
+			global.level_fade = true;
+			break;
+	}
 }
