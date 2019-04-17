@@ -85,9 +85,10 @@ if global.pause == 0 && global.player_locked == 0
 		// If (player hides it lost) OR (player escapes hitboxes)
 		if(global.win == false)
 		{
-			if OBJ_Player.player_escape
+			if (OBJ_Player.player_escape == true)
 			{
 				OBJ_Player.player_escape = false;
+				OBJ_Player.breakout = 0; // Just in case
 			
 				state = e_state.stunned;
 				
