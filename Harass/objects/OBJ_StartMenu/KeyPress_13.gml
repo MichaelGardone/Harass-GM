@@ -36,7 +36,7 @@ if(prompt_on == false)
 		case 1:
 			if(global.sfx_on)
 				audio_play_sound(Sfx_SelectMenu,2,0);
-			global.next_room = rm_LvL8;
+			global.next_room = rm_LvL2;
 			global.level_fade = true;
 			break;
 	}
