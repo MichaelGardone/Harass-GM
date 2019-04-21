@@ -3,7 +3,7 @@ if global.player_locked == 1 && global.game_over == false
 {
 	//SOUND & AUDIO MANAGEMENT
 	audio_pause_sound(Sfx_Background)
-	if !audio_is_playing(Sfx_StunHit) && sfx_play == 0  && global.sfx_on
+	if !audio_is_playing(Sfx_StunHit) && sfx_play == 0 && global.sfx_on
 	{
 		audio_play_sound(Sfx_StunHit,3,0)
 		sfx_play = 1
@@ -47,9 +47,12 @@ if global.player_locked == 1 && global.game_over == false
 	}
 	
 } else {
+	
+	if global.groove
+		audio_resume_sound(Sfx_Background);
+	
 	if global.sfx_on
 	{
-		audio_resume_sound(Sfx_Background)
 		sfx_play = 0
 		if audio_is_playing(Sfx_ChitChat)
 		{
