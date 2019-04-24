@@ -38,3 +38,19 @@ else if(door_open == false && global.sfx_on)
 {
 	audio_resume_sound(Sfx_Tram)
 }
+
+if place_meeting(x,y,OBJ_Player) && door_open == false
+{
+	if alarm[4] == -1
+	{
+		alarm[4] = room_speed * 0.5
+	}
+	draw_sprite(Spr_Correct,cm_index,x+80,y+100)
+	if (keyboard_check(ord("W")) & (!audio_is_playing(Sfx_No)))
+	{	
+		audio_play_sound(Sfx_No,9,0);
+	}
+} else if door_open == true
+{
+	alarm[4] = -1
+}

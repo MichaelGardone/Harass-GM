@@ -38,3 +38,8 @@ dir_remain = 0;
 // TIMER STORAGE
 hiding_timer = -1;
 discomf_incr_store = -1;
+
+//Extra Image Index
+eIndex = 0;
+alarm[4] = -1;
+hasHidden = 0;

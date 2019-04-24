@@ -64,13 +64,14 @@ if tut_prog == 3
 if tut_prog == 5
 {
 	draw_set_halign(fa_center)
-	draw_text(OBJ_Player.x,OBJ_Player.y-110,"Be wary of pedestrians.")
+	draw_text(OBJ_Player.x,OBJ_Player.y-140,"Be wary of pedestrians.")
+	draw_text(OBJ_Player.x,OBJ_Player.y-110,"They can make you uncomfortable.")
+	draw_sprite(Spr_Locater,betterIndex,OBJ_Meter.x,OBJ_Meter.y-80)
 	draw_sprite(Spr_Locater,betterIndex,OBJ_Stalker01.x-15,OBJ_CrowdTutorial.y-60)
 	if alarm[1] = -1
 	{
 		tut_prog += 1
 		tut_enemy += 1
-		show_debug_message("Aware Complete")
 	}
 }
 

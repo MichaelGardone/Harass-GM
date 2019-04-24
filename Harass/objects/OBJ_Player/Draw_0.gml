@@ -1,14 +1,19 @@
 
 // Draw yourself
 draw_self();
-
+show_debug_message(string(eIndex))
 if (is_hiding)
 {
 	fval = clamp(fval - hide_fade, 100, 255);
 	image_blend = make_color_rgb(fval, fval, fval);
 	
 	// HIDE JUICE
-	draw_sprite(Spr_Hidden, image_index, OBJ_Player.x, OBJ_Player.y);
+	if alarm[3] == -1
+	{
+		alarm[3] = room_speed * 0.24
+	}
+	draw_sprite(Spr_Hidden,eIndex,x,y)
+	hasHidden = 1;
 
 }
 else if (global.player_locked)
@@ -17,7 +22,16 @@ else if (global.player_locked)
 	image_blend = make_color_rgb(255, 255-fval, 255-fval);
 }
 else {
-	image_blend = c_white;
+	if (place_meeting(x,y,OBJ_CrowdTutorial) || place_meeting(x,y,OBJ_Crowd01) || place_meeting(x,y,OBJ_Crowd02)) 
+	&& hasHidden == 1
+		{
+		image_blend = c_white;
+		draw_sprite(Spr_Unhidden,eIndex,x,y)
+		}
+	else if !place_meeting(x,y,OBJ_CrowdTutorial) && hasHidden == 1 {
+		hasHidden = 0
+		alarm[3] = -1
+	}
 }
 
 if global.debug == 1

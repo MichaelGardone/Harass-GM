@@ -16,3 +16,5 @@ sfx_track = 0;
 // Speed of Animation
 play_Anim = 1;
 
+// ImageIndex of Checkmark
+cm_index = 0;
