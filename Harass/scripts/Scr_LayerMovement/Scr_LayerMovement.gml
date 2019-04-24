@@ -1,5 +1,3 @@
-
-
 if global.player_locked == 0 && global.pause == 0
 {
 	if(place_meeting(x,y,OBJ_Door) || place_meeting(x,y,OBJ_TutDoor))
@@ -10,6 +8,7 @@ if global.player_locked == 0 && global.pause == 0
 			global.record += 1;
 			global.level_fade = true;
 			global.win = true;
+			
 			if (room == rm_LvL1)
 				global.next_room = rm_LvL2;
 			// Tutorial is over, randomize
@@ -18,9 +17,16 @@ if global.player_locked == 0 && global.pause == 0
 				// Re-seed to keep it random
 				// Does GM use linear randomization?
 				randomize();
-				global.next_room = choose(rm_LvL2, rm_LvL3, rm_LvL4, rm_LvL5, rm_LvL6,
+				global.next_room = choose(rm_LvL2, rm_LvL3, rm_LvL4, rm_LvL5, rm_LvL6, rm_LvL7,
 										  rm_LvL8, rm_LvL9, rm_LvL10);
 			}
+			
+			if(global.discomf > 0)
+			{
+				global.discomf--;
+			}
+			
+			global.breakout_lim = round(22 + 12 * global.discomf);
 		}
 	} else {
 		
