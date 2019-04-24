@@ -132,6 +132,6 @@ else if(door_open == false && global.sfx_on)
 if global.hide && tut_prog == 4
 {
 	draw_set_halign(fa_center)
-	draw_text(OBJ_Player.x,OBJ_Player.y-140,"Beware, you can't ")
+	draw_text(OBJ_Player.x,OBJ_Player.y-140,"Beware, you cannot ")
 	draw_text(OBJ_Player.x,OBJ_Player.y-110,"hide forever.")
 }
