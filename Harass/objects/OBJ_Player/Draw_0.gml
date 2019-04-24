@@ -46,12 +46,12 @@ if global.debug == 1
 
 // Anim for Player
 if (x_spd != 0) && global.player_locked == 0 && global.pause == 0
-	if (keyboard_check(ord("A")))
+	if (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
 	{
 		sprite_index = Spr_PlayerMove
 		image_xscale = -1
 		image_speed = 1
-	} else if ((keyboard_check(ord("D"))))
+	} else if (keyboard_check(ord("D")) && !keyboard_check(ord("A")))
 	{
 		sprite_index = Spr_PlayerMove
 		image_xscale = 1
@@ -60,9 +60,9 @@ if (x_spd != 0) && global.player_locked == 0 && global.pause == 0
 	{
 		sprite_index = Spr_PlayerIdle
 		if (keyboard_lastkey == vk_left)
-			{
+		{
 			image_xscale = -1
-			}
+		}
 		image_speed = 0
 		image_index = 0
 	}
