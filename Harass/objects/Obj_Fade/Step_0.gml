@@ -3,11 +3,6 @@ if (global.level_fade)
 	a = clamp(a + (fade * fade_speed), 0, 1);
 	if (a == 1)
 	{
-		if(global.discomf > 0)
-		{
-			global.discomf--;
-		}
-		
 		room_goto(global.next_room);
 		
 		fade = -1;
