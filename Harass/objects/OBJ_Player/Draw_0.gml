@@ -1,7 +1,7 @@
 
 // Draw yourself
 draw_self();
-show_debug_message(string(eIndex))
+//show_debug_message(string(eIndex))
 if (is_hiding)
 {
 	fval = clamp(fval - hide_fade, 100, 255);
@@ -29,10 +29,10 @@ else {
 	
 	if (place_meeting(x,y,OBJ_CrowdTutorial) || place_meeting(x,y,OBJ_Crowd01) || place_meeting(x,y,OBJ_Crowd02)) 
 	&& hasHidden == 1
-		{
+	{
 		image_blend = c_white;
 		draw_sprite(Spr_Unhidden,eIndex,x,y)
-		}
+	}
 	else if !place_meeting(x,y,OBJ_CrowdTutorial) && hasHidden == 1 {
 		hasHidden = 0
 		alarm[3] = -1
@@ -45,7 +45,7 @@ if global.debug == 1
 }
 
 // Anim for Player
-if (!x_spd == 0) && global.player_locked == 0 && global.pause == 0
+if (x_spd != 0) && global.player_locked == 0 && global.pause == 0
 	if (keyboard_check(ord("A")))
 	{
 		sprite_index = Spr_PlayerMove
@@ -71,6 +71,10 @@ else if global.player_locked == 1
 	sprite_index = Spr_PlayerStun
 	image_speed = 0
 	image_index = 0
+}
+else if(global.pause)
+{
+	image_speed = 0;	
 }
 		
 // EXIT
