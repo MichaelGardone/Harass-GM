@@ -12,14 +12,29 @@ if dir > 0 && global.player_locked == 0 && if_stunned == 0
 	sprite_index = Spr_DougIdle
 }
 
-if state == e_state.sit_tight
+if state == e_state.sit_tight && (global.player_locked == 0 && global.pause == 0)
 {
+	if(alarm[0] == -1 && store_alarm0 != -1)
+	{
+		alarm[0] = store_alarm0;
+		store_alarm0 = -1;
+	}
 	image_blend = make_color_rgb(fval, fval, fval);
 	if alarm[0] > 0
 		fval = clamp(fval + (fade_back / alarm[0]), 0, 255);
 	else
 		fval = 255;
-} else {
+}
+else if(state == e_state.sit_tight && (global.player_locked || global.pause))
+{
+	if(alarm[0] > -1)
+	{
+		store_alarm0 = alarm[0];
+		alarm[0] = -1;
+	}
+	image_blend = make_color_rgb(fval, fval, fval);
+}
+else {
 	image_blend = c_white;
 }
 

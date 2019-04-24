@@ -1,7 +1,7 @@
 draw_self();
 show_debug_message(dir)
 
-if global.pause == 0
+if global.pause == 0 && global.player_locked == 0
 	{
 	image_speed = 1	
 	if OBJ_Passerby02.x > OBJ_Passerby02.xprevious

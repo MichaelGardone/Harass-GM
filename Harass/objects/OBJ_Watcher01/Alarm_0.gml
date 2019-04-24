@@ -1,3 +1,5 @@
 
-state = e_state.wander;
-
+if(store_alarm0 == -1) // if == -1, then the timer expired naturally
+{
+	state = e_state.wander;	
+}

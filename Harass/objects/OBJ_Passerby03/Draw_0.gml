@@ -1,7 +1,7 @@
 draw_self();
 
-if global.pause == 0 || global.player_locked == 0
-	{
+if global.pause == 0 && global.player_locked == 0
+{
 	image_speed = 1	
 	if OBJ_Passerby03.x > OBJ_Passerby03.xprevious
 	{
@@ -15,8 +15,8 @@ if global.pause == 0 || global.player_locked == 0
 		image_speed = 0
 	}
 else 
-	{
+{
 	image_speed = 0
-	}
+}
 	
 image_blend = make_color_rgb(200, 200, 200);

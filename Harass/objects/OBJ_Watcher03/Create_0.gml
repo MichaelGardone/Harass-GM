@@ -26,6 +26,9 @@ attack = collision_rectangle(x,y,x+attack_trig*dir,y+sprite_height, OBJ_Player, 
 // Initial state -- do not touch! should always be wandering
 state = e_state.wander;
 
+// Store dead timer
+store_alarm0 = -1;
+
 curr_node = noone;
 left_or_right = 0;
 

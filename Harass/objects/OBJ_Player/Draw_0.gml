@@ -22,6 +22,11 @@ else if (global.player_locked)
 	image_blend = make_color_rgb(255, 255-fval, 255-fval);
 }
 else {
+	if(global.player_locked == false)
+	{
+		image_blend = c_white;
+	}
+	
 	if (place_meeting(x,y,OBJ_CrowdTutorial) || place_meeting(x,y,OBJ_Crowd01) || place_meeting(x,y,OBJ_Crowd02)) 
 	&& hasHidden == 1
 		{

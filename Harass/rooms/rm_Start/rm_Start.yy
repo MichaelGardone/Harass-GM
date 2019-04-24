@@ -8,7 +8,8 @@
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
         "d60f750d-457c-4326-b26a-f09e232d8673",
-        "8f20f5d2-02ca-4f14-b53c-50b00335de14"
+        "8f20f5d2-02ca-4f14-b53c-50b00335de14",
+        "3f8cc915-d15c-4eb8-9cfc-da58974c2a07"
     ],
     "IsDnD": false,
     "layers": [
@@ -52,7 +53,8 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_573A569E","id": "d60f750d-457c-4326-b26a-f09e232d8673","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_573A569E","objId": "778abfa9-ed11-4481-94ed-cf218b3b843c","properties": null,"rotation": 0,"scaleX": 3,"scaleY": 3,"mvc": "1.0","x": 505,"y": 344}
+{"name": "inst_573A569E","id": "d60f750d-457c-4326-b26a-f09e232d8673","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_573A569E","objId": "778abfa9-ed11-4481-94ed-cf218b3b843c","properties": null,"rotation": 0,"scaleX": 3,"scaleY": 3,"mvc": "1.0","x": 505,"y": 344},
+{"name": "inst_7AC3E578","id": "3f8cc915-d15c-4eb8-9cfc-da58974c2a07","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_7AC3E578","objId": "85edbf0a-beee-461f-955b-df1753b085d1","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 608,"y": 384}
             ],
             "layers": [
 
@@ -67,7 +69,7 @@
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Background",
-            "id": "b2a1835c-88f4-4435-a957-456e87b72b2b",
+            "id": "ee7e5352-f176-4901-941e-7ed03a61963b",
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4278190080 },

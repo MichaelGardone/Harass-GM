@@ -1,6 +1,6 @@
 draw_self();
 
-if global.pause == 0
+if global.pause == 0 && global.player_locked == 0
 	{
 	image_speed = 1	
 	if OBJ_Passerby04.x > OBJ_Passerby04.xprevious

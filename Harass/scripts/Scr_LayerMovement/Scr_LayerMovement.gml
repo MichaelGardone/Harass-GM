@@ -24,9 +24,15 @@ if global.player_locked == 0 && global.pause == 0
 			if(global.discomf > 0)
 			{
 				global.discomf--;
+				total = 22;
+				for(i = 1; i < global.discomf; i++)
+					total += round(12 * i);
+				global.breakout_lim = total;
+			}
+			else {
+				global.breakout_lim = 22;
 			}
 			
-			global.breakout_lim = round(22 + 12 * global.discomf);
 		}
 	} else {
 		

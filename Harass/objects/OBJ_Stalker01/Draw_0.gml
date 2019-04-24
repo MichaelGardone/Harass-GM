@@ -1,13 +1,13 @@
 draw_self();
 
-if global.pause == 1
-	{
+if global.pause == 1 || global.player_locked == 1
+{
 	image_speed = 0
-	}
+}
 else
-	{
+{
 	image_speed = 1
-	}
+}
 
 if dir > 0 && if_moving == true
 {

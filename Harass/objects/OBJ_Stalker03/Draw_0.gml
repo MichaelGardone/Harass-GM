@@ -1,6 +1,6 @@
 draw_self();
 
-if global.pause == 1
+if global.pause == 1 || global.player_locked == 1
 	{
 	image_speed = 0
 	}
