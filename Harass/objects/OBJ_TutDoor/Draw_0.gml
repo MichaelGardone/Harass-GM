@@ -50,13 +50,20 @@ if tut_prog == 1
 if tut_prog == 3
 {
 	draw_set_halign(fa_center)
-	draw_text(OBJ_Player.x,OBJ_Player.y-110,"Hide with the 'W' key")
-	draw_sprite(Spr_Hide,betterIndex,OBJ_CrowdTutorial.x+64,OBJ_CrowdTutorial.y-60)
+	if warningDrawn == 0
+	{
+		draw_text(OBJ_Player.x,OBJ_Player.y-110,"Hide with the 'W' key")
+		draw_sprite(Spr_Hide,betterIndex,OBJ_CrowdTutorial.x+64,OBJ_CrowdTutorial.y-60)
+	}
 	if global.hide
 	{
-		tut_prog += 1
-		tut_hide += 1
-		alarm[0] = room_speed * 3
+		if warningDrawn == 0
+		{
+			warningDrawn = 1
+			alarm[0] = room_speed * 6
+			tut_prog += 1
+			tut_hide += 1	
+		}
 	}
 }
 
@@ -120,4 +127,11 @@ if (door_open == true && global.sfx_on)
 else if(door_open == false && global.sfx_on)
 {
 	audio_resume_sound(Sfx_Tram)
+}
+
+if global.hide && tut_prog == 4
+{
+	draw_set_halign(fa_center)
+	draw_text(OBJ_Player.x,OBJ_Player.y-140,"Beware, you can't ")
+	draw_text(OBJ_Player.x,OBJ_Player.y-110,"hide forever.")
 }

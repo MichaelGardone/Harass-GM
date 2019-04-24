@@ -18,6 +18,7 @@ alarm[0] = room_speed * 8
 // TRACKS PROGRESSION
 tut_prog = 0;
 tut_pause = 0;
+warningDrawn = 0;
 
 // MOVE
 tut_move = 0;
