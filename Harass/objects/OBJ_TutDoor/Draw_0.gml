@@ -47,43 +47,69 @@ if tut_prog == 1
 }
 
 // HOW TO HIDE - REMOVE X PRESS ONCE IT WORKS
-if tut_prog == 3
+if tut_prog == 9
 {
 	draw_set_halign(fa_center)
-	if warningDrawn == 0
+	draw_text(OBJ_Player.x,OBJ_Player.y-140,"Some doors may not open.")
+	draw_text(OBJ_Player.x,OBJ_Player.y-110,"Look around for doors with marks.")
+	draw_sprite(Spr_Correct,image_index,OBJ_TutDoor.x-32,OBJ_TutDoor.y-64)
+	if alarm[1] = -1
 	{
-		draw_text(OBJ_Player.x,OBJ_Player.y-110,"Hide with the 'W' key")
-		draw_sprite(Spr_Hide,betterIndex,OBJ_CrowdTutorial.x+64,OBJ_CrowdTutorial.y-60)
+		alarm[0] = room_speed * 3
+		tut_correctDoor += 1
+		tut_prog += 1
 	}
+}
+
+if tut_prog == 7
+{
+	draw_set_halign(fa_center)
+	draw_text(OBJ_Player.x,OBJ_Player.y-140,"You can't stay in a hiding spot forever.")
+	if alarm[1] = -1
+	{
+		alarm[0] = room_speed * 3
+		tut_tempISHide += 1
+		tut_prog += 1
+		tut_timer = 0
+	}
+}
+
+if tut_prog == 5
+{
+	draw_set_halign(fa_center)
+	draw_text(OBJ_Player.x,OBJ_Player.y-140,"Potential Harassers could confront you.")
+	draw_text(OBJ_Player.x,OBJ_Player.y-110,"Find a Crowd and hide with the 'W' key.")
+	draw_sprite(Spr_Hide,betterIndex,OBJ_CrowdTutorial.x+64,OBJ_CrowdTutorial.y-60)
 	if global.hide
 	{
-		if warningDrawn == 0
-		{
-			warningDrawn = 1
-			alarm[0] = room_speed * 6
-			tut_prog += 1
-			tut_hide += 1	
-		}
+		tut_timer = 0
+		alarm[0] = room_speed * 3
+		tut_prog += 1
+		tut_hide += 1	
 	}
 }
 
 // WHO TO AVOID
-if tut_prog == 5
+if tut_prog == 3
 {
 	draw_set_halign(fa_center)
 	draw_text(OBJ_Player.x,OBJ_Player.y-140,"Be wary of pedestrians.")
 	draw_text(OBJ_Player.x,OBJ_Player.y-110,"They can make you uncomfortable.")
 	draw_sprite(Spr_Locater,betterIndex,OBJ_Meter.x,OBJ_Meter.y-80)
 	draw_sprite(Spr_Locater,betterIndex,OBJ_Stalker01.x-15,OBJ_CrowdTutorial.y-60)
+	draw_sprite(Spr_Locater,betterIndex,OBJ_Passerby02.x-15,OBJ_CrowdTutorial.y-60)
+	draw_sprite(Spr_Locater,betterIndex,OBJ_Passerby03.x-15,OBJ_CrowdTutorial.y-60)
+	draw_sprite(Spr_Locater,betterIndex,OBJ_Passerby04.x-15,OBJ_CrowdTutorial.y-60)
 	if alarm[1] = -1
 	{
+		alarm[0] = room_speed * 3
 		tut_prog += 1
 		tut_enemy += 1
 	}
 }
 
 // HOW TO EXIT
-if tut_enemy == 1 && tut_hide == 1 && tut_move == 1
+if tut_enemy == 1 && tut_hide == 1 && tut_move == 1 && tut_correctDoor == 1 && tut_tempISHide == 1
 {
 	draw_set_halign(fa_center)
 	draw_text(OBJ_Player.x,OBJ_Player.y-110,"You have arrived. Use 'W' to Exit.")
@@ -127,11 +153,4 @@ if (door_open == true && global.sfx_on)
 else if(door_open == false && global.sfx_on)
 {
 	audio_resume_sound(Sfx_Tram)
-}
-
-if global.hide && tut_prog == 4
-{
-	draw_set_halign(fa_center)
-	draw_text(OBJ_Player.x,OBJ_Player.y-140,"Beware, you cannot ")
-	draw_text(OBJ_Player.x,OBJ_Player.y-110,"hide forever.")
 }

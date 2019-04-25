@@ -11,7 +11,6 @@ play_Anim = 1;
 betterIndex = 0
 alarm[3] = room_speed * 0.3
 
-
 //// TUTORIAL ACTIVITIES
 alarm[0] = room_speed * 8
 
@@ -29,6 +28,8 @@ a_pressed = 0;
 d_pressed = 0;
 
 tut_hide = 0;
+tut_tempISHide = 0;
+tut_correctDoor = 0;
 
 tut_timer = 0;
 tut_enemy = 0;

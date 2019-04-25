@@ -12,13 +12,26 @@ if global.pause == 0 && tut_pause == 1
 	tut_pause -= 1
 }
 
-if tut_prog == 5 && tut_timer == 0
+if tut_prog == 3 && tut_timer == 0
 {
 	alarm[1] = room_speed * 9
 	tut_timer += 1
 }
 
-if tut_move == 1 && tut_hide == 1 && tut_enemy == 1 && door_open == false
+if tut_prog == 7 && tut_timer == 0
+{
+	alarm[1] = room_speed * 7
+	tut_timer += 1
+}
+
+if tut_prog == 9 && tut_timer == 0
+{
+	alarm[1] = room_speed * 9
+	tut_timer += 1
+}
+
+if tut_move == 1 && tut_hide == 1 && tut_enemy == 1 && tut_tempISHide == 1 &&
+tut_correctDoor == 1 && door_open == false
 {
 	door_open = true
 }
