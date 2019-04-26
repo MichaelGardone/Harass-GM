@@ -32,3 +32,7 @@ dir = false
 
 // PUNCH FLASH
 flashPunch = 0
+
+//TEXT COLOR FLASHIES
+color_temp = choose(c_red, c_white, c_ltgray)
+alarm[1] = room_speed * 0.1
