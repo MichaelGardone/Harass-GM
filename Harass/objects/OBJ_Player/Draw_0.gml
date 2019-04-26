@@ -1,4 +1,4 @@
-show_debug_message(string(OBJ_Player.alarm[2]))
+
 // Draw yourself
 draw_self();
 if (is_hiding)

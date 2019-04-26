@@ -1959,6 +1959,14 @@
             }
         },
         {
+            "Key": "fcff64e0-d261-4d60-9ff2-0d37b7a17e89",
+            "Value": {
+                "id": "2b1af7e5-cf3c-4ed8-8613-4bbc5cccff02",
+                "resourcePath": "objects\\OBJ_Objective\\OBJ_Objective.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fe5e640a-e6b6-4d5d-831f-78ec5861a37f",
             "Value": {
                 "id": "6bc69026-bed4-45c5-a1f6-678ced20b673",

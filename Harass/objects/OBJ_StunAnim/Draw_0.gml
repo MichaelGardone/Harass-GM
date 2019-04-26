@@ -16,7 +16,7 @@ if global.player_locked == 1 && global.game_over == false
 	//MASH UI
 	draw_sprite(Spr_ABut,a_press,OBJ_Player.x+-30,OBJ_Player.y + -110)
 	draw_sprite(Spr_DBut,d_press,OBJ_Player.x+30,OBJ_Player.y + -110)
-	draw_set_color(c_white)
+	draw_set_color(color_temp)
 	draw_set_halign(fa_left)
 	draw_text(OBJ_Player.x-54,OBJ_Player.y+-160,"Mash!")
 	if (keyboard_check_pressed(ord("A")))

@@ -21,3 +21,7 @@ eyeTotal = 0
 
 // SPAWNED FADE, STOPS OBJECT FROM SPAWNING MULTIPLE TIMES
 fade_Spawned = 0
+
+//TEXT COLOR FLASHIES
+color_temp = choose(c_red, c_white, c_ltgray)
+alarm[1] = room_speed * 0.1
