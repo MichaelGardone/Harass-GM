@@ -46,6 +46,7 @@ if global.debug == 1
 
 // Anim for Player
 if (x_spd != 0) && global.player_locked == 0 && global.pause == 0
+	// Push the changes
 	if (keyboard_check(ord("A")) && !keyboard_check(ord("D")))
 	{
 		sprite_index = Spr_PlayerMove
