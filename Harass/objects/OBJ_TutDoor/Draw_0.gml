@@ -107,7 +107,7 @@ if tut_prog == 3
 	draw_set_halign(fa_center)
 	draw_sprite_ext(Spr_BlackBox,0,OBJ_Player.x,OBJ_Player.y-140,9.25,1.55,0,0,1)
 	draw_text(OBJ_Player.x,OBJ_Player.y-180,"Be wary of pedestrians.")
-	draw_text(OBJ_Player.x,OBJ_Player.y-150,"They can make you ")
+	draw_text(OBJ_Player.x,OBJ_Player.y-150,"Some can make you ")
 	draw_text(OBJ_Player.x,OBJ_Player.y-120,"uncomfortable.")
 	draw_sprite(Spr_Locater,betterIndex,OBJ_Meter.x,OBJ_Meter.y-80)
 	draw_sprite(Spr_Locater,betterIndex,OBJ_Stalker01.x-15,OBJ_CrowdTutorial.y-60)
