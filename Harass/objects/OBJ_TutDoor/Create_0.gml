@@ -33,3 +33,6 @@ tut_correctDoor = 0;
 
 tut_timer = 0;
 tut_enemy = 0;
+
+//Creating this variable so I can push
+asdf = 0
