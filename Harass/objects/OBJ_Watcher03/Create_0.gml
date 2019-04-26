@@ -7,6 +7,7 @@ dir = 1;
 patrol_spd = 5;
 if_stunned = false;
 
+identify_me = false;
 
 // Float
 chase_spd = 6;

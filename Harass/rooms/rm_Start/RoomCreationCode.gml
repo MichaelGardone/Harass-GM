@@ -45,3 +45,6 @@ global.discomf_max = 7;
 
 // BREAKOUT LIMIT
 global.breakout_lim = 22;
+
+// DIFFICULTY CURVE
+global.curve = 1; // starts at 1

@@ -1,4 +1,10 @@
 draw_self();
+
+if (identify_me)
+	image_blend = c_red;
+else
+	image_blend = c_white;
+
 if dir > 0 && global.player_locked == 0 && if_stunned == 0
 {
 	image_xscale = 1
@@ -19,11 +25,13 @@ if state == e_state.sit_tight && (global.player_locked == 0 && global.pause == 0
 		alarm[0] = store_alarm0;
 		store_alarm0 = -1;
 	}
-	image_blend = make_color_rgb(fval, fval, fval);
+	image_blend = make_color_rgb(fval, 0, 0);
 	if alarm[0] > 0
 		fval = clamp(fval + (fade_back / alarm[0]), 0, 255);
 	else
+	{
 		fval = 255;
+	}
 }
 else if(state == e_state.sit_tight && (global.player_locked || global.pause))
 {
@@ -33,9 +41,6 @@ else if(state == e_state.sit_tight && (global.player_locked || global.pause))
 		alarm[0] = -1;
 	}
 	image_blend = make_color_rgb(fval, fval, fval);
-}
-else {
-	image_blend = c_white;
 }
 
 if global.debug == 1

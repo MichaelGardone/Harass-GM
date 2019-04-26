@@ -94,7 +94,7 @@ if global.pause == 0 && global.player_locked == 0
 				
 				total = 22;
 				for(i = 1; i < global.discomf; i++)
-					total += round(12 * i);
+					total += round(12 * i * global.curve);
 				
 				global.breakout_lim = total;
 			} else 

@@ -9,6 +9,9 @@ if global.player_locked == 0 && global.pause == 0
 			global.level_fade = true;
 			global.win = true;
 			
+			if(global.record % 5 == 0 && global.record != 0)
+				global.curve += 0.5; // increase the difficulty every 5 levels by 50%
+			
 			if (room == rm_LvL1)
 				global.next_room = rm_LvL2;
 			// Tutorial is over, randomize
@@ -26,7 +29,7 @@ if global.player_locked == 0 && global.pause == 0
 				global.discomf--;
 				total = 22;
 				for(i = 1; i < global.discomf; i++)
-					total += round(12 * i);
+					total += round(12 * i * global.curve);
 				global.breakout_lim = total;
 			}
 			else {
