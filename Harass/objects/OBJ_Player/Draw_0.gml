@@ -1,20 +1,29 @@
-
+show_debug_message(string(OBJ_Player.alarm[2]))
 // Draw yourself
 draw_self();
-//show_debug_message(string(eIndex))
 if (is_hiding)
 {
 	fval = clamp(fval - hide_fade, 100, 255);
 	image_blend = make_color_rgb(fval, fval, fval);
 	
 	// HIDE JUICE
+	hasHidden = 1
 	if alarm[3] == -1
 	{
 		alarm[3] = room_speed * 0.24
 	}
-	draw_sprite(Spr_Hidden,eIndex,x,y)
-	hasHidden = 1;
-
+	if alarm[1] >= 300
+		{draw_sprite(Spr_Hidden5,eIndex,x,y)} 
+	if alarm[1] < 300 && alarm[1] >= 240
+		{draw_sprite(Spr_Hidden4,eIndex,x,y)} 
+	if alarm[1] < 240 && alarm[1] >= 180
+		{draw_sprite(Spr_Hidden3,eIndex,x,y)}
+	if alarm[1] < 180 && alarm[1] >= 120
+		{draw_sprite(Spr_Hidden2,eIndex,x,y)}
+	if alarm[1] < 120 && alarm[1] >= 60
+		{draw_sprite(Spr_Hidden1,eIndex,x,y)}
+	if alarm[1] < 60 && alarm[1] > 1
+		{draw_sprite(Spr_Hidden0,eIndex,x,y)}
 }
 else if (global.player_locked)
 {
@@ -31,7 +40,7 @@ else {
 	&& hasHidden == 1
 	{
 		image_blend = c_white;
-		draw_sprite(Spr_Unhidden,eIndex,x,y)
+		draw_sprite(Spr_NotHidden,eIndex,x,y)
 	}
 	else if !place_meeting(x,y,OBJ_CrowdTutorial) && hasHidden == 1 {
 		hasHidden = 0

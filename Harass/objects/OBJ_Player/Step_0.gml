@@ -1,4 +1,4 @@
-
+show_debug_message(string(alarm[1]))
 // inputs
 if(global.pause == 0)
 	Scr_Input();
