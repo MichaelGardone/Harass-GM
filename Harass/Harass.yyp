@@ -1887,6 +1887,14 @@
             }
         },
         {
+            "Key": "fc9983ca-8729-4ae9-a105-099a97b50bc1",
+            "Value": {
+                "id": "c85d0237-5297-4aea-aaa5-86a37c5f53a3",
+                "resourcePath": "sprites\\Spr_BlackBox\\Spr_BlackBox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fe5e640a-e6b6-4d5d-831f-78ec5861a37f",
             "Value": {
                 "id": "6bc69026-bed4-45c5-a1f6-678ced20b673",
