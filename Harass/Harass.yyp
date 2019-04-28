@@ -999,6 +999,14 @@
             }
         },
         {
+            "Key": "7036a81a-4ca9-4d9f-ad33-d86d1cbbea79",
+            "Value": {
+                "id": "e3c89226-e9dc-497c-8bee-fb268d23d689",
+                "resourcePath": "sprites\\Spr_CautionTape\\Spr_CautionTape.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7064ed59-ccf9-492c-9164-259b3d619f14",
             "Value": {
                 "id": "c325b02b-2316-4d12-a099-b8c155e226cb",
@@ -1603,6 +1611,14 @@
             "Value": {
                 "id": "473804a7-eecd-4bec-9a05-1e266ac11115",
                 "resourcePath": "objects\\OBJ_TutDoor\\OBJ_TutDoor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bf71ea6b-6cb9-4c30-9969-78247f0519bf",
+            "Value": {
+                "id": "44531e53-a664-4909-8983-c0332bbf1208",
+                "resourcePath": "objects\\OBJ_CautTape\\OBJ_CautTape.yy",
                 "resourceType": "GMObject"
             }
         },

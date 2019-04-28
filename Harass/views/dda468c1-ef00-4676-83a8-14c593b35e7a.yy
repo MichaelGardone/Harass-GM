@@ -15,7 +15,8 @@
         "ac38f66d-62df-4698-9c3b-7b05af4725aa",
         "835ec59c-7bf8-4739-aaaa-1a45dbf91b45",
         "5deb77e4-6c25-4d67-b6c3-d09df263fb91",
-        "935f9edd-adfb-4b83-9f0d-7c8006d04c0a"
+        "935f9edd-adfb-4b83-9f0d-7c8006d04c0a",
+        "7036a81a-4ca9-4d9f-ad33-d86d1cbbea79"
     ],
     "filterType": "GMSprite",
     "folderName": "EnvironmentArt",
