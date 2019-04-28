@@ -40,9 +40,6 @@ else if(state == e_state.sit_tight && (global.player_locked || global.pause))
 	}
 	image_blend = make_color_rgb(fval, fval, fval);
 }
-else {
-	image_blend = c_white;
-}
 
 if global.debug == 1
 {

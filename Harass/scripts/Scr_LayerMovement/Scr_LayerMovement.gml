@@ -46,7 +46,7 @@ if global.player_locked == 0 && global.pause == 0
 		if (w_key && (place_meeting(x,y, OBJ_Crowd01) || place_meeting(x,y,OBJ_Crowd02)
 			|| place_meeting(x,y, OBJ_CrowdTutorial))
 			&& ((instance != noone && instance.can_hide) || (instance2 != noone && instance2.can_hide
-				|| instance3 != noone)))
+				|| (instance3 != noone && instance3.can_hide))))
 		{
 			alarm[1] = room_speed * hide_length;
 			
