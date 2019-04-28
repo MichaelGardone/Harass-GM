@@ -8,7 +8,7 @@ if global.player_locked == 1 && anim_Pace == 0
 	
 	anim_Pace += 1
 	//show_debug_message(string(anim_Pace))
-	alarm[0] = room_speed * 1.25
+	alarm[0] = room_speed * 0.75
 }
 else if (global.player_locked == 0 && anim_Pace != 0)
 {
