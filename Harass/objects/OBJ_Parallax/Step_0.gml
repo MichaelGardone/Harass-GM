@@ -13,9 +13,9 @@ if (!global.open)
 				{
 					if(alarm[0] == -1&& slow_down < parallax_speed)
 						alarm[0] = room_speed * time_scale;
-					layer_x("ParallaxLayer", layer_get_x("ParallaxLayer") - (parallax_speed - slow_down));
 					layer_background_alpha(layer_background_get_id(layer_get_id("ParallaxLayer")),
 						(parallax_speed - slow_down) / parallax_speed);
+					layer_x("ParallaxLayer", layer_get_x("ParallaxLayer") - (parallax_speed - slow_down));
 				}
 				else
 				{
