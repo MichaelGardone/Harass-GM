@@ -21,7 +21,7 @@ if global.player_locked == 0 && global.pause == 0
 				// Does GM use linear randomization?
 				randomize();
 				global.next_room = choose(rm_LvL2, rm_LvL3, rm_LvL4, rm_LvL5, rm_LvL6, rm_LvL7,
-										  rm_LvL8, rm_LvL9, rm_LvL10);
+										  rm_LvL8, rm_LvL9, rm_LvL10, rm_LvL11, rm_LvL12);
 			}
 			
 			if(global.discomf > 0)

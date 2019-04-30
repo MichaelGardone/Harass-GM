@@ -1375,6 +1375,14 @@
             }
         },
         {
+            "Key": "9b817cfc-d921-4021-92fd-344487e9aa68",
+            "Value": {
+                "id": "fe1d2f36-4b3d-48c1-8fdb-644677546647",
+                "resourcePath": "tilesets\\BlackSpace\\BlackSpace.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "9d03535c-0cb0-4e01-9c8f-87c5004f6414",
             "Value": {
                 "id": "a2c3fa84-1e1c-424f-a57f-a2a544f27d3e",
@@ -1500,6 +1508,14 @@
                 "id": "ebcd1710-4f49-494e-b35f-7923c704526f",
                 "resourcePath": "views\\ac38f66d-62df-4698-9c3b-7b05af4725aa.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ac8150fc-dae7-4e56-a5a5-95e3ae09e862",
+            "Value": {
+                "id": "7720cf9c-b894-4b81-b572-a2cfe857c155",
+                "resourcePath": "sprites\\Spr_BlackSpace\\Spr_BlackSpace.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

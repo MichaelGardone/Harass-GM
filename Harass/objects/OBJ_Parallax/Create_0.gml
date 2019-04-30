@@ -4,4 +4,4 @@ time_start_slow = room_speed * 8; // 8 seconds is the best time to start slowing
 time_scale = 0.5;
 
 // Shader information
-fade_val = shader_get_uniform(Shdr_FadeWhite,"fade_val");
+//fade_val = shader_get_uniform(Shdr_FadeWhite,"fade_val");

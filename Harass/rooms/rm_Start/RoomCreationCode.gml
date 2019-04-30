@@ -26,13 +26,15 @@ global.reason = "";
 global.times[0] = -1; // lvl 1 - 1, TUTORIAL
 global.times[1] = 25; // lvl 2 - 2
 global.times[2] = 35; // lvl 3 - 3
-global.times[3] = 45; // lvl 4 - 4
+global.times[3] = 35; // lvl 4 - 4
 global.times[4] = 25; // lvl 5 - 2
 global.times[5] = 25; // lvl 6 - 2
-global.times[6] = 25; // lvl 7 - 2
+global.times[6] = 25; // lvl 7 - 2, 2 stun
 global.times[7] = 35; // lvl 8 - 2
 global.times[8] = 35; // lvl 9 - 2
 global.times[9] = 15; // lvl 10 - 1 BUT NO WHERE TO HIDE
+global.times[10] = 15 // lvl 11 - 1
+global.times[11] = 35 // lvl 12 - 3, 2 stun
 
 // HIDDEN
 global.hide = false;
