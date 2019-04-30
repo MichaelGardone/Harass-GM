@@ -983,14 +983,6 @@
             }
         },
         {
-            "Key": "6ca58fcd-8984-44e5-a59e-40194cc2beaf",
-            "Value": {
-                "id": "4dd0ce9b-b32b-42e6-9316-2e5b02c96024",
-                "resourcePath": "shaders\\Shdr_FadeWhite\\Shdr_FadeWhite.yy",
-                "resourceType": "GMShader"
-            }
-        },
-        {
             "Key": "6e5a417d-ec46-49d8-947d-02871ab83807",
             "Value": {
                 "id": "75d9994a-3424-41c8-95cb-edf8bb212e02",
