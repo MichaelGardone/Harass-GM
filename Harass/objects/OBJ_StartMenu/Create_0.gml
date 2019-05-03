@@ -2,7 +2,7 @@ display_set_gui_size(1080,620);
 
 y_pos = 0;
 
-yoffset = 100;
+yoffset = 60;
 
 text[0] = "Start";
 text[1] = "Options";
